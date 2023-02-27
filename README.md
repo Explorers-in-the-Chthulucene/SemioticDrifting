@@ -1,2 +1,7 @@
 # SemioticDrifting
-The repository for the project SemioticDrifting. This project was developed as final examination for the "Knowledge Representation and Extraction" course of Digital Humanities and Digital Knowledge Master Degree, held by professor Aldo Gangemi and professor Andrea Giovanni Nuzzolese, at the University of Bologna, for the a.y. 2021/2022.
+This project aims at extracting and organizing Knowledge from the text <i>Staying with the trouble: Making Kin in the Chthulucene</i> by Donna Haraway (Duke University Press, 2016). 
+<br>
+<br>
+## Contributors
+- [Giusy Grieco](mailto:giusy.grieco@studio.unibo.it)
+- [Maddalena Ghiotto](mailto:maddalena.ghiotto@studio.unibo.it)
