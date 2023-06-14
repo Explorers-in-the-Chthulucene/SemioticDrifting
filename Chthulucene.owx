@@ -28,82 +28,130 @@
         <Class IRI="#Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArtisticEntity"/>
+        <Class IRI="#Artifact"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Concept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Critter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Domain"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HumanAnimal"/>
+        <Class IRI="#ExistingPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GivenConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImaginedPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeDomain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Method"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NonHumanAnimal"/>
+        <Class IRI="#NewConcept"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Practice"/>
+        <Class IRI="#PracticalConcept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Relation"/>
+        <Class IRI="#SF"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specie"/>
+        <Class IRI="#ScienceFact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScienceFiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoFar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeculativeFabulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeculativeFeminism"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Story"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Technology"/>
+        <Class IRI="#StringFigure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Thinker"/>
+        <Class IRI="#TheoreticalConcept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Timescape"/>
+        <Class IRI="#Time"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#after"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#agent"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#before"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#domain"/>
+        <ObjectProperty IRI="#belongsTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty IRI="#collaborator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isAgentOf"/>
+        <ObjectProperty IRI="#companion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isInformedBy"/>
+        <ObjectProperty IRI="#composedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#place"/>
+        <ObjectProperty IRI="#drawnFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerspective"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#kinship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occursDuring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#references"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#symbiogenesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#thinksWith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#thoughtBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#timescape"/>
+        <ObjectProperty IRI="#unfoldsIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Anthropocene"/>
@@ -139,139 +187,163 @@
         <AnnotationProperty IRI="#creator"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#ArtisticEntity"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#ExistingPlace"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Critter"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#GivenConcept"/>
+        <Class IRI="#Concept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HumanAnimal"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#ImaginedPlace"/>
+        <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NonHumanAnimal"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#NewConcept"/>
+        <Class IRI="#Concept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Practice"/>
-        <Class IRI="#Method"/>
+        <Class IRI="#PracticalConcept"/>
+        <Class IRI="#Concept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specie"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#SF"/>
+        <Class IRI="#Story"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScienceFact"/>
+        <Class IRI="#SF"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScienceFiction"/>
+        <Class IRI="#SF"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoFar"/>
+        <Class IRI="#SF"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeculativeFabulation"/>
+        <Class IRI="#SF"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeculativeFeminism"/>
+        <Class IRI="#SF"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Story"/>
         <Class IRI="#Method"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Technology"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#StringFigure"/>
+        <Class IRI="#SF"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Thinker"/>
-        <Class IRI="#HumanAnimal"/>
+        <Class IRI="#TheoreticalConcept"/>
+        <Class IRI="#Concept"/>
     </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="#Timescape"/>
-        <NamedIndividual IRI="#Anthropocene"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#BecomingWith"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Timescape"/>
-        <NamedIndividual IRI="#Capitalocene"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Timescape"/>
-        <NamedIndividual IRI="#Chthulucene"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#FS"/>
-    </ClassAssertion>
+    <DisjointClasses>
+        <Class IRI="#ExistingPlace"/>
+        <Class IRI="#ImaginedPlace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GivenConcept"/>
+        <Class IRI="#NewConcept"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticalConcept"/>
+        <Class IRI="#TheoreticalConcept"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Concept"/>
         <NamedIndividual IRI="#MakingKin"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#MakingKin"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#RenderingCapable"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#StayingWithTheTrouble"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Concept"/>
         <NamedIndividual IRI="#TentacularThinking"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#TentacularThinking"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Concept"/>
         <NamedIndividual IRI="#Worlding"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Practice"/>
-        <NamedIndividual IRI="#Worlding"/>
-    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#before"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#collaborator"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#companion"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#kinship"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#symbiogenesis"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#thinksWith"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#after"/>
         <ObjectProperty IRI="#before"/>
     </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#agent"/>
-        <ObjectProperty IRI="#isAgentOf"/>
-    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#after"/>
         <Class IRI="#Event"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#agent"/>
-        <Class IRI="#Event"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#agent"/>
-        <Class IRI="#Practice"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#agent"/>
-        <Class IRI="#Relation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#before"/>
         <Class IRI="#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#domain"/>
+        <ObjectProperty IRI="#belongsTo"/>
         <Class IRI="#Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty IRI="#composedBy"/>
         <Class IRI="#Story"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isInformedBy"/>
-        <Class IRI="#Practice"/>
+        <ObjectProperty IRI="#drawnFrom"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAgent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerspective"/>
+        <Class IRI="#Story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelation"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesDomain"/>
+        <Class IRI="#Story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occursDuring"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#references"/>
+        <Class IRI="#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#thoughtBy"/>
         <Class IRI="#Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#timescape"/>
+        <ObjectProperty IRI="#unfoldsIn"/>
         <Class IRI="#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -279,37 +351,92 @@
         <Class IRI="#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#agent"/>
-        <Class IRI="#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#before"/>
         <Class IRI="#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#domain"/>
-        <Class IRI="#Domain"/>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#KnowledgeDomain"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty IRI="#composedBy"/>
         <Class IRI="#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#involves"/>
-        <Class IRI="#Practice"/>
+        <ObjectProperty IRI="#composedBy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#composedBy"/>
+            <Class IRI="#Event"/>
+        </ObjectMinCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isInformedBy"/>
+        <ObjectProperty IRI="#drawnFrom"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerspective"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelation"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesDomain"/>
+        <Class IRI="#KnowledgeDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occursDuring"/>
+        <Class IRI="#Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#references"/>
         <Class IRI="#Concept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#thoughtBy"/>
-        <Class IRI="#Thinker"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#timescape"/>
-        <Class IRI="#Timescape"/>
+        <ObjectProperty IRI="#unfoldsIn"/>
+        <Class IRI="#Place"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Artifact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Story"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Time"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
 </Ontology>
 
 
