@@ -1,0 +1,936 @@
+COREF	start_token	end_token	prop	cat	text
+115	50	56	NOM	PER	all the mortal inhabitants of the earth
+116	55	56	NOM	LOC	the earth
+117	66	69	NOM	PER	the Human as species
+27	71	72	PROP	PER	the Anthropos
+118	74	76	NOM	PER	the human species
+45	78	79	PROP	PER	Modern Man
+119	93	101	NOM	PER	the best biologies of the twenty - first century
+119	105	105	PRON	PER	their
+120	108	109	NOM	PER	bounded individuals
+121	122	122	PRON	PER	they
+121	136	136	PRON	PER	they
+122	155	159	NOM	PER	even Western - indebted people
+122	164	164	PRON	PER	themselves
+123	170	173	NOM	PER	individuals in humanonly histories
+124	181	181	NOM	LOC	earth
+1	186	187	PROP	LOC	the Anthropocene
+125	194	201	NOM	PER	all the unfaithful offspring of the sky gods
+126	199	201	NOM	PER	the sky gods
+0	204	204	PRON	PER	my
+127	204	205	NOM	PER	my littermates
+0	215	215	PRON	PER	I
+0	228	228	PRON	PER	I
+0	240	240	PRON	PER	I
+0	256	256	PRON	PER	My
+46	268	269	PROP	PER	Pimoa cthulhu
+128	276	292	NOM	FAC	the redwood forests of Sonoma and Mendocino Counties , near where I live in North Central California
+2	280	280	PROP	GPE	Sonoma
+3	282	283	PROP	GPE	Mendocino Counties
+0	287	287	PRON	PER	I
+4	290	292	PROP	GPE	North Central California
+129	294	294	NOM	PER	Nobody
+130	298	298	NOM	PER	everybody
+131	321	322	NOM	GPE	a place
+0	337	337	PRON	PER	me
+0	352	352	PRON	PER	I
+132	356	356	PRON	PER	her
+133	363	367	NOM	PER	the Goshute people of Utah
+5	367	367	PROP	GPE	Utah
+132	369	369	PRON	PER	her
+134	375	376	NOM	LOC	the depths
+135	379	383	NOM	LOC	the abyssal and elemental entities
+7	392	392	PROP	PER	Terra
+136	403	407	NOM	PER	the agents of sky gods
+136	410	410	PRON	PER	them
+137	414	415	NOM	PER	chief Singletons
+137	417	417	PRON	PER	their
+138	417	423	NOM	PER	their tame committees of multiples or subgods
+139	428	429	NOM	PER	the Many
+140	436	437	NOM	PER	the biologist
+0	451	451	PRON	PER	I
+6	471	472	PROP	LOC	the Chthulucene
+0	474	474	PRON	PER	I
+0	504	504	PRON	PER	I
+0	507	507	PRON	PER	my
+6	526	527	PROP	LOC	the Chthulucene
+0	533	533	PRON	PER	me
+141	537	537	PRON	PER	Their
+0	546	546	PRON	PER	me
+142	574	576	NOM	PER	The tentacular ones
+141	582	582	PRON	PER	they
+141	593	593	PRON	PER	they
+143	627	628	NOM	LOC	possible worlds
+0	647	647	PRON	PER	I
+144	650	651	NOM	PER	string figures
+145	666	666	NOM	PER	companions
+0	680	680	PRON	PER	I
+141	708	708	PRON	PER	they
+146	717	717	NOM	PER	humans
+147	731	732	NOM	PER	flagellated beings
+485	798	802	NOM	PER	The inhabitants of the world
+486	801	802	NOM	LOC	the world
+487	804	807	NOM	PER	creatures of all kinds
+488	809	813	NOM	PER	human and non - human
+489	816	816	NOM	PER	wayfarers
+0	841	841	PRON	PER	me
+0	849	849	PRON	PER	I
+0	861	861	PRON	PER	My
+148	861	862	NOM	PER	My partner
+0	881	881	PRON	PER	I
+149	895	895	PRON	PER	we
+150	900	902	NOM	PER	human as Homo
+151	908	916	NOM	PER	a self - making and planet - destroying ceo
+152	929	932	NOM	GPE	the Capitalist Restructuring University
+48	940	941	PROP	PER	the Humusities
+49	950	951	PROP	PER	Beth Stephens
+50	953	954	PROP	PER	Annie Sprinkle
+0	960	960	PRON	PER	me
+149	963	963	PRON	PER	us
+153	975	980	NOM	LOC	The earth of the ongoing Chthulucene
+154	987	988	NOM	FAC	Mortal Worlds
+7	990	990	PROP	GPE	Terra
+8	992	992	PROP	LOC	Earth
+9	994	994	PROP	GPE	Gaia
+154	1020	1020	PRON	PER	themselves
+154	1082	1082	PRON	PER	their
+155	1107	1110	NOM	LOC	the mortal sf world
+6	1135	1136	PROP	LOC	The Chthulucene
+51	1162	1162	PROP	PER	Spider
+0	1213	1213	PRON	PER	I
+52	1230	1231	PROP	PER	Katie King
+0	1233	1233	PRON	PER	me
+53	1235	1237	PROP	PER	M. Beth Dempster
+53	1249	1249	PRON	PER	she
+490	1264	1270	NOM	LOC	self - defined spatial or temporal boundaries
+53	1327	1327	PROP	PER	Dempster
+0	1341	1341	PRON	PER	I
+156	1374	1376	NOM	LOC	the planet earth
+1	1385	1386	PROP	LOC	the Anthropocene
+157	1448	1448	PRON	PER	us
+54	1453	1453	PROP	PER	Barad
+158	1470	1471	NOM	PER	Terran wayfarers
+0	1484	1484	PRON	PER	my
+159	1498	1501	NOM	PER	another of her companions
+53	1500	1500	PRON	PER	her
+160	1500	1501	NOM	PER	her companions
+55	1505	1506	PROP	PER	Félix Guattari
+56	1508	1509	PROP	PER	Isabelle Stengers
+0	1513	1513	PRON	PER	me
+161	1515	1515	NOM	PER	players
+162	1572	1572	PRON	PER	you
+162	1622	1622	PRON	PER	you
+162	1651	1651	PRON	PER	you
+163	1657	1663	NOM	PER	the one you take the relay from
+162	1659	1659	PRON	PER	you
+162	1674	1674	PRON	PER	your
+162	1682	1682	PRON	PER	you
+164	1791	1793	NOM	PER	the other one
+0	1810	1810	PRON	PER	I
+157	1831	1831	PRON	PER	we
+157	1842	1842	PRON	PER	our
+157	1858	1858	PRON	PER	we
+57	1861	1862	PROP	PER	Marilyn Strathern
+165	1864	1868	NOM	PER	an ethnographer of thinking practices
+57	1870	1870	PRON	PER	She
+57	1893	1893	PRON	PER	her
+10	1898	1900	PROP	GPE	Papua New Guinea
+58	1902	1903	PROP	PER	Mt. Hagen
+57	1906	1906	PROP	PER	Strathern
+166	1926	1927	NOM	LOC	unexpected worlds
+57	1941	1941	PROP	PER	Strathern
+0	1943	1943	PRON	PER	me
+157	1946	1946	PRON	PER	us
+157	1961	1961	PRON	PER	we
+0	1969	1969	PRON	PER	I
+0	1971	1971	PRON	PER	my
+167	1978	1979	NOM	PER	The worms
+167	1984	1984	PRON	PER	their
+167	1992	1992	PRON	PER	their
+167	1997	1997	PRON	PER	Their
+168	2027	2029	NOM	LOC	worlds world worlds
+59	2040	2041	PROP	PER	Baila Goldenthal
+157	2152	2152	PRON	PER	we
+157	2175	2175	PRON	PER	our
+157	2199	2199	PRON	PER	we
+157	2210	2210	PRON	PER	our
+157	2226	2226	PRON	PER	we
+60	2231	2232	PROP	PER	Valerie Hartouni
+0	2234	2234	PRON	PER	I
+61	2237	2238	PROP	PER	Hannah Arendt
+169	2242	2245	NOM	PER	the Nazi war criminal
+62	2246	2247	PROP	PER	Adolf Eichmann
+157	2298	2298	PRON	PER	we
+157	2301	2301	PRON	PER	we
+60	2306	2306	PROP	PER	Hartouni
+61	2310	2310	PROP	PER	Arendt
+157	2319	2319	PRON	PER	we
+61	2349	2349	PROP	PER	Arendt
+170	2371	2371	PRON	PER	oneself
+171	2373	2373	NOM	PER	others
+61	2390	2390	PROP	PER	Arendt
+0	2400	2400	PRON	PER	I
+1	2413	2414	PROP	LOC	the Anthropocene
+61	2416	2416	PROP	PER	Arendt
+62	2419	2419	PROP	PER	Eichmann
+172	2421	2423	NOM	PER	an incomprehensible monster
+61	2431	2431	PRON	PER	she
+173	2441	2443	NOM	PER	a human being
+173	2449	2449	PRON	PER	himself
+173	2457	2457	PRON	PER	himself
+486	2460	2461	NOM	LOC	the world
+175	2489	2504	NOM	PER	a wayfarer , could not entangle , could not track the lines of living and dying
+176	2518	2518	PRON	PER	itself
+63	2537	2537	PROP	PER	Function
+486	2544	2545	NOM	LOC	the world
+62	2550	2550	PROP	PER	Eichmann
+486	2552	2553	NOM	LOC	The world
+179	2574	2574	NOM	PER	friends
+180	2576	2576	NOM	PER	enemies
+62	2620	2620	PROP	PER	Eichmann
+0	2628	2628	PRON	PER	I
+61	2638	2638	PROP	PER	Arendt
+0	2642	2642	PRON	PER	my
+62	2647	2647	PROP	PER	Eichmann
+486	2672	2673	NOM	LOC	the world
+62	2677	2677	PROP	PER	Eichmann
+62	2679	2679	PRON	PER	his
+182	2679	2680	NOM	PER	his heirs
+183	2682	2682	PRON	PER	us?—a
+184	2697	2698	NOM	PER	The anthropologist
+185	2700	2703	NOM	PER	feminist , cultural theorist
+186	2723	2724	NOM	LOC	local places
+64	2725	2726	PROP	PER	Anna Tsing
+491	2734	2736	NOM	LOC	a damaged planet
+64	2745	2745	PRON	PER	her
+492	2754	2755	NOM	FAC	Capitalist ruins
+64	2758	2758	PRON	PER	She
+0	2788	2788	PRON	PER	I
+187	2823	2823	PRON	PER	we
+65	2847	2847	PROP	PER	Americans
+188	2849	2851	NOM	PER	Chinese , Koreans
+66	2853	2853	PROP	PER	Hmong
+189	2872	2872	NOM	PER	pickers
+190	2874	2874	NOM	PER	buyers
+191	2876	2876	NOM	PER	shippers
+192	2878	2878	NOM	PER	restaurateurs
+193	2880	2880	NOM	PER	diners
+194	2882	2882	NOM	PER	businessmen
+195	2884	2884	NOM	PER	scientists
+196	2886	2886	NOM	PER	foresters
+197	2888	2889	NOM	PER	dna sequencers
+197	2891	2891	PRON	PER	their
+64	2899	2899	PROP	PER	Tsing
+116	2914	2915	NOM	LOC	the earth
+64	2936	2936	PROP	PER	Tsing
+64	2963	2963	PRON	PER	She
+199	2984	2985	NOM	LOC	the ruins
+64	2987	2987	PRON	PER	She
+64	2994	2994	PRON	PER	she
+200	3040	3040	PRON	PER	our
+67	3046	3046	PROP	PER	Matsutake
+200	3055	3055	PRON	PER	us
+200	3063	3063	PRON	PER	our
+493	3063	3065	NOM	FAC	our collective home
+67	3069	3069	PROP	PER	matsutake
+200	3071	3071	PRON	PER	us
+64	3106	3106	PROP	PER	Tsing
+200	3141	3141	PRON	PER	our
+64	3158	3158	PROP	PER	Tsing
+486	3169	3170	NOM	LOC	the world
+62	3179	3179	PROP	PER	Eichmann
+202	3179	3181	NOM	PER	Eichmann ’s heirs
+67	3184	3184	PROP	PER	Matsutake
+200	3186	3186	PRON	PER	us
+200	3195	3195	PRON	PER	We
+494	3202	3202	NOM	FAC	ruins
+64	3238	3238	PROP	PER	Tsing
+203	3268	3273	NOM	PER	The ecological philosopher and multispecies ethnographer
+68	3274	3276	PROP	PER	Thom van Dooren
+68	3295	3295	PRON	PER	he
+200	3297	3297	PRON	PER	our
+204	3311	3313	NOM	PER	all of us
+200	3313	3313	PRON	PER	us
+68	3316	3316	PRON	PER	his
+68	3322	3323	PROP	PER	van Dooren
+205	3376	3376	NOM	PER	individuals
+68	3382	3382	PRON	PER	his
+68	3400	3401	PROP	PER	van Dooren
+486	3500	3501	NOM	LOC	the world
+207	3507	3509	NOM	PER	historically situated people
+69	3511	3512	PROP	PER	Van Dooren
+68	3525	3525	PRON	PER	his
+70	3542	3542	PROP	PER	Linneans
+179	3553	3553	NOM	PER	friends
+209	3555	3555	NOM	PER	chicks
+210	3558	3558	NOM	PER	mates
+69	3563	3564	PROP	PER	van Dooren
+211	3571	3585	NOM	PER	human people who mourn the loss of loved ones , of place , of lifeways
+212	3578	3579	NOM	PER	loved ones
+213	3587	3588	NOM	PER	other beings
+214	3632	3632	NOM	PER	people
+486	3657	3658	NOM	LOC	the world
+200	3664	3664	PRON	PER	we
+200	3666	3666	PRON	PER	ourselves
+200	3670	3670	PRON	PER	our
+200	3673	3673	PRON	PER	we
+200	3689	3689	PRON	PER	us
+200	3695	3695	PRON	PER	our
+216	3770	3771	NOM	PER	human beings
+200	3777	3777	PRON	PER	we
+200	3791	3791	PRON	PER	we
+200	3817	3817	PRON	PER	we
+11	3866	3867	PROP	FAC	Urban Penguins
+12	3871	3872	PROP	LOC	Lost Places
+69	3875	3876	PROP	PER	van Dooren
+13	3880	3881	PROP	FAC	Sydney Harbor
+217	3899	3900	NOM	GPE	storied place
+218	3903	3903	PRON	PER	their
+219	3909	3909	NOM	FAC	home
+220	3930	3931	NOM	GPE	this place
+221	3933	3936	NOM	GPE	not just any place
+222	3945	3948	NOM	LOC	penguin - storied place
+71	3994	3996	PROP	PER	Ursula Le Guin
+0	3998	3998	PRON	PER	me
+71	4010	4010	PRON	PER	Her
+71	4013	4013	PRON	PER	her
+495	4058	4059	NOM	PER	A recipient
+223	4126	4128	NOM	PER	one real actor
+224	4130	4134	NOM	PER	one real world - maker
+225	4136	4137	NOM	PER	the hero
+226	4147	4159	NOM	PER	the hunter on a quest to kill and bring back the terrible bounty
+218	4203	4203	PRON	PER	They
+218	4208	4208	PRON	PER	their
+227	4223	4224	NOM	FAC	the road
+228	4226	4227	NOM	PER	the conduit
+229	4231	4232	NOM	PER	the traveler
+230	4235	4236	NOM	PER	the begetter
+225	4241	4242	NOM	PER	the hero
+225	4248	4248	PRON	PER	his
+232	4268	4269	NOM	PER	no adventurer
+219	4272	4272	NOM	FAC	home
+225	4308	4309	NOM	PER	the hero
+235	4347	4348	NOM	PER	the hunter
+235	4357	4357	PRON	PER	him
+236	4359	4363	NOM	PER	the self - making human
+237	4365	4371	NOM	PER	the human - making machine of history
+238	4470	4475	NOM	PER	the naturalcultural multispecies trouble on earth
+124	4475	4475	NOM	LOC	earth
+124	4534	4534	NOM	LOC	earth
+71	4537	4538	PROP	PER	Le Guin
+72	4540	4541	PROP	PER	Bruno Latour
+241	4565	4567	NOM	PER	Humans in History
+242	4576	4577	NOM	PER	each other
+243	4588	4590	NOM	LOC	the living earth
+244	4597	4597	PRON	PER	we
+244	4600	4600	PRON	PER	we
+244	4609	4609	PRON	PER	we
+71	4620	4621	PROP	PER	Le Guin
+71	4635	4635	PRON	PER	I
+72	4665	4665	PROP	PER	Latour
+245	4679	4682	NOM	PER	the parties in crisis
+73	4686	4686	PROP	PER	Providence
+246	4708	4711	NOM	LOC	A common livable world
+72	4778	4778	PROP	PER	Latour
+244	4781	4781	PRON	PER	we
+244	4799	4799	PRON	PER	we
+244	4802	4802	PRON	PER	our
+496	4811	4814	NOM	PER	all the former props
+497	4816	4817	NOM	PER	passive agents
+498	4834	4836	NOM	PER	some overseeing entity
+247	4839	4845	NOM	PER	Those who tell Gaia stories or geostories
+72	4872	4872	PROP	PER	Latour
+244	4875	4875	PRON	PER	we
+499	4882	4882	NOM	PER	Some
+499	4885	4885	PRON	PER	themselves
+16	4889	4889	PROP	LOC	Earthbound
+1	4891	4892	PROP	LOC	the Anthropocene
+171	4894	4894	NOM	PER	others
+146	4899	4899	NOM	PER	Humans
+15	4901	4902	PROP	LOC	the Holocene
+72	4908	4908	PRON	PER	his
+72	4911	4911	PROP	PER	Latour
+1	4926	4927	PROP	PER	the Anthropocene
+16	4929	4930	PROP	LOC	the Earthbound
+72	4932	4932	PRON	PER	he
+248	4961	4962	NOM	PER	real enemies
+72	4972	4972	PROP	PER	Latour
+75	4999	4999	PROP	PER	God
+249	5034	5051	NOM	PER	those who only need to learn them — by force , faith , or self - certain pedagogy
+250	5053	5068	NOM	PER	Those who “ believe ” they have the answers to the present urgencies are terribly dangerous
+251	5070	5084	NOM	PER	Those who refuse to be for some ways of living and dying and not others
+72	5110	5110	PROP	PER	Latour
+502	5150	5150	PRON	PER	our
+502	5174	5174	PRON	PER	our
+503	5174	5175	NOM	LOC	our world
+72	5179	5179	PROP	PER	Latour
+72	5181	5181	PRON	PER	himself
+252	5186	5194	NOM	ORG	the Intergovernmental Panel on Climate Change ( ipcc )
+72	5196	5196	PRON	PER	he
+252	5200	5200	PRON	PER	its
+72	5205	5205	PRON	PER	he
+72	5217	5217	PRON	PER	He
+72	5219	5219	PRON	PER	his
+171	5228	5228	NOM	PER	others
+254	5230	5230	NOM	PER	One
+72	5234	5234	PROP	PER	Latour
+72	5245	5245	PRON	PER	he
+255	5253	5255	NOM	LOC	a common world
+256	5268	5270	NOM	PER	all the builders
+216	5273	5274	NOM	PER	human beings
+72	5288	5288	PROP	PER	Latour
+0	5296	5296	PRON	PER	I
+258	5313	5313	PRON	PER	our
+489	5325	5325	NOM	PER	wayfarers
+16	5328	5329	PROP	LOC	the Earthbound
+260	5352	5354	NOM	GPE	the United States
+0	5370	5370	PRON	PER	my
+258	5374	5374	PRON	PER	us
+56	5386	5386	PROP	PER	Stengers
+0	5389	5389	PRON	PER	myself
+72	5391	5391	PROP	PER	Latour
+261	5393	5401	NOM	PER	a thoroughgoing materialist committed to an ecology of practices
+262	5423	5424	NOM	PER	Actual players
+263	5428	5433	NOM	PER	varied allies of all ontological sorts
+264	5437	5437	NOM	PER	colleagues
+0	5480	5480	PRON	PER	I
+72	5484	5484	PROP	PER	Latour
+0	5505	5505	PRON	PER	I
+72	5514	5514	PRON	PER	his
+258	5516	5516	PRON	PER	our
+72	5521	5521	PRON	PER	He
+265	5528	5529	NOM	PER	a referee
+266	5545	5549	NOM	PER	the Earthbound in the Anthropocene
+1	5548	5549	PROP	LOC	the Anthropocene
+267	5559	5572	NOM	PER	no Referee who / which can establish what is / was / will be
+268	5591	5592	NOM	PER	the Humans
+269	5603	5603	PRON	PER	they
+258	5632	5632	PRON	PER	we
+225	5638	5639	NOM	PER	the hero
+76	5664	5665	PROP	PER	the Authority
+76	5679	5680	PROP	PER	the Authority
+72	5701	5701	PROP	PER	Latour
+258	5710	5710	PRON	PER	our
+72	5731	5731	PROP	PER	Latour
+271	5737	5741	NOM	PER	a specific kind of enemies
+72	5743	5743	PRON	PER	He
+77	5746	5747	PROP	PER	Carl Schmitt
+272	5774	5774	NOM	PER	host
+273	5776	5776	NOM	PER	hostage
+274	5778	5778	NOM	PER	guest
+275	5781	5782	NOM	PER	worthy enemy
+276	5787	5788	NOM	PER	an enemy
+77	5790	5790	PROP	PER	Schmitt
+72	5792	5792	PROP	PER	Latour
+277	5812	5822	NOM	PER	Those who operate within the categories of Authority and of belief
+277	5841	5841	PRON	PER	They
+278	5851	5852	NOM	PER	The hostis
+242	5883	5884	NOM	PER	each other
+72	5889	5889	PROP	PER	Latour
+72	5893	5893	PRON	PER	he
+72	5901	5901	PRON	PER	he
+280	5918	5920	NOM	PER	the respected enemy
+278	5922	5923	NOM	PER	the hostis
+504	5933	5933	PRON	PER	you
+504	5950	5950	PRON	PER	you
+504	5961	5961	PRON	PER	you
+77	5967	5967	PROP	PER	Schmitt
+282	5967	5969	NOM	PER	Schmitt ’s enemies
+16	5981	5982	PROP	PER	the Earthbound
+72	5993	5993	PROP	PER	Latour
+77	6003	6003	PROP	PER	Schmitt
+0	6017	6017	PRON	PER	I
+72	6021	6021	PROP	PER	Latour
+1	6031	6032	PROP	LOC	the Anthropocene
+72	6034	6034	PRON	PER	His
+283	6034	6035	NOM	PER	His Earthbound
+6	6041	6042	PROP	LOC	the Chthulucene
+284	6046	6056	NOM	PER	the ongoing , snaky , unheroic , tentacular , dreadful ones
+285	6058	6074	NOM	PER	the ones which / who craft material - semiotic netbags of little use in trials of strength
+219	6081	6081	NOM	FAC	home
+287	6100	6108	NOM	PER	human and more - than - human critters alike
+288	6111	6111	PRON	PER	her
+56	6126	6126	PROP	PER	Stengers
+72	6134	6134	PROP	PER	Latour
+56	6136	6137	PROP	PER	Isabelle Stengers
+289	6142	6142	PRON	PER	we
+289	6144	6144	PRON	PER	ourselves
+79	6154	6154	PROP	PER	Gaïa
+72	6159	6159	PROP	PER	Latour
+71	6164	6165	PROP	PER	Le Guin
+290	6167	6173	NOM	PER	one of her most generative sf writers
+288	6169	6169	PRON	PER	her
+56	6175	6175	PROP	PER	Stengers
+56	6190	6190	PROP	PER	Stengers
+9	6192	6192	PROP	PER	Gaia
+289	6201	6201	PRON	PER	our
+17	6212	6214	PROP	LOC	Earth / Gaia
+291	6216	6218	NOM	PER	maker and destroyer
+292	6231	6232	NOM	PER	nursing mother
+9	6236	6236	PROP	PER	Gaia
+293	6239	6240	NOM	PER	a person
+294	6247	6249	NOM	LOC	a living planet
+9	6251	6251	PROP	PER	Gaia
+289	6255	6255	PRON	PER	our
+124	6273	6273	NOM	LOC	earth
+124	6274	6274	PRON	FAC	itself
+124	6290	6290	NOM	LOC	earth
+205	6300	6300	NOM	PER	individuals
+56	6315	6315	PROP	PER	Stengers
+72	6318	6318	PROP	PER	Latour
+9	6324	6324	PROP	GPE	Gaia
+81	6328	6329	PROP	PER	James Lovelock
+82	6331	6332	PROP	PER	Lynn Margulis
+9	6361	6361	PROP	GPE	Gaia
+9	6385	6385	PROP	GPE	Gaia
+9	6417	6417	PROP	PER	Gaia
+298	6427	6429	NOM	PER	other biological beings
+9	6438	6438	PROP	PER	Gaia
+289	6442	6442	PRON	PER	our
+289	6446	6446	PRON	PER	we
+299	6446	6462	NOM	PER	we who have provoked its brutal mutation that threatens both human and nonhuman livable presents and futures
+505	6489	6489	PRON	PER	She
+289	6517	6517	PRON	PER	we
+506	6520	6525	NOM	PER	those who belong to this history
+289	6533	6533	PRON	PER	we
+289	6539	6539	PRON	PER	we
+289	6549	6549	PRON	PER	we
+18	6557	6557	PROP	GPE	California
+0	6569	6569	PRON	PER	I
+19	6581	6588	PROP	FAC	Sustainable Resource Alberta near the Saskatchewan River Crossing
+20	6585	6588	PROP	LOC	the Saskatchewan River Crossing
+21	6590	6592	PROP	LOC	the Icefields Parkway
+22	6639	6642	PROP	LOC	the North American West
+1	6651	6652	PROP	LOC	the Anthropocene
+22	6670	6673	PROP	LOC	the North American West
+289	6708	6708	PRON	PER	our
+83	6745	6759	PROP	PER	University of Michigan ecologist Eugene Stoermer ( d. ) , an expert in freshwater diatoms
+300	6755	6759	NOM	PER	an expert in freshwater diatoms
+83	6761	6761	PRON	PER	He
+116	6778	6779	NOM	LOC	the earth
+302	6794	6803	NOM	PER	the Dutch Nobel Prize – winning atmospheric chemist Paul Crutzen
+84	6802	6803	PROP	PER	Paul Crutzen
+83	6805	6805	PROP	PER	Stoermer
+303	6889	6889	NOM	LOC	waters
+304	6903	6904	NOM	LOC	the oceans
+305	6934	6934	PRON	GPE	its
+289	6959	6959	PRON	PER	our
+1	6968	6969	PROP	LOC	the Anthropocene
+84	7028	7029	PROP	PER	Paul Crutzen
+306	7032	7034	NOM	PER	a Nobel laureate
+307	7036	7039	NOM	PER	an atmospheric chemist mattered
+486	7046	7047	NOM	LOC	the world
+309	7086	7086	PRON	PER	their
+310	7107	7107	NOM	PER	human
+311	7111	7114	NOM	LOC	the expanse of Terra
+7	7114	7114	PROP	GPE	Terra
+312	7116	7118	NOM	PER	Fossilburning human beings
+312	7134	7134	PRON	PER	They
+313	7145	7146	NOM	LOC	the land
+314	7152	7158	NOM	PER	the geologists of the very near future
+315	7168	7170	NOM	LOC	the fiery forest
+1	7175	7176	PROP	LOC	the Anthropocene
+45	7180	7180	PROP	PER	Man
+316	7188	7191	NOM	PER	fossil - making man
+289	7239	7239	PRON	PER	we
+317	7340	7345	NOM	PER	a close reader of ipcc documents
+85	7360	7361	PROP	PER	Michael Klare
+318	7363	7373	NOM	PER	a professor of Peace and World Security Studies at Hampshire College
+23	7372	7373	PROP	ORG	Hampshire College
+85	7406	7406	PRON	PER	He
+319	7458	7461	NOM	PER	the big global players
+320	7476	7484	NOM	LOC	whatever formations of sand , mud , or rock
+321	7501	7502	NOM	PER	someone else
+85	7529	7529	PRON	PER	he
+322	7546	7550	NOM	LOC	the ( melting ) iceberg
+323	7554	7556	NOM	LOC	the polar seas
+324	7564	7565	NOM	PER	coastal peoples
+325	7583	7585	NOM	LOC	the northern passages
+326	7592	7592	PRON	PER	you
+327	7599	7602	NOM	PER	A complex systems engineer
+86	7604	7605	PROP	PER	Brad Werner
+24	7613	7619	PROP	FAC	the American Geophysical Union in San Francisco
+25	7618	7619	PROP	GPE	San Francisco
+85	7622	7622	PRON	PER	His
+85	7665	7665	PRON	PER	he
+205	7681	7681	NOM	PER	individuals
+329	7698	7701	NOM	PER	the dominant capitalist culture
+86	7706	7706	PROP	PER	Werner
+330	7721	7726	NOM	PER	The reporter who covered this session
+86	7729	7729	PROP	PER	Werner
+86	7734	7734	PRON	PER	He
+86	7738	7738	PRON	PER	his
+332	7742	7742	PRON	PER	our
+86	7754	7754	PROP	PER	Werner
+331	7760	7772	NOM	PER	the last researcher and maker of matters of concern to argue this point
+86	7775	7775	PRON	PER	his
+332	7787	7787	PRON	PER	we
+332	7790	7790	PRON	PER	we
+87	7799	7801	PROP	PER	Eichmann the Thoughtless
+333	7806	7807	NOM	PER	the devil
+28	7827	7827	PROP	GPE	Capitalocene
+334	7841	7841	PRON	PER	he
+334	7853	7853	PRON	PER	he
+27	7858	7859	PROP	PER	the Anthropos
+334	7867	7867	PRON	PER	he
+27	7879	7880	PROP	LOC	The Anthropos
+45	7883	7884	PROP	PER	Burning Man
+335	7901	7903	NOM	PER	many important players
+28	7906	7907	PROP	LOC	the Capitalocene
+0	7909	7909	PRON	PER	I
+332	7912	7912	PRON	PER	we
+1	7919	7919	PROP	LOC	Anthropocene
+0	7921	7921	PRON	PER	I
+1	7936	7936	PRON	LOC	its
+199	7945	7946	NOM	LOC	the ruins
+332	7957	7957	PRON	PER	we
+88	7975	7976	PROP	PER	Species Man
+88	7995	7996	PROP	PER	Species Man
+337	7998	8002	NOM	PER	the agent of the Anthropocene
+1	8001	8002	PROP	LOC	the Anthropocene
+338	8018	8018	NOM	PER	man
+339	8025	8027	NOM	PER	a vanished god
+338	8033	8033	PRON	PER	his
+340	8049	8052	NOM	PER	Autopoietic , selfmaking man
+341	8092	8094	NOM	VEH	the steam engine
+254	8111	8111	NOM	PER	one
+254	8124	8124	NOM	PER	one
+332	8150	8150	PRON	PER	we
+332	8156	8156	PRON	PER	we
+28	8170	8171	PROP	LOC	the Capitalocene
+344	8186	8186	NOM	FAC	plantations
+345	8195	8195	PRON	PER	their
+346	8209	8215	NOM	PER	human and nonhuman workers of all kinds
+30	8222	8222	PROP	GPE	England
+347	8249	8249	NOM	PER	peoples
+348	8259	8260	NOM	LOC	vast forests
+341	8269	8271	NOM	VEH	the steam engine
+254	8281	8281	NOM	PER	one
+27	8288	8289	PROP	LOC	the Anthropos
+351	8298	8300	NOM	PER	Man the Hunter
+352	8316	8316	PRON	PER	your
+353	8327	8330	NOM	PER	human and nonhuman critters
+354	8339	8339	PRON	PER	They
+354	8351	8351	PRON	PER	They
+355	8362	8363	NOM	LOC	outer space
+28	8365	8366	PROP	LOC	The Capitalocene
+332	8383	8383	PRON	PER	our
+216	8408	8409	NOM	PER	human beings
+0	8416	8416	PRON	PER	me
+0	8418	8418	PRON	PER	my
+1	8421	8422	PROP	LOC	the Anthropocene
+27	8442	8443	PROP	LOC	the Anthropos
+357	8481	8483	NOM	PER	a bad actor
+358	8485	8486	NOM	PER	Bad actors
+359	8499	8500	NOM	PER	Species Man
+88	8508	8508	PROP	PER	Man
+360	8522	8523	NOM	PER	human exceptionalists
+361	8544	8544	NOM	PER	terrans
+361	8561	8561	PRON	PER	they
+1	8574	8575	PROP	LOC	the Anthropocene
+89	8586	8586	PROP	PER	Revolt
+1	8617	8618	PROP	LOC	the Anthropocene
+1	8671	8672	PROP	LOC	the Anthropocene
+362	8740	8743	NOM	PER	intellectuals in wealthy classes
+363	8745	8745	NOM	GPE	regions
+364	8758	8758	NOM	LOC	land
+365	8762	8762	NOM	GPE	country
+366	8768	8772	NOM	LOC	great swathes of the world
+486	8771	8772	NOM	LOC	the world
+368	8779	8780	NOM	PER	indigenous peoples
+0	8782	8782	PRON	PER	I
+90	8788	8789	PROP	PER	Eileen Crist
+90	8791	8791	PRON	PER	she
+369	8840	8840	PRON	PER	our
+370	8860	8860	NOM	LOC	wilderness
+371	8871	8873	NOM	PER	racist settler colonialism
+369	8877	8877	PRON	PER	we
+372	8886	8887	NOM	PER	other critters
+373	8929	8934	NOM	PER	a humanity with more earthly integrity
+369	8940	8940	PRON	PER	our
+369	8951	8951	PRON	PER	our
+91	8975	8975	PROP	PER	Humans
+16	8980	8981	PROP	LOC	the Earthbound
+16	8984	8984	PRON	PER	their
+1	8987	8988	PROP	LOC	the Anthropocene
+374	8990	8992	NOM	PER	too many Posthumans
+375	8995	8999	NOM	PER	posthumanists , another gathering altogether
+1	9006	9007	PROP	LOC	the Anthropocene
+0	9009	9009	PRON	PER	my
+0	9013	9013	PRON	PER	my
+376	9016	9017	NOM	PER	nonhuman people
+377	9019	9029	NOM	PER	the dreadful Chthonic ones who snake within the tissues of Terrapolis
+378	9026	9029	NOM	LOC	the tissues of Terrapolis
+31	9029	9029	PROP	GPE	Terrapolis
+28	9035	9036	PROP	LOC	the Capitalocene
+1	9073	9074	PROP	LOC	the Anthropocene
+379	9076	9077	NOM	PER	the Capitalocene
+92	9089	9089	PROP	PER	Marx
+93	9097	9097	PROP	PER	Darwin
+380	9099	9099	PRON	PER	We
+381	9102	9102	PRON	PER	their
+380	9138	9138	PRON	PER	our
+94	9147	9147	PROP	PER	Modernization
+28	9178	9179	PROP	PER	The Capitalocene
+71	9201	9204	PROP	PER	Ursula K. Le Guin
+380	9213	9213	PRON	PER	our
+382	9222	9222	PRON	PER	your
+0	9224	9224	PRON	PER	my
+96	9237	9238	PROP	PER	Philippe Pignarre
+56	9240	9241	PROP	PER	Isabelle Stengers
+116	9258	9259	NOM	LOC	the earth
+380	9277	9277	PRON	PER	us
+380	9285	9285	PRON	PER	we
+242	9300	9301	NOM	PER	each other
+380	9314	9314	PRON	PER	us
+96	9326	9326	PROP	PER	Pignarre
+56	9328	9328	PROP	PER	Stengers
+385	9332	9358	NOM	PER	the - ground collectives capable of inventing new practices of imagination , resistance , revolt , repair , and mourning , and of living and dying well
+381	9360	9360	PRON	PER	They
+380	9362	9362	PRON	PER	us
+386	9371	9372	NOM	LOC	another world
+380	9386	9386	PRON	PER	we
+387	9406	9411	NOM	PER	Many Marxist critical and cultural theorists
+387	9414	9414	PRON	PER	their
+142	9422	9424	NOM	PER	the tentacular ones
+81	9435	9435	PROP	PER	Lovelock
+82	9437	9437	PROP	PER	Margulis
+9	9439	9439	PROP	PER	Gaia
+6	9457	9458	PROP	LOC	the Chthulucene
+9	9477	9477	PROP	GPE	Gaia
+389	9488	9489	NOM	PER	no one
+389	9493	9494	NOM	PER	no one
+88	9539	9539	PROP	PER	Man
+391	9541	9544	NOM	PER	Brazilian anthropologists and philosophers
+97	9545	9551	PROP	PER	Eduardo Viveiros de Castro and Déborah Danowski
+392	9560	9565	NOM	PER	the ancient Greeks and subsequent Eurocultures
+392	9567	9567	PRON	PER	their
+380	9572	9572	PRON	PER	our
+9	9585	9585	PROP	GPE	Gaia
+393	9619	9623	NOM	LOC	this age of the earth
+116	9622	9623	NOM	LOC	the earth
+380	9625	9625	PRON	PER	We
+1	9641	9642	PROP	LOC	the Anthropocene
+395	9653	9656	NOM	LOC	a California redwood forest
+0	9662	9662	PRON	PER	I
+98	9667	9667	PROP	LOC	Medusa
+98	9674	9674	PRON	PER	her
+396	9677	9677	NOM	PER	affiliates
+397	9680	9680	NOM	PER	descendants
+98	9683	9683	PROP	PER	Medusa
+398	9685	9688	NOM	PER	the only mortal Gorgon
+380	9692	9692	PRON	PER	us
+399	9694	9697	NOM	LOC	the holobiomes of Terrapolis
+31	9697	9697	PROP	GPE	Terrapolis
+380	9700	9700	PRON	PER	our
+400	9704	9713	NOM	FAC	the twenty - first - century ships of the Heroes
+401	9712	9713	NOM	PER	the Heroes
+402	9715	9718	NOM	LOC	a living coral reef
+400	9722	9722	PRON	PER	them
+403	9733	9734	NOM	LOC	dead rock
+98	9742	9743	PROP	PER	Potnia Theron
+404	9745	9749	NOM	PER	the Mistress of the Animals
+405	9752	9765	NOM	PER	a winged goddess wearing a split skirt and touching a bird with each hand
+98	9767	9767	PRON	PER	She
+33	9789	9789	PROP	GPE	Mediterranean
+406	9791	9793	NOM	LOC	Near Eastern worlds
+98	9797	9798	PROP	PER	Potnia Theron
+34	9802	9802	PROP	GPE	Minoan
+99	9812	9813	PROP	PER	the Gorgons
+398	9816	9819	NOM	PER	the only mortal Gorgon
+98	9821	9821	PROP	PER	Medusa
+100	9825	9825	PROP	PER	Artemis
+35	9833	9835	PROP	LOC	Ur - Medusa
+408	9837	9841	NOM	PER	the Lady of the Beasts
+36	9847	9847	PROP	GPE	Crete
+37	9849	9849	PROP	GPE	India
+409	9851	9853	NOM	PER	The winged figure
+101	9857	9858	PROP	PER	Potnia Melissa
+410	9860	9863	NOM	PER	Mistress of the Bees
+99	9868	9868	PRON	PER	their
+411	9887	9888	NOM	PER	the Mistress
+411	9890	9890	PRON	PER	her
+412	9916	9917	NOM	PER	these critters
+486	9936	9937	NOM	LOC	the world
+414	9939	9942	NOM	PER	the winged bee goddesses
+101	9957	9957	PROP	PER	Melissa
+98	9965	9965	PRON	PER	her
+98	10020	10024	PROP	PER	Potnia Theron / Melissa/ Medusa
+415	10041	10051	NOM	PER	technohumanist ) figurations of the forwardlooking , sky - gazing Anthropos
+116	10066	10067	NOM	LOC	the earth
+508	10069	10070	NOM	LOC	the seas”—a
+416	10090	10092	NOM	PER	The chthonic ones
+102	10103	10104	PROP	PER	the Olympiad
+16	10119	10120	PROP	PER	The Earthbound
+99	10130	10131	PROP	PER	The Gorgons
+99	10142	10142	PRON	PER	their
+99	10149	10149	PRON	PER	they
+99	10165	10165	PRON	PER	they
+99	10177	10178	PROP	PER	the Gorgons
+103	10181	10182	PROP	PER	the Erinyes
+104	10203	10207	PROP	PER	the bird - bodied Harpies
+98	10222	10223	PROP	GPE	Potnia Theron
+99	10227	10227	PRON	PER	they
+104	10231	10232	PROP	PER	the Harpies
+104	10233	10233	PRON	PER	their
+417	10233	10234	NOM	PER	their cousins
+105	10238	10238	PROP	PER	Hesiod
+99	10240	10241	PROP	PER	the Gorgons
+99	10247	10247	PRON	PER	them
+418	10251	10251	NOM	PER	parents
+0	10253	10253	PRON	PER	I
+105	10255	10255	PROP	PER	Hesiod
+419	10262	10266	NOM	PER	a very bumptious queer family
+99	10268	10269	PROP	PER	The Gorgons
+99	10275	10275	PRON	PER	they
+56	10284	10284	PROP	PER	Stengers
+9	10287	10287	PROP	GPE	Gaia
+99	10289	10290	PROP	PER	The Gorgons
+420	10292	10306	NOM	PER	men who looked into their living , venomous , snake - encrusted faces into stone
+420	10296	10296	PRON	PER	their
+0	10308	10308	PRON	PER	I
+421	10315	10316	NOM	PER	those men
+422	10323	10326	NOM	PER	the dreadful chthonic ones
+0	10328	10328	PRON	PER	I
+423	10366	10370	NOM	PER	the deities of the Olympiad
+102	10369	10370	PROP	LOC	the Olympiad
+424	10372	10372	PRON	PER	her
+126	10379	10381	NOM	PER	the sky gods
+98	10387	10388	PROP	PER	mortal Medusa
+0	10393	10393	PRON	PER	my
+6	10397	10398	PROP	LOC	the Chthulucene
+426	10416	10416	PRON	PER	our
+0	10420	10420	PRON	PER	I
+427	10431	10433	NOM	PER	the Greeks themselves
+428	10437	10439	NOM	PER	The hero Perseus
+98	10444	10444	PROP	PER	Medusa
+106	10451	10451	PROP	PER	Athena
+429	10453	10459	NOM	PER	head - born favorite daughter of Zeus
+107	10459	10459	PROP	PER	Zeus
+428	10461	10461	PRON	PER	he
+108	10464	10465	PROP	PER	the Gorgon
+428	10472	10472	PRON	PER	his
+430	10472	10473	NOM	PER	his accomplice
+431	10475	10481	NOM	PER	this virgin goddess of wisdom and war
+98	10484	10484	PROP	PER	Medusa
+98	10492	10492	PRON	PER	her
+432	10495	10496	NOM	PER	the Aegis
+106	10498	10498	PROP	PER	Athena
+433	10506	10507	NOM	PER	the Earthbound
+426	10509	10509	PRON	PER	we
+434	10514	10516	NOM	PER	motherless mind children
+98	10532	10532	PROP	PER	Medusa
+109	10540	10540	PROP	PER	Pegasus
+435	10542	10542	NOM	PER	Feminists
+426	10558	10558	PRON	PER	us
+98	10567	10567	PROP	PER	Medusa
+436	10572	10578	NOM	LOC	the rocky corals of the western seas
+437	10576	10578	NOM	LOC	the western seas
+438	10587	10588	NOM	PER	the Gorgonians
+426	10620	10620	PRON	PER	we
+98	10635	10636	PROP	LOC	Potnia Theron
+101	10638	10639	PROP	PER	Potnia Melissa
+98	10642	10642	PROP	PER	Medusa
+0	10666	10666	PRON	PER	my
+46	10670	10671	PROP	PER	Pimoa chthulhu
+439	10675	10681	NOM	PER	the decidedly nonvertebrate critters of the seas
+440	10680	10681	NOM	LOC	the seas
+110	10683	10683	PROP	PER	Corals
+440	10698	10699	NOM	LOC	the seas
+442	10704	10704	PRON	PER	their
+442	10710	10710	PRON	PER	their
+443	10714	10717	NOM	PER	The tentacular chthonic ones
+443	10722	10722	PRON	PER	they
+443	10735	10735	PRON	PER	They
+6	10752	10753	PROP	LOC	the Chthulucene
+444	10791	10793	NOM	LOC	the coral reefs
+445	10800	10801	NOM	LOC	the sea
+46	10805	10806	PROP	PER	Pimoa chthulhu
+111	10808	10809	PROP	PER	Octopus cyanea
+6	10816	10817	PROP	LOC	the Chthulucene
+6	10828	10829	PROP	LOC	the Chthulucene
+416	10854	10856	NOM	PER	The chthonic ones
+416	10865	10865	PRON	PER	They
+216	10877	10878	NOM	PER	human beings
+448	10887	10887	PRON	PER	We
+112	10892	10892	PROP	PER	Homo
+448	10897	10897	PRON	PER	we
+6	10943	10944	PROP	LOC	the Chthulucene
+486	10984	10985	NOM	LOC	the world
+448	10998	10998	PRON	PER	We
+216	11016	11017	NOM	PER	human beings
+6	11025	11026	PROP	LOC	the Chthulucene
+451	11029	11031	NOM	PER	all other beings
+216	11042	11043	NOM	PER	human beings
+116	11048	11049	NOM	LOC	the earth
+454	11058	11059	NOM	LOC	this earth
+455	11070	11074	NOM	PER	situated , actual human beings
+448	11086	11086	PRON	PER	we
+448	11088	11088	PRON	PER	our
+216	11099	11100	NOM	PER	human beings
+448	11113	11113	PRON	PER	we
+457	11114	11126	NOM	PER	have subjected to exterminations , extinctions , genocides , and prospects of futurelessness
+448	11133	11133	PRON	PER	we
+458	11152	11169	NOM	PER	fossil - burning man making new fossils as rapidly as possible in orgies of the Anthropocene and Capitalocene
+459	11171	11172	NOM	PER	Diverse human
+460	11174	11175	NOM	PER	nonhuman players
+461	11191	11193	NOM	PER	The chief actors
+462	11198	11213	NOM	PER	the too - big players in the too - big stories of Capitalism and the Anthropos
+113	11210	11210	PROP	PER	Capitalism
+27	11212	11213	PROP	LOC	the Anthropos
+1	11242	11243	PROP	LOC	the Anthropocene
+28	11245	11246	PROP	LOC	the Capitalocene
+0	11276	11276	PRON	PER	I
+0	11280	11280	PRON	PER	me
+444	11321	11323	NOM	LOC	the coral reefs
+444	11326	11326	PRON	PER	their
+444	11334	11334	PRON	PER	their
+464	11334	11336	NOM	PER	their myriad critters
+465	11345	11349	NOM	PER	at least million human beings
+465	11361	11361	PRON	PER	their
+41	11369	11370	PROP	LOC	Diverse corals
+466	11372	11375	NOM	PER	diverse people and peoples
+114	11385	11385	PROP	PER	Flourishing
+444	11403	11403	PRON	PER	their
+467	11403	11404	NOM	PER	their minions
+468	11408	11409	NOM	LOC	biodiverse terra
+110	11436	11436	PROP	PER	Corals
+433	11439	11440	NOM	PER	the Earthbound
+1	11444	11445	PROP	LOC	the Anthropocene
+304	11468	11469	NOM	LOC	the oceans
+444	11499	11499	PRON	PER	their
+471	11510	11518	NOM	PER	myriad taxa whose worlding depends on intact reef systems
+472	11522	11528	NOM	LOC	the seas and lichens of the land
+313	11527	11528	NOM	LOC	the land
+474	11531	11531	PRON	PER	us
+475	11547	11547	NOM	LOC	oceans
+476	11554	11559	NOM	LOC	delicate lichen - covered northern landscapes
+477	11575	11576	NOM	PER	lichen symbionts
+474	11579	11579	PRON	PER	us
+6	11586	11589	PROP	LOC	the thickly present Chthulucene
+478	11611	11615	NOM	PER	all those in the muddle
+474	11617	11617	PRON	PER	We
+479	11619	11620	NOM	PER	all lichens
+474	11623	11623	PRON	PER	we
+480	11631	11642	NOM	PER	the Furies , who still erupt to avenge crimes against the earth
+116	11641	11642	NOM	LOC	the earth
+474	11646	11646	PRON	PER	we
+509	11668	11668	PRON	PER	you
+510	11672	11673	NOM	PER	the phytolinguist
+511	11677	11679	NOM	PER	the aesthetic critic
+511	11689	11689	PRON	PER	they
+511	11698	11698	PRON	PER	they
+474	11702	11702	PRON	PER	our
+511	11706	11706	PRON	PER	they
+511	11709	11709	PRON	PER	their
+43	11729	11731	PROP	LOC	Pike ’s Peak
+0	11741	11741	PRON	PER	me
+27	11792	11793	PROP	LOC	the Anthropos
+1	11838	11839	PROP	LOC	the Anthropocene
+28	11844	11845	PROP	LOC	the Capitalocene
+126	11851	11853	NOM	PER	the sky gods
+483	11855	11860	NOM	PER	not guarantors of the finished future
+474	11872	11872	PRON	PER	We
+1	11885	11886	PROP	LOC	the Anthropocene
+28	11891	11892	PROP	LOC	the Capitalocene
+484	11901	11903	NOM	PER	a mad gardener

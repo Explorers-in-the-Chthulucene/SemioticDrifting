@@ -1,0 +1,136 @@
+@prefix : <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2/> .
+
+<http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2> rdf:type owl:Ontology ;
+                                                                    <http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator> "Giusy Grieco" ,
+                                                                                                                                             "Maddalena Ghiotto" ;
+                                                                    rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemy at University of Bologna."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator
+<http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_concept
+:has_concept rdf:type owl:ObjectProperty ;
+             rdfs:domain :Story ;
+             rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_place
+:has_place rdf:type owl:ObjectProperty ;
+           rdfs:domain :Story ;
+           rdfs:range :Place .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_story
+:has_story rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_in .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#involves
+:involves rdf:type owl:ObjectProperty ;
+          rdfs:domain :Story ;
+          rdfs:range :Agent .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#is_associated_with
+:is_associated_with rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Agent ;
+                    rdfs:range :Agent .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#is_in
+:is_in rdf:type owl:ObjectProperty ;
+       rdfs:domain :Story ;
+       rdfs:range :Chapter .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_description
+:has_description rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Concept ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Agent ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_number
+:has_number rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Chapter ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_reference
+:has_reference rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Concept ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#has_title
+:has_title rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Chapter ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#is_about
+:is_about rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Story ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Agent
+:Agent rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Chapter
+:Chapter rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Concept
+:Concept rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Agent ;
+       owl:disjointWith :NonHuman .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#NonHuman
+:NonHuman rdf:type owl:Class ;
+          rdfs:subClassOf :Agent .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Place
+:Place rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene_2#Story
+:Story rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

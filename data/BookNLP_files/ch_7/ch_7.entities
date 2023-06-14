@@ -1,0 +1,366 @@
+COREF	start_token	end_token	prop	cat	text
+14	0	1	PROP	PER	Vinciane Despret
+25	5	10	NOM	PER	other beings , human and not
+26	33	34	NOM	LOC	the world
+14	47	47	PROP	PER	Despret
+14	60	60	PRON	PER	her
+14	73	73	PRON	PER	She
+14	79	79	PRON	PER	she
+14	94	94	PRON	PER	She
+27	97	97	NOM	PER	beings
+14	107	107	PRON	PER	she
+14	121	121	PROP	PER	Despret
+28	132	132	NOM	PER	others
+14	146	146	PRON	PER	Her
+29	158	160	NOM	PER	all the players
+14	163	163	PRON	PER	herself
+14	197	197	PRON	PER	her
+14	201	201	PRON	PER	She
+30	203	204	NOM	PER	a philosopher
+31	206	232	NOM	PER	a scientist who is allergic to denunciation and hungry for discovery , needy for what must be known and built together , with and for earthly beings
+14	246	246	PRON	PER	her
+32	251	251	NOM	PER	scientists
+15	259	260	PROP	PER	Thelma Rowell
+15	262	262	PRON	PER	her
+14	266	266	PROP	PER	Despret
+14	275	275	PRON	PER	I
+14	281	281	PRON	PER	I
+14	296	296	PROP	PER	Despret
+14	306	306	PRON	PER	She
+14	308	308	PRON	PER	her
+14	314	314	PRON	PER	her
+16	318	318	PROP	PER	Arendt
+28	341	341	NOM	PER	others
+34	349	357	NOM	PER	most people already claim to know all too completely
+35	363	365	NOM	PER	one ’s interlocutors
+36	380	380	NOM	PER	one
+37	413	414	NOM	PER	its practitioners
+14	438	438	PROP	PER	Despret
+38	447	463	NOM	PER	beings have pre - established natures and abilities that are simply put into play in an encounter
+14	467	467	PROP	PER	Despret
+36	498	498	NOM	PER	one
+40	514	514	PRON	PER	They
+41	520	520	PRON	PER	we
+41	526	526	PRON	PER	we
+42	528	534	NOM	PER	not who / what were anticipated either
+43	546	547	NOM	PER	the choreographer
+44	549	550	NOM	PER	a trickster
+45	560	560	NOM	PER	another
+46	571	571	NOM	PER	everybody
+47	581	583	NOM	PER	a polite inquirer
+48	586	593	NOM	PER	a polite inquirer provoked by a singing blackbird
+17	650	651	PROP	PER	Miss Manners
+17	654	654	PRON	PER	her
+14	664	664	PROP	PER	Despret
+17	676	676	PRON	PER	her
+1	679	689	PROP	FAC	the Negev desert field site of the Israeli ornithologist Amotz Zahavi
+18	685	689	PROP	PER	the Israeli ornithologist Amotz Zahavi
+18	688	689	PROP	PER	Amotz Zahavi
+17	692	692	PRON	PER	she
+49	694	716	NOM	PER	Arabian babblers who defied orthodox accounts of what birds should be doing , even as the scientists also acted off - script scientifically
+50	709	710	NOM	PER	the scientists
+18	720	720	PROP	PER	Zahavi
+51	729	729	NOM	PER	babblers
+18	731	731	PRON	PER	He
+52	739	740	NOM	PER	The babblers
+52	751	751	PRON	PER	they
+18	759	759	PROP	PER	Zahavi
+18	776	776	PROP	PER	Zahavi
+52	778	779	NOM	PER	the babblers
+18	783	783	PRON	PER	he
+52	785	785	PRON	PER	them
+18	789	789	PRON	PER	he
+52	791	791	PRON	PER	them
+52	812	812	PRON	PER	they
+172	818	819	NOM	PER	one another
+52	824	824	PRON	PER	they
+173	830	831	NOM	PER	each other
+174	837	839	NOM	PER	an endangered comrade
+18	846	846	PROP	PER	Zahavi
+52	850	850	PRON	PER	their
+14	858	858	PROP	PER	Despret
+54	860	860	PRON	PER	us
+14	861	861	PRON	PER	she
+32	915	915	NOM	PER	scientists
+19	927	927	PRON	PER	their
+175	927	928	NOM	PER	their scientists
+19	930	930	PRON	PER	them
+56	944	944	NOM	PER	observers
+19	973	973	PROP	PER	Birds
+32	975	975	NOM	PER	scientists
+19	990	990	PRON	PER	their
+58	990	991	NOM	PER	their observers
+18	1012	1012	PROP	PER	Zahavi
+51	1022	1022	NOM	PER	babblers
+18	1024	1024	PRON	PER	He
+26	1030	1031	NOM	LOC	the world
+51	1038	1038	PRON	PER	them
+14	1052	1052	PROP	PER	Despret
+32	1058	1058	NOM	PER	scientists
+19	1071	1071	PROP	PER	Birds
+32	1073	1073	NOM	PER	scientists
+63	1078	1078	PRON	PER	they
+63	1083	1083	PRON	PER	They
+173	1087	1088	NOM	PER	each other
+65	1090	1096	NOM	LOC	The world in the southern Israeli desert
+66	1093	1096	NOM	LOC	the southern Israeli desert
+52	1139	1140	NOM	PER	the babblers
+50	1142	1143	NOM	PER	the scientists
+14	1145	1145	PROP	PER	Despret
+176	1159	1159	NOM	PER	humans
+51	1161	1161	NOM	PER	babblers
+178	1169	1169	PRON	PER	them
+63	1171	1171	PRON	PER	They
+26	1187	1188	NOM	LOC	the world
+14	1203	1203	PROP	PER	Despret
+70	1213	1213	NOM	PER	people
+0	1227	1227	PRON	PER	I
+0	1229	1229	PRON	PER	I
+70	1238	1238	NOM	PER	people
+14	1248	1248	PROP	PER	Despret
+20	1252	1254	PROP	PER	sociologist Jocelyne Porcher
+72	1256	1257	NOM	PER	the farmers
+50	1264	1264	PRON	PER	their
+0	1267	1267	PRON	PER	me
+14	1269	1269	PROP	PER	Despret
+20	1271	1271	PROP	PER	Porcher
+73	1273	1276	NOM	PER	cow and pig breeders
+74	1278	1280	NOM	FAC	nonindustrial French farms
+75	1283	1284	NOM	PER	the humans
+76	1293	1298	NOM	PER	sober , nonromantic , working breeders
+79	1306	1306	PRON	PER	We
+79	1312	1312	PRON	PER	our
+14	1320	1320	PROP	PER	Despret
+20	1322	1322	PROP	PER	Porcher
+72	1324	1325	NOM	PER	the farmers
+72	1328	1328	PRON	PER	their
+72	1351	1351	PRON	PER	their
+78	1351	1352	NOM	PER	their people
+79	1371	1372	NOM	PER	the breeders
+79	1376	1376	PRON	PER	them
+79	1378	1378	PRON	PER	their
+79	1383	1383	PRON	PER	their
+79	1392	1393	NOM	PER	the breeders
+70	1399	1399	NOM	PER	people
+82	1410	1423	NOM	PER	people who make particular animals live and die and who live , and die
+82	1426	1426	PRON	PER	them
+83	1433	1434	NOM	PER	these breeders
+83	1442	1442	PRON	PER	them
+79	1444	1445	NOM	PER	The breeders
+85	1450	1451	NOM	PER	the researchers
+85	1460	1460	PRON	PER	them
+85	1462	1462	PRON	PER	their
+0	1474	1474	PRON	PER	me
+79	1480	1481	NOM	PER	the breeders
+79	1483	1483	PRON	PER	their
+79	1488	1488	PRON	PER	we
+79	1492	1492	PRON	PER	we
+79	1494	1494	PRON	PER	we
+92	1499	1499	PRON	PER	they
+79	1506	1506	PRON	PER	their
+70	1512	1512	NOM	PER	people
+88	1527	1528	NOM	FAC	the farm
+89	1530	1530	NOM	PER	Farmers
+89	1535	1535	PRON	PER	their
+89	1542	1542	PRON	PER	them
+90	1549	1556	NOM	PER	not good farmers in their peers ’ estimation
+89	1553	1553	PRON	PER	their
+91	1553	1554	NOM	PER	their peers
+92	1558	1559	NOM	PER	The animals
+92	1563	1563	PRON	PER	their
+93	1563	1564	NOM	PER	their farmers
+94	1579	1580	NOM	PER	good breeders
+95	1589	1590	NOM	PER	both people
+179	1601	1601	PRON	PER	you
+180	1615	1616	NOM	PER	the other
+179	1618	1618	PRON	PER	you
+176	1644	1644	NOM	PER	humans
+97	1647	1650	NOM	PER	humans that nourish animals
+0	1679	1679	PRON	PER	me
+14	1691	1691	PROP	PER	Despret
+92	1697	1697	PRON	PER	their
+78	1697	1698	NOM	PER	their people
+92	1701	1701	PRON	PER	their
+14	1708	1708	PRON	PER	her
+0	1719	1719	PRON	PER	I
+99	1728	1732	NOM	PER	human people on the menu
+0	1740	1740	PRON	PER	I
+14	1748	1769	PROP	PER	The Unfaithful Daughters of Virginia Woolf , which Isabelle Stengers and Vinciane Despret wrote together with an extraordinary collective of bumptious women
+14	1752	1753	PROP	PER	Virginia Woolf
+14	1756	1757	PROP	PER	Isabelle Stengers
+14	1759	1760	PROP	PER	Vinciane Despret
+100	1764	1769	NOM	PER	an extraordinary collective of bumptious women
+106	1773	1773	PRON	PER	we
+14	1788	1789	PROP	PER	Virginia Woolf
+101	1795	1796	NOM	LOC	Western worlds
+102	1802	1802	NOM	PER	women
+103	1816	1817	NOM	PER	the patrilines
+14	1829	1830	PROP	PER	Virginia Woolf
+104	1833	1835	NOM	PER	any other woman
+105	1838	1841	NOM	PER	men for that matter
+103	1849	1849	PRON	PER	their
+106	1858	1858	PRON	PER	we
+106	1862	1862	PRON	PER	ourselves
+106	1891	1891	PRON	PER	we
+106	1893	1893	PRON	PER	ourselves
+106	1899	1899	PRON	PER	we
+106	1941	1941	PRON	PER	We
+70	1985	1985	NOM	PER	people
+106	1992	1992	PRON	PER	We
+16	2052	2053	PROP	PER	Hannah Arendt
+14	2055	2056	PROP	PER	Virginia Woolf
+108	2080	2085	NOM	PER	unexpected , non - natal kin
+0	2122	2122	PRON	PER	I
+21	2130	2130	PROP	PER	Visiting
+52	2182	2183	NOM	PER	the babblers
+52	2185	2185	PRON	PER	their
+110	2189	2190	NOM	PER	the storytellers
+16	2215	2215	PROP	PER	Arendt
+14	2217	2217	PROP	PER	Woolf
+14	2219	2219	PROP	PER	Despret
+14	2221	2221	PRON	PER	her
+111	2221	2222	NOM	PER	her collaborators
+106	2225	2225	PRON	PER	we
+181	2246	2250	NOM	PER	women who make a fuss
+22	2255	2256	PROP	PER	the True
+106	2313	2313	PRON	PER	we
+14	2336	2336	PROP	PER	Despret
+14	2374	2374	PRON	PER	She
+14	2391	2391	PRON	PER	She
+106	2426	2426	PRON	PER	we
+106	2438	2438	PRON	PER	ourselves
+14	2461	2461	PROP	PER	Despret
+14	2466	2467	PROP	PER	Isabelle Stengers
+14	2471	2471	PRON	PER	she
+0	2475	2475	PRON	PER	me
+0	2479	2479	PRON	PER	I
+14	2484	2484	PRON	PER	her
+106	2504	2504	PRON	PER	our
+112	2515	2515	PRON	PER	his
+113	2518	2519	NOM	PER	the father
+112	2524	2524	PRON	PER	his
+114	2524	2527	NOM	PER	his three quarrelsome sons
+115	2545	2547	NOM	PER	the eldest son
+116	2552	2554	NOM	PER	the second son
+117	2570	2587	NOM	PER	the confused sons , who were on the verge of failing to fulfill the terms of the will
+118	2591	2597	NOM	PER	an old man living in the village
+119	2596	2597	NOM	GPE	the village
+112	2599	2599	PRON	PER	His
+120	2604	2605	NOM	PER	the sons
+121	2610	2611	NOM	PER	the heirs
+121	2617	2617	PRON	PER	their
+121	2621	2621	PRON	PER	they
+121	2624	2624	PRON	PER	their
+122	2651	2653	NOM	PER	the old man
+14	2655	2655	PROP	PER	Despret
+14	2660	2660	PRON	PER	she
+123	2701	2703	NOM	PER	the problematic sons
+14	2720	2720	PROP	PER	Despret
+0	2723	2723	PRON	PER	I
+14	2738	2738	PRON	PER	her
+14	2741	2741	PRON	PER	she
+14	2749	2749	PRON	PER	She
+124	2758	2758	NOM	PER	anybody
+125	2769	2770	NOM	PER	anyone listening
+126	2772	2773	NOM	PER	anyone attuned
+127	2790	2799	NOM	PER	Long - legged , big - lipped , humped camels
+127	2804	2804	PRON	PER	their
+128	2813	2814	NOM	PER	the storyteller
+14	2822	2822	PROP	PER	Despret
+14	2827	2827	PRON	PER	her
+129	2829	2829	PRON	PER	we
+127	2837	2837	PRON	PER	their
+78	2837	2838	NOM	PER	their people
+127	2841	2841	PRON	PER	their
+127	2851	2851	PRON	PER	their
+2	2865	2866	PROP	LOC	Gobi Desert
+129	2868	2868	PRON	PER	We
+129	2888	2888	PRON	PER	we
+129	2900	2900	PRON	PER	we
+70	2912	2912	NOM	PER	people
+173	2917	2918	NOM	PER	each other
+129	2950	2950	PRON	PER	We
+133	2956	2957	NOM	LOC	situated worlds
+129	2960	2960	PRON	PER	we
+129	2993	2993	PRON	PER	us
+134	3007	3007	PRON	PER	their
+129	3029	3029	PRON	PER	us
+14	3034	3034	PROP	PER	Despret
+14	3053	3053	PRON	PER	She
+135	3056	3058	NOM	PER	situated human beings
+135	3063	3063	PRON	PER	their
+14	3070	3070	PRON	PER	her
+14	3080	3080	PRON	PER	she
+70	3088	3088	NOM	PER	people
+14	3107	3107	PRON	PER	She
+0	3123	3123	PRON	PER	I
+137	3154	3163	NOM	LOC	the tissues of an earth whose very habitability is threatened
+138	3157	3163	NOM	LOC	an earth whose very habitability is threatened
+129	3174	3174	PRON	PER	our
+0	3219	3219	PRON	PER	my
+14	3226	3226	PROP	PER	Despret
+0	3228	3228	PRON	PER	me
+135	3245	3245	PRON	PER	their
+139	3245	3247	NOM	PER	their avid fanciers
+140	3253	3255	NOM	PER	lovers of pigeons
+0	3258	3258	PRON	PER	I
+14	3263	3263	PROP	PER	Despret
+14	3269	3269	PRON	PER	her
+14	3271	3271	PRON	PER	her
+141	3271	3272	NOM	PER	her colleagues
+142	3274	3277	NOM	FAC	the chateau at Cerisy
+3	3277	3277	PROP	GPE	Cerisy
+0	3283	3283	PRON	PER	I
+0	3299	3299	PRON	PER	I
+14	3301	3301	PROP	PER	Despret
+0	3305	3305	PRON	PER	my
+23	3319	3321	PROP	PER	Beatriz da Costa
+135	3337	3337	PRON	PER	their
+143	3337	3338	NOM	PER	their fanciers
+4	3340	3341	PROP	GPE	Southern California
+144	3346	3350	NOM	PER	a working - class men
+26	3354	3355	NOM	LOC	the world
+5	3367	3367	PROP	GPE	Baghdad
+6	3369	3369	PROP	GPE	Damascus
+7	3377	3378	PROP	GPE	New York
+8	3380	3380	PROP	GPE	Berlin
+146	3392	3392	NOM	GPE	regions
+9	3394	3394	PROP	GPE	France
+10	3396	3396	PROP	GPE	Iran
+11	3398	3398	PROP	GPE	California
+0	3401	3401	PRON	PER	I
+147	3412	3413	NOM	PER	diverse people
+148	3418	3423	NOM	FAC	shared , often vexed public spaces
+0	3441	3441	PRON	PER	me
+149	3443	3445	NOM	FAC	innovative pigeon lofts
+14	3453	3453	PROP	PER	Despret
+0	3472	3472	PRON	PER	me
+12	3474	3477	PROP	FAC	Matali Crasset ’s Capsule
+150	3482	3486	NOM	FAC	the leisure park of Caudry
+13	3486	3486	PROP	GPE	Caudry
+14	3488	3488	PRON	PER	she
+14	3490	3490	PRON	PER	her
+151	3518	3524	NOM	ORG	The Beauvois association of carrier pigeon fanciers
+152	3522	3524	NOM	PER	carrier pigeon fanciers
+24	3526	3526	PROP	PER	Crasset
+153	3528	3532	NOM	PER	an artist and industrial designer
+154	3536	3539	NOM	FAC	a prototype pigeon loft
+70	3547	3547	NOM	PER	people
+156	3557	3558	NOM	PER	future practitioners
+157	3570	3571	NOM	FAC	this loft
+158	3573	3574	NOM	PER	actual colombophiles
+159	3583	3588	NOM	PER	actual visitors to the ecological park
+160	3586	3588	NOM	FAC	the ecological park
+161	3593	3594	NOM	LOC	exhausted farmland
+162	3596	3599	NOM	FAC	a variegated nature reserve
+70	3604	3604	NOM	PER	people
+164	3618	3619	NOM	PER	avian voyageurs
+14	3621	3621	PROP	PER	Despret
+165	3639	3639	PRON	PER	their
+78	3639	3640	NOM	PER	their people
+167	3651	3652	NOM	PER	the critters
+168	3654	3655	NOM	PER	the people
+173	3663	3664	NOM	PER	each other
+170	3676	3676	PRON	PER	they
+173	3678	3679	NOM	PER	each other
+170	3689	3689	PRON	PER	they

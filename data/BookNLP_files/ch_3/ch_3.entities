@@ -1,0 +1,1365 @@
+COREF	start_token	end_token	prop	cat	text
+192	105	106	NOM	FAC	the hallway
+193	108	111	NOM	FAC	the Departments of Geosciences
+1	115	116	PROP	LOC	UMass Amherst
+194	119	123	NOM	FAC	the Life and Earth Café
+195	164	164	NOM	LOC	earth
+196	166	166	NOM	PER	Critters
+197	168	169	NOM	PER	one another
+198	179	180	NOM	PER	each another
+197	191	192	NOM	PER	one another
+966	226	228	NOM	PER	entire beings ”
+196	271	271	NOM	PER	Critters
+196	275	275	PRON	PER	their
+196	278	278	PRON	PER	they
+201	289	294	NOM	PER	the beings of previous such entanglements
+120	296	297	PROP	PER	Lynn Margulis
+967	307	307	NOM	PER	strangers
+120	312	312	PRON	PER	she
+202	333	334	NOM	LOC	earth history
+0	336	336	PRON	PER	I
+968	350	352	NOM	PER	beings . ”
+120	354	354	PROP	PER	Margulis
+0	356	356	PRON	PER	I
+120	424	424	PRON	PER	hers
+0	426	426	PRON	PER	my
+203	437	440	NOM	PER	all of the players
+204	439	440	NOM	PER	the players
+205	444	445	NOM	PER	each other
+206	498	501	NOM	PER	the symbionts / holobionts
+207	508	508	NOM	PER	biologists
+208	549	556	NOM	PER	a lover of languages , arts , stories
+209	567	568	NOM	PER	human beings
+120	570	570	PROP	PER	Margulis
+210	572	575	NOM	PER	a radical evolutionary theorist
+120	577	577	PRON	PER	Her
+2	589	589	PROP	GPE	Terra
+211	592	592	PRON	PER	their
+120	599	599	PROP	PER	Margulis
+120	675	675	PROP	PER	Margulis
+121	687	687	PROP	PER	Bacteria
+0	694	694	PRON	PER	My
+120	699	699	PRON	PER	her
+120	703	703	PROP	PER	Margulis
+212	720	727	NOM	PER	so - called higher - order biological entities
+205	740	741	NOM	PER	each other
+120	807	807	PRON	PER	she
+214	809	839	NOM	PER	a founder of Gaia theory with James Lovelock and a student of interlocked and multileveled systemic processes of nonreductionist organization and maintenance that make earth itself and earth ’s living beings
+122	815	816	PROP	PER	James Lovelock
+215	818	830	NOM	PER	a student of interlocked and multileveled systemic processes of nonreductionist organization and maintenance
+216	833	834	NOM	LOC	earth itself
+195	836	836	NOM	LOC	earth
+120	842	842	PROP	PER	Margulis
+120	849	849	PRON	PER	she
+218	910	915	NOM	PER	a Canadian environmental studies graduate student
+123	917	919	PROP	PER	M. Beth Dempster
+219	964	965	NOM	PER	autopoietic systems
+220	1009	1013	NOM	PER	self - organizing individual units
+221	1023	1024	NOM	PER	living beings
+124	1046	1046	PROP	PER	Mixotricha
+222	1049	1049	NOM	PER	everyone
+120	1065	1065	PROP	PER	Margulis
+219	1085	1085	PRON	PER	their
+223	1130	1142	NOM	PER	the kind of one - celled organism that is classified as a protist
+224	1206	1206	PRON	PER	we
+225	1246	1247	NOM	PER	This holobiont
+226	1269	1271	NOM	PER	ones and manys
+227	1274	1274	NOM	PER	holoents
+219	1280	1280	PRON	PER	their
+228	1283	1283	NOM	PER	people
+123	1318	1319	PROP	PER	M. paradoxa
+123	1321	1321	PRON	PER	their
+0	1325	1325	PRON	PER	my
+229	1325	1326	NOM	PER	my companions
+125	1335	1335	PROP	PER	Darwin
+224	1354	1354	PRON	PER	our
+230	1395	1395	NOM	PER	one
+231	1397	1399	NOM	PER	a serious person
+126	1406	1407	PROP	PER	Theodosius Dobzhansky
+127	1418	1419	PROP	PER	Ernst Mayr
+128	1430	1432	PROP	PER	George Gaylord Simpson
+129	1444	1445	PROP	PER	Richard Dawkins
+224	1631	1631	PRON	PER	us
+120	1682	1682	PROP	PER	Margulis
+0	1684	1684	PRON	PER	I
+120	1710	1710	PRON	PER	her
+120	1718	1718	PROP	PER	Margulis
+130	1727	1730	PROP	PER	the Russian Konstantin Mereschkowsky
+232	1732	1732	NOM	PER	others
+120	1736	1736	PROP	PER	Margulis
+120	1738	1738	PRON	PER	her
+233	1738	1739	NOM	PER	her successors
+120	1742	1742	PRON	PER	her
+234	1742	1743	NOM	PER	her colleagues
+131	1890	1892	PROP	PER	Alice in Wonderland
+235	1897	1899	NOM	PER	the Red Queen
+236	1903	1904	NOM	LOC	this world
+131	1909	1909	PRON	PER	she
+237	1913	1921	NOM	LOC	the complex - enough , simple - enough world
+238	1935	1935	NOM	PER	colleagues
+239	1952	1976	NOM	PER	hard - working living models , each shaped in knots and layers of practice to be apt for some kinds of questions and not others
+240	1989	1992	NOM	PER	fruit flies Drosophila melanogaster
+132	2028	2029	PROP	PER	Scott Gilbert
+241	2035	2037	NOM	PER	one ’s organism
+230	2047	2047	NOM	PER	one
+243	2058	2074	NOM	PER	a community of like - minded researchers who have identified problems that the community thinks are important
+244	2070	2071	NOM	PER	the community
+245	2094	2094	PRON	PER	your
+245	2102	2102	PRON	PER	you
+969	2114	2117	NOM	PER	“ model organisms ”
+246	2166	2167	NOM	PER	the researcher
+247	2194	2204	NOM	PER	quasi - collective / quasi - individual partners in constitutive relatings
+248	2214	2215	NOM	PER	The partners
+120	2234	2234	PROP	PER	Margulis
+249	2236	2236	PRON	PER	us
+124	2241	2241	PROP	PER	Mixotricha
+0	2260	2260	PRON	PER	I
+250	2273	2274	NOM	FAC	the laboratory
+251	2283	2285	NOM	LOC	the living world
+252	2343	2344	NOM	LOC	coral reefs
+0	2347	2347	PRON	PER	I
+253	2358	2360	NOM	FAC	the experimental laboratory
+0	2382	2382	PRON	PER	I
+133	2453	2454	PROP	PER	Nicole King
+254	2453	2463	NOM	FAC	Nicole King ’s laboratory at the University of California , Berkeley
+255	2458	2461	NOM	GPE	the University of California
+3	2463	2463	PROP	GPE	Berkeley
+256	2476	2477	NOM	PER	These scientists
+134	2509	2509	PROP	PER	Alegado
+133	2511	2511	PROP	PER	King
+257	2520	2520	PRON	PER	their
+249	2635	2635	PRON	PER	ourselves
+258	2668	2669	NOM	PER	companion species
+133	2671	2671	PROP	PER	King
+259	2697	2699	NOM	PER	the genus Algoriphagus
+133	2759	2759	PROP	PER	King
+260	2826	2826	NOM	PER	players
+261	2831	2834	NOM	PER	the best science writers
+133	2836	2837	PROP	PER	Nicole King
+262	2836	2839	NOM	FAC	Nicole King ’s lab
+0	2841	2841	PRON	PER	my
+0	2851	2851	PRON	PER	I
+263	2871	2871	PRON	PER	themselves
+263	2880	2880	PRON	PER	they
+263	2886	2886	PRON	PER	them
+0	2893	2893	PRON	PER	My
+264	2922	2922	PRON	PER	its
+265	3025	3027	NOM	PER	the right bacteria
+266	3029	3029	PRON	PER	they
+266	3033	3033	PRON	PER	their
+266	3040	3040	PRON	PER	they
+267	3043	3043	NOM	PER	adults
+268	3080	3081	NOM	PER	unwanted associates
+269	3090	3091	NOM	FAC	vibrio homes
+133	3093	3093	PRON	PER	Herself
+135	3106	3106	PROP	PER	McFallNgai
+135	3120	3120	PRON	PER	she
+136	3125	3129	PROP	PER	Edward ( Ned ) Ruby
+270	3131	3136	NOM	PER	a microbiologist also interested in symbiosis
+0	3153	3153	PRON	PER	I
+137	3169	3171	PROP	PER	McFall - Ngai
+970	3182	3193	NOM	PER	bacteria whose members often have broad physiological scope and multiple ecological niches
+138	3276	3276	PROP	PER	Buchnera
+139	3278	3279	PROP	PER	Nancy Moran
+971	3311	3311	PRON	PER	us
+972	3337	3338	NOM	PER	biological communities
+0	3341	3341	PRON	PER	I
+271	3378	3383	NOM	PER	all the partners making up holobionts
+205	3387	3388	NOM	PER	each other
+0	3395	3395	PRON	PER	me
+273	3403	3403	PRON	PER	their
+971	3406	3406	PRON	PER	We
+973	3410	3410	NOM	PER	Individuals
+132	3413	3413	PROP	PER	Gilbert
+140	3415	3415	PROP	PER	Sapp
+141	3418	3418	PROP	PER	Tauber
+974	3453	3455	NOM	GPE	a Bacterial World
+274	3466	3470	NOM	PER	the twenty - six coauthors
+274	3492	3492	PRON	PER	They
+975	3535	3536	NOM	PER	bacterial partners
+273	3545	3545	PRON	PER	their
+971	3554	3554	PRON	PER	our
+275	3569	3572	NOM	PER	worried colleagues at conferences
+276	3574	3575	NOM	PER	uncomprehending reviewers
+277	3591	3592	NOM	PER	enthusiastic editors
+278	3611	3612	NOM	PER	The critics
+0	3625	3625	PRON	PER	I
+279	3628	3630	NOM	PER	a disinterested observer
+0	3634	3634	PRON	PER	I
+280	3681	3683	NOM	LOC	a damaged planet
+0	3697	3697	PRON	PER	I
+280	3710	3712	NOM	LOC	a damaged planet
+142	3714	3715	PROP	PER	Carla Hustak
+143	3717	3718	PROP	PER	Natasha Myers
+282	3722	3722	PRON	PER	us
+0	3736	3736	PRON	PER	me
+0	3744	3744	PRON	PER	I
+283	3754	3755	NOM	PER	These authors
+125	3757	3757	PROP	PER	Darwin
+125	3763	3763	PRON	PER	his
+284	3771	3771	PRON	PER	their
+142	3775	3775	PROP	PER	Hustak
+143	3777	3777	PROP	PER	Myers
+283	3779	3779	PRON	PER	themselves
+285	3795	3795	NOM	PER	scientists
+286	3797	3798	NOM	PER	The authors
+195	3814	3814	NOM	LOC	earth
+288	3853	3858	NOM	PER	the biologists of the previous section
+142	3860	3860	PROP	PER	Hustak
+143	3862	3862	PROP	PER	Myers
+289	3872	3874	NOM	PER	competing methodological individualists
+283	3908	3908	PRON	PER	their
+290	3911	3912	NOM	PER	living critters
+285	3977	3977	NOM	PER	scientists
+282	3979	3979	PRON	PER	we
+283	4013	4013	PRON	PER	their
+292	4079	4079	NOM	PER	practitioners
+293	4083	4084	NOM	PER	the humans
+144	4086	4086	PROP	PER	Orchids
+144	4107	4107	PRON	PER	them
+294	4109	4119	NOM	PER	The right sort of males seeking females of their own kind
+294	4117	4117	PRON	PER	their
+142	4180	4180	PROP	PER	Hustak
+143	4182	4182	PROP	PER	Myers
+285	4242	4242	NOM	PER	scientists
+282	4268	4268	PRON	PER	our
+282	4295	4295	PRON	PER	we
+976	4317	4317	PRON	PER	themselves
+296	4329	4337	NOM	PER	a partner involved critically in the life of another
+297	4340	4341	NOM	LOC	the earth
+4	4375	4376	PROP	LOC	the Anthropocene
+282	4380	4380	PRON	PER	we
+280	4388	4390	NOM	LOC	a damaged planet
+299	4393	4393	PRON	PER	his
+145	4400	4404	PROP	PER	the Dead Orson Scott Card
+300	4407	4429	NOM	PER	a young boy who had excelled in exterminationist technoscience in a cross - species war with an insectoid hive species later in life
+301	4443	4454	NOM	PER	those left behind when a being , or a way of being
+302	4458	4459	NOM	PER	The man
+303	4464	4465	NOM	PER	the boy
+302	4484	4485	NOM	PER	the man
+305	4504	4504	PRON	PER	their
+306	4510	4514	NOM	PER	the Speaker for the Dead
+307	4518	4519	NOM	PER	the dead
+0	4542	4542	PRON	PER	My
+146	4568	4569	PROP	PER	Bee Orchid
+282	4572	4572	PRON	PER	we
+307	4706	4707	NOM	PER	the dead
+309	4709	4711	NOM	PER	A stick figure
+0	4745	4745	PRON	PER	I
+5	4777	4777	PROP	GPE	Capitalocene
+0	4779	4779	PRON	PER	I
+310	4785	4801	NOM	PER	stinger - endowed , unfurling , grasping tentacles of the ink - spurting , disguise - artist
+6	4815	4816	PROP	LOC	the Chthulucene
+6	4823	4824	PROP	LOC	the Chthulucene
+311	4829	4831	NOM	PER	the symchthonic ones
+312	4833	4838	NOM	PER	the symbiogenetic and sympoietic earthly ones
+313	4846	4847	NOM	FAC	the tunnels
+314	4849	4849	NOM	FAC	caves
+315	4858	4859	NOM	LOC	damaged waters
+316	4864	4864	NOM	LOC	lands
+317	4866	4868	NOM	PER	The chthonic ones
+297	4873	4874	NOM	LOC	the earth
+319	4882	4884	NOM	PER	decolonial indigenous peoples
+0	4890	4890	PRON	PER	my
+320	4916	4922	NOM	GPE	a model system for sympoietic , multiplayer
+321	4930	4933	NOM	GPE	a particularly sensitive place
+322	4937	4940	NOM	LOC	the Great Barrier Reef
+323	4942	4947	NOM	LOC	all the world ’s coral reefs
+324	4950	4954	NOM	FAC	the Crochet Coral Reef project
+7	4960	4966	PROP	FAC	the Institute for Figuring in Los Angeles
+8	4965	4966	PROP	GPE	Los Angeles
+325	4970	4974	NOM	GPE	the island Republic of Madagascar
+9	4974	4974	PROP	GPE	Madagascar
+326	4977	4981	NOM	PER	the Malagasy - English children
+285	4998	4998	NOM	PER	scientists
+328	5000	5000	NOM	PER	artists
+329	5004	5012	NOM	LOC	the circumpolar northern lands of the Inupiat in Alaska
+10	5009	5010	PROP	LOC	the Inupiat
+11	5012	5012	PROP	GPE	Alaska
+330	5014	5018	NOM	GPE	site of the Never Alone
+10	5030	5031	PROP	LOC	the Inupiat
+331	5037	5043	NOM	FAC	the sympoiesis of E - Line Media
+332	5045	5049	NOM	GPE	the Cook Inlet Tribal Council
+0	5053	5053	PRON	PER	my
+333	5063	5067	NOM	FAC	the Navajo and Hopi lands
+12	5070	5070	PROP	GPE	Arizona
+334	5072	5076	NOM	GPE	site of many - threaded
+335	5080	5083	NOM	PER	Black Mesa Indigenous Support
+13	5085	5089	PROP	FAC	Black Mesa Trust ( Hopi
+14	5086	5086	PROP	GPE	Mesa
+149	5089	5089	PROP	GPE	Hopi
+336	5092	5093	NOM	PER	the scientists
+337	5095	5103	NOM	PER	indigenous herding people committed to Navajo - Churro sheep
+338	5105	5111	NOM	PER	Black Mesa Weavers for Life and Land
+339	5113	5122	NOM	PER	the mostly Diné activists of the Black Mesa Water Coalition
+340	5125	5135	NOM	PER	the people and sheep of Diné be’iiná / The Navajo Lifeway
+341	5128	5135	NOM	PER	sheep of Diné be’iiná / The Navajo Lifeway
+285	5204	5204	NOM	PER	scientists
+328	5206	5206	NOM	PER	artists
+344	5208	5211	NOM	PER	ordinary members of communities
+345	5211	5211	NOM	PER	communities
+346	5214	5215	NOM	PER	nonhuman beings
+205	5219	5220	NOM	PER	each other
+205	5225	5226	NOM	PER	each other
+349	5230	5230	PRON	PER	they
+205	5234	5235	NOM	PER	each other
+349	5255	5255	PRON	PER	They
+351	5264	5282	NOM	LOC	Four Critical Zones Bathed in hot and acid oceans that are becoming more acidic and hotter by the decade
+352	5269	5272	NOM	LOC	hot and acid oceans
+252	5290	5291	NOM	FAC	Coral reefs
+354	5300	5301	NOM	LOC	marine ecosystem
+355	5344	5349	NOM	PER	Hundreds of millions of human beings
+355	5353	5353	PRON	PER	them
+355	5364	5364	PRON	PER	their
+356	5374	5377	NOM	PER	human and nonhuman critters
+207	5417	5417	NOM	PER	biologists
+207	5425	5425	NOM	PER	biologists
+207	5431	5431	PRON	PER	their
+359	5435	5437	NOM	PER	individuals and collectives
+360	5439	5440	NOM	PER	These critters
+361	5442	5444	NOM	PER	people like me
+0	5444	5444	PRON	PER	me
+362	5446	5446	PRON	PER	we
+363	5460	5461	NOM	LOC	some locations
+364	5475	5476	NOM	LOC	shallower waters
+252	5478	5479	NOM	LOC	Coral reefs
+366	5481	5485	NOM	LOC	the forests of the sea
+367	5484	5485	NOM	LOC	the sea
+147	5488	5489	PROP	PER	Anna Tsing
+368	5488	5495	NOM	LOC	Anna Tsing ’s forest refugia of the land
+369	5494	5495	NOM	LOC	the land
+370	5502	5504	NOM	LOC	coral reef worlds
+0	5509	5509	PRON	PER	I
+371	5516	5521	NOM	PER	human people who know this beauty
+371	5523	5523	PRON	PER	their
+372	5526	5540	NOM	GPE	A large island nation off the east coast of Africa , the Republic of Madagascar
+373	5531	5535	NOM	LOC	the east coast of Africa
+16	5535	5535	PROP	GPE	Africa
+374	5537	5540	NOM	GPE	the Republic of Madagascar
+9	5540	5540	PROP	GPE	Madagascar
+375	5549	5551	NOM	PER	historically situated peoples
+9	5572	5572	PROP	GPE	Madagascar
+195	5587	5587	NOM	LOC	earth
+9	5600	5600	PROP	GPE	Madagascar
+377	5607	5608	NOM	PER	rural people
+378	5610	5617	NOM	PER	the large majority of Madagascar ’s human citizens
+9	5614	5614	PROP	GPE	Madagascar
+379	5616	5617	NOM	PER	human citizens
+380	5620	5623	NOM	PER	urban and town residents
+381	5622	5622	NOM	GPE	town
+382	5626	5627	NOM	PER	myriad nonhumans
+383	5655	5663	NOM	LOC	the forests of Madagascar that were still thriving in
+9	5658	5658	PROP	GPE	Madagascar
+383	5670	5670	PRON	PER	their
+384	5670	5671	NOM	PER	their critters
+383	5674	5674	PRON	PER	their
+385	5674	5675	NOM	PER	their people
+383	5688	5688	PRON	PER	their
+297	5711	5712	NOM	LOC	the earth
+17	5730	5732	PROP	LOC	The circumpolar North
+18	5742	5743	PROP	LOC	The Arctic
+387	5756	5757	NOM	LOC	Sea ice
+228	5765	5765	NOM	PER	people
+228	5795	5795	PRON	PER	their
+195	5835	5835	NOM	LOC	earth
+195	5839	5839	NOM	LOC	earth
+391	5862	5864	NOM	GPE	imperial circumpolar nations
+392	5870	5872	NOM	LOC	increasingly militarized seas
+393	5885	5887	NOM	LOC	the far North
+17	5924	5925	PROP	LOC	the North
+394	5930	5935	NOM	PER	peoples and critters facing this storm
+195	5942	5942	NOM	LOC	earth
+45	5950	5959	PROP	FAC	the four - thousand - square - mile Colorado Plateau
+45	5958	5959	PROP	LOC	Colorado Plateau
+22	5961	5962	PROP	LOC	Black Mesa
+23	5965	5966	PROP	LOC	Big Mountain
+396	5969	5976	NOM	LOC	ancestral land for both Hopi and Diné peoples
+397	5972	5976	NOM	PER	both Hopi and Diné peoples
+22	5978	5979	PROP	LOC	Black Mesa
+24	5988	5988	PROP	GPE	Navajo
+398	5990	6002	NOM	PER	Hopi families for income , food , water , sociality , and ceremony
+399	6004	6007	NOM	FAC	The Black Mesa coalfield
+400	6010	6013	NOM	LOC	a huge Pleistocene lake
+401	6016	6023	NOM	LOC	the largest coal deposit in the United States
+402	6021	6023	NOM	GPE	the United States
+403	6028	6032	NOM	GPE	this colonizing capitalist extractive nation
+404	6034	6042	NOM	FAC	the largest strip - mining operation in North America
+25	6041	6042	PROP	GPE	North America
+26	6046	6050	PROP	FAC	the Peabody Western Coal Company
+405	6052	6055	NOM	ORG	part of Peabody Energy
+148	6054	6055	PROP	ORG	Peabody Energy
+406	6057	6065	NOM	ORG	the world ’s largest private - sector coal company
+407	6073	6077	NOM	FAC	the Black Mesa strip mine
+408	6089	6092	NOM	FAC	the irreplaceable Navajo aquifer
+28	6104	6105	PROP	LOC	Southern Pacific
+409	6109	6117	NOM	FAC	the heavily polluting coal - fired Mohave Generating Station
+29	6119	6119	PROP	GPE	Nevada
+410	6123	6125	NOM	ORG	the Bechtel Corporation
+411	6127	6128	NOM	FAC	This plant
+412	6132	6139	NOM	GPE	the blooming toxic cities in the desert Southwest
+413	6137	6139	NOM	LOC	the desert Southwest
+8	6142	6143	PROP	GPE	Los Angeles
+414	6145	6149	NOM	PER	People living on Black Mesa
+22	6148	6149	PROP	LOC	Black Mesa
+414	6165	6165	PRON	PER	their
+415	6165	6166	NOM	FAC	their wells
+24	6169	6171	PROP	LOC	the Navajo aquifer
+416	6198	6201	NOM	FAC	the Black Mesa mine
+417	6205	6208	NOM	FAC	the Mohave Generating Station
+418	6221	6222	NOM	PER	settler environmentalists
+419	6229	6229	PRON	GPE	its
+420	6229	6232	NOM	FAC	its nearby Kayenta site
+148	6241	6241	PROP	PER	Peabody
+416	6249	6252	NOM	FAC	the Black Mesa mine
+228	6262	6262	NOM	PER	people
+423	6267	6268	NOM	PER	other critters
+424	6270	6272	NOM	FAC	The expanded operation
+31	6279	6281	PROP	LOC	the Coconino Aquifer
+425	6285	6288	NOM	FAC	the Kayenta strip mine
+426	6296	6301	NOM	FAC	the Navajo Generating Station ( ngs
+427	6304	6308	NOM	LOC	the Arizona - Utah border
+12	6305	6305	PROP	GPE	Arizona
+32	6307	6307	PROP	GPE	Utah
+33	6311	6313	PROP	LOC	Glen Canyon Dam
+428	6315	6316	NOM	FAC	the ngs
+429	6318	6327	NOM	FAC	the largest power - generating plant in the U.S. West
+34	6325	6327	PROP	LOC	the U.S. West
+430	6332	6334	NOM	FAC	the power station
+431	6339	6340	NOM	PER	no one
+432	6343	6346	NOM	FAC	half of Navajo homes
+433	6345	6346	NOM	FAC	Navajo homes
+434	6352	6354	NOM	GPE	the Navajo Nation
+435	6358	6359	NOM	FAC	the plant
+228	6370	6370	NOM	PER	people
+437	6375	6375	NOM	LOC	land
+438	6394	6395	NOM	PER	local residents
+434	6404	6406	NOM	GPE	the Navajo Nation
+149	6411	6412	PROP	PER	the Hopi
+434	6421	6423	NOM	GPE	the Navajo Nation
+149	6430	6430	PROP	PER	Hopi
+150	6432	6432	PROP	PER	Diné
+441	6435	6441	NOM	PER	the poorest citizens of the United States
+402	6439	6441	NOM	GPE	the United States
+151	6446	6446	PROP	PER	Bechtel
+443	6448	6456	NOM	FAC	the s on land leased from the Navajo Nation
+434	6454	6456	NOM	GPE	the Navajo Nation
+411	6458	6459	NOM	FAC	this plant
+446	6461	6469	NOM	FAC	the second - largest utility in the United States
+402	6467	6469	NOM	GPE	the United States
+448	6471	6478	NOM	PER	The largest owner of the Navajo Generating Station
+449	6475	6478	NOM	FAC	the Navajo Generating Station
+450	6480	6492	NOM	FAC	the federal government ’s Bureau of Reclamation in the Department of the Interior
+451	6481	6482	NOM	ORG	federal government
+452	6488	6492	NOM	GPE	the Department of the Interior
+35	6494	6496	PROP	ORG	the Bureau of
+453	6497	6498	NOM	GPE	Indian Affairs
+452	6502	6506	NOM	GPE	the Department of the Interior
+455	6512	6513	NOM	LOC	Native lands
+152	6517	6517	PROP	PER	Coyote
+456	6523	6525	NOM	FAC	the sheep corral
+457	6531	6534	NOM	FAC	Peabody ’s Kayenta mine
+402	6542	6544	NOM	GPE	the United States
+459	6552	6557	NOM	FAC	federal Mine Safety and Health Administration
+411	6559	6560	NOM	FAC	This plant
+461	6562	6589	NOM	FAC	the pumping stations that transfer the waters of the Colorado River through a -mile - long aqueduct to the always fast - growing cities of Tucson and Phoenix
+462	6567	6572	NOM	LOC	the waters of the Colorado River
+36	6570	6572	PROP	LOC	the Colorado River
+463	6574	6578	NOM	FAC	a -mile - long aqueduct
+464	6580	6589	NOM	GPE	the always fast - growing cities of Tucson and Phoenix
+37	6587	6587	PROP	GPE	Tucson
+38	6589	6589	PROP	GPE	Phoenix
+465	6608	6609	NOM	LOC	the desert
+428	6612	6613	NOM	FAC	the ngs
+467	6621	6626	NOM	FAC	a conventional coal - fired plant
+468	6630	6631	NOM	PER	Hopi ancestors
+468	6635	6635	PRON	PER	their
+22	6641	6642	PROP	GPE	Black Mesa
+150	6667	6667	PROP	PER	Diné
+469	6669	6670	NOM	PER	Hopi agriculturalists
+470	6672	6672	NOM	PER	herders
+22	6695	6696	PROP	GPE	Black Mesa
+471	6711	6712	NOM	ORG	transnational corporations
+472	6718	6719	NOM	PER	tribal councils
+473	6726	6739	NOM	PER	the great majority of tribal members or collective bodies ( kivas , chapters )
+474	6730	6731	NOM	PER	tribal members
+475	6736	6739	NOM	PER	kivas , chapters )
+476	6762	6789	NOM	PER	a lawyer and bishop of the Mormon church named John Boyden , who , without the Hopi ’s knowledge , worked simultaneously for Peabody and selected Hopi leaders
+477	6765	6769	NOM	PER	bishop of the Mormon church
+478	6767	6769	NOM	ORG	the Mormon church
+153	6771	6772	PROP	PER	John Boyden
+149	6777	6778	PROP	PER	the Hopi
+148	6785	6785	PROP	PER	Peabody
+479	6787	6789	NOM	PER	selected Hopi leaders
+149	6788	6788	PRON	PER	Hopi
+480	6791	6793	NOM	PER	Thousands of Navajo
+24	6793	6793	PROP	PER	Navajo
+22	6796	6797	PROP	LOC	Black Mesa
+481	6800	6807	NOM	PER	some of the most traditional among the Diné
+482	6806	6807	NOM	PER	the Diné
+483	6809	6812	NOM	ORG	The Navajo tribal council
+153	6818	6818	PROP	PER	Boyden
+153	6821	6821	PRON	PER	he
+484	6823	6825	NOM	PER	Hopi whose leaders
+485	6830	6833	NOM	PER	so - called traditionalists
+486	6835	6835	NOM	PER	progressives
+149	6842	6843	PROP	PER	the Hopi
+487	6845	6848	NOM	PER	no overall governing council
+153	6850	6850	PROP	PER	Boyden
+488	6862	6867	NOM	LOC	the land of Navajo sheep people
+489	6865	6867	NOM	PER	Navajo sheep people
+490	6874	6875	NOM	PER	the Hopi
+491	6882	6889	NOM	LOC	the land that would be strip - mined
+149	6891	6892	PROP	PER	Traditional Hopi
+153	6895	6895	PROP	PER	Boyden
+40	6905	6905	PROP	GPE	Washington
+153	6907	6907	PROP	PER	Boyden
+22	6922	6923	PROP	FAC	Black Mesa
+492	6922	6926	NOM	FAC	Black Mesa ’s coal bounty
+493	6936	6940	NOM	PER	the Native American Rights Fund
+494	6948	6953	NOM	FAC	a federal trust for the Hopi
+149	6952	6953	PROP	PER	the Hopi
+153	6958	6958	PROP	PER	Boyden
+153	6965	6965	PRON	PER	his
+495	6972	6973	NOM	PER	the tribe
+42	6977	6979	PROP	ORG	the U.S. Congress
+155	6987	6988	PROP	PER	John McCain
+496	6990	7002	NOM	PER	a man with close personal and family ties to mining and energy industries
+228	7033	7033	NOM	PER	people
+498	7043	7044	NOM	LOC	specific places
+228	7052	7052	NOM	PER	people
+500	7060	7060	PRON	PER	they
+500	7065	7065	PRON	PER	they
+500	7070	7070	PRON	PER	they
+501	7074	7076	NOM	ORG	the federal government
+502	7078	7080	NOM	LOC	a uraniumcontaminated site
+43	7082	7082	PROP	GPE	Chambers
+12	7084	7084	PROP	GPE	Arizona
+155	7096	7096	PROP	PER	McCain
+503	7098	7106	NOM	PER	then chairman of the Senate Committee on Indian Affairs
+504	7101	7106	NOM	ORG	the Senate Committee on Indian Affairs
+24	7115	7116	PROP	PER	The Navajo
+44	7119	7123	PROP	ORG	the United Nations High Commission
+505	7136	7137	NOM	PER	young activists
+149	7146	7146	PROP	GPE	Hopi
+24	7148	7148	PROP	GPE	Navajo
+149	7156	7156	PROP	GPE	Hopi
+24	7161	7161	PROP	GPE	Navajo
+22	7166	7167	PROP	GPE	Black Mesa
+0	7179	7179	PRON	PER	I
+22	7183	7184	PROP	GPE	Black Mesa
+24	7213	7214	PROP	PER	the Navajo
+228	7229	7229	NOM	PER	people
+507	7232	7238	NOM	LOC	this troubled world on the Colorado Plateau
+45	7236	7238	PROP	LOC	the Colorado Plateau
+508	7244	7254	NOM	FAC	four critical zones of the tussle between the Anthropocene and Capitalocene
+509	7269	7273	NOM	LOC	coral forests of the oceans
+510	7272	7273	NOM	LOC	the oceans
+511	7275	7283	NOM	LOC	diverse tropical forests of an island nation and ecosystem
+512	7279	7281	NOM	GPE	an island nation
+513	7287	7290	NOM	LOC	arctic lands and seas
+514	7298	7299	NOM	LOC	indigenous lands
+205	7340	7341	NOM	PER	each other
+280	7361	7363	NOM	GPE	a damaged planet
+516	7372	7372	NOM	PER	heroes
+517	7384	7390	NOM	FAC	Four Parts The Crochet Coral Reef In
+156	7392	7393	PROP	PER	Daina Taimina
+518	7395	7400	NOM	PER	a Latvian mathematician at Cornell University
+46	7399	7400	PROP	ORG	Cornell University
+522	7417	7417	PRON	PER	us
+518	7434	7434	PRON	PER	she
+157	7461	7462	PROP	PER	Christine Wertheim
+519	7464	7467	NOM	PER	a crafter and poet
+157	7471	7471	PRON	PER	her
+520	7471	7473	NOM	PER	her twin sister
+158	7474	7474	PROP	PER	Margaret
+521	7476	7479	NOM	PER	a mathematician and artist
+522	7482	7482	PRON	PER	We
+978	7485	7487	NOM	LOC	a coral reef
+522	7490	7490	PRON	PER	We
+523	7494	7496	NOM	LOC	the coral reefs
+524	7505	7506	NOM	PER	The sisters
+159	7517	7517	PROP	PER	Xena
+159	7520	7520	PRON	PER	her
+160	7522	7522	PROP	PER	Gabrielle
+161	7533	7534	PROP	PER	Lucy Lawless
+162	7536	7537	PROP	PER	Renee O’Connor
+524	7540	7540	PRON	PER	them
+525	7552	7554	NOM	PER	the twin sisters
+8	7556	7557	PROP	GPE	Los Angeles
+526	7566	7578	NOM	PER	about eight thousand people , mostly women , in twenty - seven countries
+527	7575	7578	NOM	GPE	twenty - seven countries
+47	7581	7581	PROP	GPE	Ireland
+48	7583	7583	PROP	GPE	Latvia
+528	7585	7588	NOM	GPE	the United Arab Emirates
+49	7590	7590	PROP	GPE	Australia
+402	7592	7594	NOM	GPE	the United States
+530	7596	7597	NOM	FAC	the UK
+50	7599	7599	PROP	GPE	Croatia
+531	7692	7692	NOM	PER	crafters
+531	7712	7712	PRON	PER	they
+532	7731	7733	NOM	LOC	the vulnerable reefs
+531	7771	7771	PRON	PER	their
+533	7771	7773	NOM	FAC	their reef habitats
+534	7798	7801	NOM	FAC	the Crochet Coral Reef
+535	7808	7814	NOM	FAC	the world ’s largest collaborative art project
+534	7820	7823	NOM	LOC	the crochet coral reef
+537	7841	7841	NOM	PER	women
+538	7879	7883	NOM	PER	the makers of the reef
+51	7976	7980	PROP	FAC	the Warhol Museum in Pittsburgh
+52	7980	7980	PROP	GPE	Pittsburgh
+539	7982	7985	NOM	FAC	the Chicago Cultural Center
+53	7996	7997	PROP	GPE	Abu Dhabi
+54	8008	8013	PROP	FAC	the Los Angeles Institute for Figuring
+163	8021	8022	PROP	PER	the Wertheims
+540	8021	8024	NOM	FAC	the Wertheims ’ home
+541	8029	8033	NOM	ORG	the Wertheims ’ nonprofit organization
+55	8035	8035	PROP	GPE	LA
+0	8080	8080	PRON	PER	I
+280	8087	8089	NOM	LOC	a damaged planet
+534	8094	8097	NOM	FAC	the Crochet Coral Reef
+228	8107	8107	NOM	PER	people
+6	8146	8147	PROP	LOC	the Chthulucene
+979	8160	8161	NOM	LOC	toxic reef
+980	8162	8188	NOM	PER	, ” “ bleached reef , ” “ coral forest , ” “ plastic midden , ” “ white spire garden , ” “ bleached bone reef
+981	8198	8200	NOM	LOC	coral forest medusa
+545	8222	8223	NOM	LOC	the world
+531	8229	8229	NOM	PER	Crafters
+547	8231	8233	NOM	FAC	fabulated healthy reefs
+0	8236	8236	PRON	PER	my
+0	8263	8263	PRON	PER	me
+158	8277	8277	PROP	PER	Margaret
+157	8279	8280	PROP	PER	Christine Wertheim
+56	8286	8286	PROP	GPE	Brisbane
+548	8286	8291	NOM	LOC	Brisbane near the Great Barrier Reef
+322	8288	8291	NOM	LOC	the Great Barrier Reef
+550	8303	8307	NOM	PER	the thousands of reef crafters
+551	8306	8307	NOM	PER	reef crafters
+158	8316	8317	PROP	PER	Margaret Wertheim
+552	8319	8321	NOM	PER	a science writer
+553	8323	8323	NOM	PER	curator
+554	8326	8326	NOM	PER	artist
+158	8328	8328	PRON	PER	She
+158	8340	8340	PRON	PER	Her
+982	8344	8348	NOM	FAC	The Beautiful Math of Coral
+555	8355	8357	NOM	PER	a million people
+157	8369	8370	PROP	PER	Christine Wertheim
+556	8372	8373	NOM	PER	a poet
+557	8375	8375	NOM	PER	performer
+554	8377	8377	NOM	PER	artist
+559	8379	8379	NOM	PER	critic
+553	8381	8381	NOM	PER	curator
+561	8383	8383	NOM	PER	crafter
+562	8386	8386	NOM	PER	teacher
+157	8388	8388	PRON	PER	She
+157	8391	8391	PRON	PER	her
+563	8412	8414	NOM	PER	these twin sisters
+205	8422	8423	NOM	PER	each other
+565	8425	8433	NOM	PER	anyone who comes into contact with their fibrous critters
+563	8431	8431	PRON	PER	their
+531	8438	8438	NOM	PER	crafters
+510	8451	8452	NOM	LOC	the oceans
+568	8465	8466	NOM	LOC	the reefs
+569	8476	8477	NOM	PER	the crafters
+570	8567	8569	NOM	FAC	The crochet reef
+571	8607	8608	NOM	LOC	the reef
+572	8610	8610	PRON	PER	we
+573	8612	8613	NOM	PER	all corals
+574	8622	8624	NOM	PER	the Wertheim sisters
+370	8626	8628	NOM	LOC	coral reef worlds
+0	8630	8630	PRON	PER	I
+534	8636	8639	NOM	FAC	the Crochet Coral Reef
+577	8651	8652	NOM	LOC	the ocean
+578	8654	8655	NOM	LOC	the beach
+579	8658	8658	PRON	PER	their
+579	8662	8662	PRON	PER	their
+580	8667	8668	NOM	GPE	eighty countries
+581	8681	8687	NOM	LOC	the tropical and subtropical belt of earth
+577	8697	8698	NOM	LOC	the ocean
+57	8700	8703	PROP	LOC	the Great Barrier Reef
+49	8705	8705	PROP	GPE	Australia
+58	8707	8715	PROP	FAC	the Regional Chamber of the Rights of Nature Tribunal
+59	8718	8720	PROP	GPE	Far North Queensland
+60	8732	8733	PROP	LOC	Raine Island
+57	8735	8738	PROP	LOC	the Great Barrier Reef
+297	8751	8752	NOM	LOC	the earth
+584	8755	8756	NOM	PER	The tribunal
+585	8760	8761	NOM	PER	Aboriginal witnesses
+571	8766	8767	NOM	FAC	the reef
+61	8771	8778	PROP	FAC	the International Tribunal for the Rights of Nature
+62	8785	8785	PROP	GPE	Paris
+587	8794	8801	NOM	PER	Aboriginal witnesses on the care of decolonizing Country
+285	8806	8806	NOM	PER	scientists
+589	8808	8811	NOM	PER	denizens of the Chthulucene
+590	8813	8816	NOM	PER	diverse environmental justice activists
+591	8819	8822	NOM	PER	international art science crafters
+592	8834	8837	NOM	ORG	The Madagascar Ako Project
+593	8839	8842	NOM	PER	a Yale graduate student
+594	8851	8854	NOM	FAC	the Berenty Primate Reserve
+164	8856	8857	PROP	PER	Alison Jolly
+164	8865	8865	PRON	PER	her
+595	8881	8883	NOM	LOC	the spiny forest
+596	8889	8893	NOM	LOC	the south of the island
+597	8892	8893	NOM	LOC	the island
+598	8899	8908	NOM	PER	this young six - foot - tall American white woman
+599	8910	8919	NOM	PER	a lover and seeker of knowledge and well - being
+600	8923	8926	NOM	PER	the beings of Madagascar
+9	8926	8926	PROP	GPE	Madagascar
+601	8935	8946	NOM	LOC	the radically different forest ecosystems the length and breadth of the island
+597	8945	8946	NOM	LOC	the island
+369	8949	8950	NOM	LOC	the land
+604	8955	8955	NOM	PER	peoples
+605	8967	8971	NOM	PER	numerous study and conservation teams
+164	8973	8973	PROP	PER	Jolly
+164	8977	8977	PRON	PER	Her
+164	9000	9000	PROP	PER	Jolly
+164	9001	9001	PRON	PER	herself
+164	9009	9009	PRON	PER	she
+606	9025	9026	NOM	GPE	vulnerable Malagasy
+164	9034	9034	PRON	PER	her
+0	9036	9036	PRON	PER	I
+164	9044	9044	PRON	PER	her
+164	9047	9047	PROP	PER	Jolly
+164	9055	9055	PRON	PER	her
+607	9059	9061	NOM	PER	the rural people
+608	9067	9068	NOM	LOC	the forests
+164	9078	9078	PRON	PER	her
+609	9078	9080	NOM	PER	her beloved prosimians
+609	9083	9083	PRON	PER	their
+610	9083	9085	NOM	PER	their forest partners
+164	9090	9090	PRON	PER	she
+164	9092	9092	PRON	PER	she
+611	9100	9127	NOM	PER	a guest who might reciprocate appropriately , and at worst another in a long line of colonizers , always taking land and giving advice for the best reasons
+612	9112	9116	NOM	PER	a long line of colonizers
+613	9135	9136	NOM	PER	shifting cultivators
+614	9142	9143	NOM	LOC	the forest
+164	9145	9145	PRON	PER	she
+608	9163	9164	NOM	LOC	the forests
+608	9168	9168	PRON	PER	their
+616	9172	9198	NOM	PER	the people who need them not just for their products ( including lemurs for food ) , but to sustain fertility in phosphorous - poor tropical soils
+608	9176	9176	PRON	PER	them
+608	9180	9180	PRON	PER	their
+617	9197	9198	NOM	LOC	tropical soils
+164	9200	9200	PRON	PER	She
+618	9221	9225	NOM	FAC	old stands in Ranomafana Park
+63	9224	9225	PROP	GPE	Ranomafana Park
+164	9229	9229	PRON	PER	she
+164	9242	9242	PROP	PER	Jolly
+608	9256	9257	NOM	LOC	the forests
+164	9301	9301	PRON	PER	She
+620	9305	9306	NOM	PER	local people
+621	9316	9317	NOM	PER	visiting experts
+622	9320	9321	NOM	PER	the experts
+623	9323	9325	NOM	PER	visiting research scientists
+624	9357	9376	NOM	PER	villagers of the failed projects of usually well intentioned but often ignorant foreign scientists and both local and foreign ngos
+164	9378	9378	PRON	PER	She
+625	9386	9387	NOM	PER	real colleagues
+626	9389	9389	NOM	PER	friends
+9	9393	9393	PROP	GPE	Madagascar
+627	9410	9412	NOM	PER	many important people
+0	9415	9415	PRON	PER	I
+64	9438	9438	PROP	GPE	Malagasy
+628	9443	9445	NOM	FAC	the Ako Project
+629	9451	9454	NOM	PER	a young Malagasy lemur
+630	9462	9468	NOM	PER	the tiny mouse lemur or ny tsididy
+631	9471	9479	NOM	PER	the queer fingered aye - aye or ny aiay
+165	9485	9486	PROP	PER	ilay babakoto
+629	9522	9522	PRON	PER	their
+629	9526	9526	PRON	PER	their
+632	9526	9527	NOM	PER	their groups
+629	9544	9544	PRON	PER	their
+633	9551	9551	NOM	PER	teachers
+64	9555	9555	PROP	GPE	Malagasy
+634	9561	9570	NOM	LOC	the unique regions of Madagascar where the stories take place
+9	9565	9565	PROP	GPE	Madagascar
+635	9591	9591	NOM	PER	children
+267	9594	9594	NOM	PER	adults
+635	9607	9607	PRON	PER	their
+637	9607	9609	NOM	GPE	their own nation
+638	9612	9612	NOM	GPE	region
+639	9614	9615	NOM	GPE	Most Malagasy
+369	9621	9622	NOM	LOC	the land
+641	9632	9641	NOM	PER	Those privileged enough to go to a school with books
+642	9638	9641	NOM	FAC	a school with books
+164	9650	9651	PROP	PER	Alison Jolly
+0	9653	9653	PRON	PER	me
+0	9660	9660	PRON	PER	I
+164	9662	9662	PRON	PER	her
+643	9667	9668	NOM	GPE	Many villages
+644	9672	9672	NOM	FAC	schools
+635	9679	9679	NOM	PER	children
+646	9696	9699	NOM	PER	most of the population
+647	9698	9699	NOM	PER	the population
+648	9704	9705	NOM	FAC	rural schools
+649	9711	9713	NOM	PER	most rural children
+650	9717	9718	NOM	PER	community teachers
+651	9731	9733	NOM	PER	very poor families
+652	9752	9754	NOM	FAC	the starved schools
+164	9760	9760	PROP	PER	Jolly
+166	9770	9771	PROP	PER	Deborah Ross
+164	9773	9773	PRON	PER	she
+653	9775	9776	NOM	PER	the artist
+653	9778	9778	PRON	PER	she
+653	9781	9781	PRON	PER	her
+654	9781	9782	NOM	PER	her children
+166	9788	9788	PROP	PER	Ross
+164	9792	9792	PROP	PER	Jolly
+164	9795	9795	PRON	PER	her
+655	9795	9797	NOM	PER	her old friend
+656	9799	9803	NOM	PER	the lemur biologist Hantanirina Rasamimanana
+167	9802	9803	PROP	PER	Hantanirina Rasamimanana
+657	9805	9805	PRON	PER	They
+658	9829	9831	NOM	FAC	the school bureaucracies
+628	9833	9835	NOM	ORG	the Ako Project
+9	9845	9845	PROP	GPE	Madagascar
+64	9847	9848	PROP	LOC	the Malagasy
+66	9850	9852	PROP	FAC	The Ako Project
+164	9866	9867	PROP	PER	Alison Jolly
+168	9869	9870	PROP	PER	Hanta Rasamimanana
+660	9872	9877	NOM	PER	a scientist seventeen years her junior
+164	9876	9876	PRON	PER	her
+657	9879	9879	PRON	PER	They
+661	9882	9882	NOM	PER	mothers
+662	9895	9898	NOM	PER	lovers of Malagasy people
+663	9919	9921	NOM	GPE	the capital city
+664	9923	9936	NOM	PER	part of the generation sponsored by the Soviet Union under Didier Ratsiraka ’s socialism
+665	9929	9931	NOM	GPE	the Soviet Union
+169	9933	9934	PROP	PER	Didier Ratsiraka
+168	9938	9938	PROP	PER	Rasamimanana
+67	9944	9948	PROP	FAC	the Veterinary Academy in Moscow
+68	9948	9948	PROP	GPE	Moscow
+164	9950	9950	PRON	PER	She
+69	9955	9961	PROP	FAC	the Muséum National d’Histoire Naturelle in Paris
+62	9961	9961	PROP	GPE	Paris
+164	9964	9964	PRON	PER	she
+666	9966	9967	NOM	PER	a master
+164	9973	9973	PRON	PER	She
+70	9982	9986	PROP	FAC	l’École Normale Supérieure of Antananarivo
+71	9986	9986	PROP	GPE	Antananarivo
+168	9991	9991	PROP	PER	Rasamimanana
+657	10009	10009	PRON	PER	their
+164	10017	10017	PRON	PER	Her
+667	10020	10024	NOM	ORG	the scientific academy of Madagascar
+9	10024	10024	PROP	GPE	Madagascar
+164	10030	10030	PRON	PER	she
+72	10041	10041	PROP	GPE	Mahajanga
+668	10043	10044	NOM	GPE	the Comoros
+669	10046	10052	NOM	PER	An adviser on the Madagascar National Curriculum
+164	10054	10054	PRON	PER	she
+670	10064	10066	NOM	PER	the Malagasy teacher
+164	10072	10072	PRON	PER	she
+671	10075	10076	NOM	LOC	rural areas
+168	10083	10083	PROP	PER	Rasamimanana
+73	10097	10105	PROP	FAC	the Centre ValBio Research Campus in Ranomafana National Park
+74	10103	10105	PROP	LOC	Ranomafana National Park
+164	10108	10109	PROP	PER	Alison Jolly
+672	10108	10111	NOM	PER	Alison Jolly ’s friend
+170	10114	10115	PROP	PER	Patricia Wright
+9	10131	10131	PROP	GPE	Madagascar
+673	10134	10135	NOM	PER	Malagasy scientists
+674	10139	10143	NOM	PER	the two hundred participants in
+9	10146	10146	PROP	GPE	Madagascar
+675	10150	10153	NOM	PER	the two hundred present
+676	10155	10155	NOM	PER	students
+677	10157	10180	NOM	PER	the core of the next generation of scientists dedicated to holding open space and time for lemurs and their associates in vulnerable forest webs
+678	10175	10175	PRON	PER	their
+679	10175	10176	NOM	PER	their associates
+680	10178	10180	NOM	LOC	vulnerable forest webs
+164	10184	10184	PRON	PER	her
+164	10189	10189	PRON	PER	her
+164	10192	10192	PROP	PER	Jolly
+681	10212	10212	PRON	PER	their
+681	10219	10219	PRON	PER	their
+983	10239	10239	NOM	PER	anyone
+984	10259	10259	NOM	PER	foreigners
+681	10264	10264	PRON	PER	their
+682	10269	10272	NOM	PER	book and poster artists
+336	10275	10276	NOM	PER	the scientists
+164	10279	10279	PROP	PER	Jolly
+168	10281	10281	PROP	PER	Rasamimanana
+545	10287	10288	NOM	LOC	the world
+681	10295	10295	PRON	PER	their
+9	10303	10303	PROP	GPE	Madagascar
+9	10305	10305	PRON	GPE	its
+681	10309	10309	PRON	PER	they
+685	10315	10316	NOM	PER	Malagasy naturalists
+285	10318	10318	NOM	PER	scientists
+687	10321	10322	NOM	PER	small children
+688	10324	10326	NOM	PER	field station guides
+689	10331	10332	NOM	PER	university students
+164	10341	10341	PROP	PER	Jolly
+168	10343	10343	PROP	PER	Rasamimanana
+280	10355	10357	NOM	LOC	a damaged planet
+0	10362	10362	PRON	PER	My
+280	10372	10374	NOM	LOC	a damaged planet
+692	10389	10390	NOM	PER	indigenous peoples
+697	10406	10406	PRON	PER	they
+693	10429	10433	NOM	PER	Indigenous peoples around the earth
+297	10432	10433	NOM	LOC	the earth
+695	10468	10468	NOM	FAC	home
+604	10489	10489	NOM	PER	peoples
+697	10557	10557	PRON	PER	their
+698	10557	10558	NOM	PER	their designers
+699	10560	10561	NOM	PER	indigenous storytellers
+700	10563	10564	NOM	PER	visual artists
+701	10566	10566	NOM	PER	carvers
+702	10568	10569	NOM	PER	puppet makers
+703	10571	10574	NOM	PER	digital - savvy youngsters
+704	10577	10578	NOM	PER	community activists
+0	10589	10589	PRON	PER	I
+604	10643	10643	NOM	PER	peoples
+706	10645	10649	NOM	PER	entities that seem permanently undead
+4	10681	10682	PROP	LOC	the Anthropocene
+6	10695	10696	PROP	LOC	the Chthulucene
+75	10701	10701	PROP	GPE	Sila
+0	10740	10740	PRON	PER	I
+0	10755	10755	PRON	PER	my
+76	10783	10783	PROP	GPE	Inupiaq
+707	10811	10811	NOM	PER	storytellers
+707	10815	10815	PRON	PER	them
+708	10836	10840	NOM	PER	raiders , academic or otherwise
+709	10854	10858	NOM	LOC	native places for native audiences
+710	10857	10858	NOM	PER	native audiences
+711	10864	10865	NOM	GPE	a reservation
+77	10888	10889	PROP	LOC	Kisima Ingitchuna
+10	10899	10900	PROP	PER	the Inupiat
+985	10902	10905	NOM	PER	an Alaska Native people
+986	10909	10912	NOM	PER	a young Inupiat girl
+987	10918	10918	PRON	PER	they
+987	10935	10935	PRON	PER	they
+431	10941	10942	NOM	PER	No one
+172	10962	10962	PROP	PER	Anglophones
+713	10967	10969	NOM	LOC	the spirit world
+714	10971	10972	NOM	PER	The girl
+173	10973	10973	PROP	PER	Nuna
+280	10990	10992	NOM	LOC	a damaged planet
+147	10994	10995	PROP	PER	Anna Tsing
+174	11011	11013	PROP	PER	Ursula Le Guin
+716	11019	11020	NOM	PER	Game makers
+717	11037	11040	NOM	PER	Makers of Never Alone
+77	11042	11043	PROP	PER	Kisima Ingitchuna
+176	11046	11047	PROP	PER	Gloria O’Neill
+718	11049	11059	NOM	PER	the president and chief executive of the Cook Inlet Tribal Council
+719	11061	11070	NOM	PER	dozens of advisers and elders from the Alaska Native community
+720	11063	11063	NOM	PER	advisers
+721	11067	11070	NOM	PER	the Alaska Native community
+177	11072	11073	PROP	PER	Alan Gershenfeld
+722	11075	11080	NOM	PER	cofounder of E - line Media
+723	11082	11086	NOM	PER	E - Line creative director
+178	11087	11088	PROP	PER	Sean Vesce
+724	11090	11092	NOM	PER	the design team
+725	11090	11096	NOM	FAC	the design team ’s studio in Seattle
+78	11096	11096	PROP	GPE	Seattle
+726	11098	11101	NOM	PER	young and old people
+727	11114	11115	NOM	LOC	the lands
+728	11117	11117	NOM	LOC	waters
+726	11119	11119	PRON	PER	their
+729	11122	11127	NOM	PER	other - than - human beings
+176	11130	11130	PROP	PER	O’Neill
+731	11132	11132	PRON	PER	she
+988	11143	11144	NOM	PER	the council
+989	11147	11151	NOM	PER	a codeveloper in the process
+990	11155	11172	NOM	PER	no Native American group had ever played such a role in the history of the video game industry
+730	11191	11193	NOM	PER	most modernist people
+731	11206	11208	NOM	PER	The girl Nuna
+731	11210	11210	PRON	PER	her
+732	11210	11213	NOM	PER	her arctic fox companion
+733	11216	11218	NOM	GPE	the home village
+734	11233	11234	NOM	PER	the people
+369	11236	11237	NOM	LOC	the land
+205	11240	11241	NOM	PER	each other
+737	11243	11243	NOM	PER	girl
+738	11302	11304	NOM	PER	multiple spirit helpers
+739	11332	11333	NOM	PER	spirit helpers
+740	11336	11339	NOM	PER	biocultural girls and foxes
+741	11362	11385	NOM	PER	Brazilian Amerindian hunters , with whom he learned to theorize the radical conceptual realignment he called multinaturalism and perspectivism , Eduardo Viveiros de Castro
+742	11368	11368	PRON	PER	he
+742	11376	11376	PRON	PER	he
+179	11382	11385	PROP	PER	Eduardo Viveiros de Castro
+0	11399	11399	PRON	PER	I
+361	11404	11406	NOM	PER	people like me
+0	11406	11406	PRON	PER	me
+744	11409	11409	NOM	PER	kids
+0	11475	11475	PRON	PER	I
+6	11522	11523	PROP	LOC	the Chthulucene
+230	11565	11565	NOM	PER	one
+0	11599	11599	PRON	PER	I
+739	11604	11605	NOM	PER	spirit helpers
+739	11607	11607	PRON	PER	their
+747	11607	11608	NOM	PER	their kin
+748	11620	11620	NOM	PER	visitors
+749	11637	11641	NOM	PER	the unwilling heirs of colonizers
+750	11641	11641	NOM	PER	colonizers
+751	11655	11657	NOM	PER	many contemporary Inuit
+752	11660	11664	NOM	PER	those committed to cultural renewal
+751	11671	11671	PRON	PER	their
+753	11690	11690	NOM	PER	everybody
+754	11711	11714	NOM	PER	Navajo - Churro Sheep
+180	11716	11718	PROP	PER	Hózhó Black Mesa
+755	11733	11733	PRON	PER	they
+755	11739	11739	PRON	PER	they
+0	11744	11744	PRON	PER	my
+0	11754	11754	PRON	PER	I
+534	11760	11763	NOM	FAC	the Crochet Coral Reef
+434	11774	11776	NOM	GPE	the Navajo Nation
+0	11779	11779	PRON	PER	I
+758	11782	11786	NOM	PER	the weavers of Black Mesa
+22	11785	11786	PROP	LOC	Black Mesa
+758	11788	11788	PRON	PER	their
+758	11792	11792	PRON	PER	their
+24	11804	11804	PROP	PER	Navajo
+79	11819	11822	PROP	LOC	the Crochet Coral Reef
+991	11883	11885	NOM	PER	traditional . ”
+534	11887	11890	NOM	FAC	the Crochet Coral Reef
+228	11904	11904	NOM	PER	people
+534	11927	11930	NOM	FAC	the Crochet Coral Reef
+534	11948	11951	NOM	FAC	the Crochet Coral Reef
+79	11976	11979	PROP	LOC	the Crochet Coral Reef
+24	11981	11981	PROP	GPE	Navajo
+537	11987	11987	NOM	PER	women
+764	11990	11990	NOM	PER	men
+765	11997	11999	NOM	PER	thinkers / makers
+534	12002	12005	NOM	FAC	the Crochet Coral Reef
+537	12023	12023	NOM	PER	women
+57	12094	12097	PROP	LOC	the Great Barrier Reef
+22	12099	12100	PROP	LOC	Black Mesa
+768	12126	12127	NOM	PER	a weaver
+768	12133	12133	PRON	PER	me
+768	12145	12145	PRON	PER	me
+0	12158	12158	PRON	PER	me
+0	12202	12202	PRON	PER	I
+545	12212	12213	NOM	LOC	the world
+545	12224	12225	NOM	LOC	the world
+545	12235	12236	NOM	LOC	the world
+152	12249	12249	PROP	PER	Coyote
+772	12273	12274	NOM	PER	the person
+734	12281	12282	NOM	PER	the People
+150	12285	12286	PROP	PER	the Diné
+150	12301	12301	PRON	PER	their
+774	12408	12410	NOM	PER	a particular woman
+774	12413	12413	PRON	PER	her
+775	12420	12424	NOM	PER	knowledgeable members of the community
+244	12423	12424	NOM	PER	the community
+777	12428	12428	NOM	PER	weavers
+777	12430	12430	NOM	PER	weavers
+779	12471	12472	NOM	PER	Changing Woman
+780	12474	12476	NOM	PER	the Holy Twins
+181	12478	12479	PROP	PER	Spider Woman
+781	12482	12488	NOM	PER	the other world - making Holy People
+782	12528	12528	NOM	PER	humans
+80	12555	12556	PROP	LOC	the Americas
+182	12558	12559	PROP	PER	the Spanish
+783	12567	12568	NOM	PER	Navajo herders
+784	12595	12603	NOM	LOC	the lands of Diné bikéyah on the Colorado Plateau
+45	12601	12603	PROP	LOC	the Colorado Plateau
+24	12610	12610	PROP	PER	Navajo
+785	12642	12643	NOM	PER	Churro sheep
+482	12654	12655	NOM	PER	The Diné
+787	12663	12664	NOM	PER	U.S. officials
+787	12667	12667	PRON	PER	their
+183	12682	12683	PROP	PER	Kit Carson
+81	12685	12688	PROP	ORG	the U.S. War Department
+788	12695	12717	NOM	PER	all the People who could be forcibly rounded up from Dinetah and marched for hundreds of miles to Bosque Redondo in New Mexico
+82	12705	12705	PROP	GPE	Dinetah
+83	12713	12714	PROP	GPE	Bosque Redondo
+84	12716	12717	PROP	GPE	New Mexico
+184	12719	12720	PROP	PER	The Hwéeldi
+183	12729	12729	PROP	PER	Carson
+24	12731	12732	PROP	PER	the Navajo
+24	12736	12736	PROP	PER	Navajo
+85	12751	12752	PROP	LOC	the Southwest
+789	12758	12761	NOM	PER	Spanish - introduced stock
+790	12772	12773	NOM	FAC	peach orchards
+228	12780	12780	NOM	PER	people
+86	12782	12783	PROP	GPE	Fort Sumner
+83	12785	12786	PROP	GPE	Bosque Redondo
+792	12797	12797	NOM	PER	officials
+793	12801	12804	NOM	PER	an unruly mobile population
+794	12828	12830	NOM	FAC	a prison camp
+787	12837	12837	PRON	PER	their
+795	12837	12838	NOM	LOC	their lands
+228	12850	12850	NOM	PER	people
+185	12863	12864	PROP	PER	Toni Morrison
+185	12867	12867	PRON	PER	her
+150	12871	12872	PROP	PER	The Diné
+797	12875	12876	NOM	GPE	the Navajo
+798	12875	12881	NOM	FAC	the Navajo reservation on the Colorado Plateau
+45	12879	12881	PROP	LOC	the Colorado Plateau
+799	12890	12916	NOM	PER	people who escaped Kit Carson ’s soldiers in the deep canyons and remote areas of Dinetah , including Big Mountain / Dzil ni Staa / Black Mesa
+183	12893	12894	PROP	PER	Kit Carson
+800	12898	12905	NOM	LOC	the deep canyons and remote areas of Dinetah
+82	12905	12905	PROP	GPE	Dinetah
+23	12908	12909	PROP	GPE	Big Mountain
+88	12911	12916	PROP	GPE	Dzil ni Staa / Black Mesa
+801	12918	12922	NOM	LOC	The boundaries of the reservation
+802	12921	12922	NOM	GPE	the reservation
+803	12935	12937	NOM	ORG	the U.S. government
+83	12943	12944	PROP	GPE	Bosque Redondo
+804	12956	12958	NOM	PER	the human population
+24	13003	13004	PROP	PER	the Navajo
+805	13019	13020	NOM	PER	The traders
+806	13033	13034	NOM	PER	the women
+805	13039	13039	PRON	PER	they
+807	13051	13052	NOM	PER	federal agents
+808	13054	13057	NOM	PER	most of the Diné
+482	13056	13057	NOM	PER	the Diné
+810	13067	13073	NOM	PER	merinos and other “ improved ” breeds
+186	13075	13075	PROP	PER	Sheep
+811	13096	13099	NOM	PER	clan and gender relationships
+812	13101	13102	NOM	PER	The animals
+734	13104	13105	NOM	PER	the people
+186	13110	13110	PROP	PER	Sheep
+537	13117	13117	NOM	PER	women
+537	13124	13124	PRON	PER	their
+815	13124	13125	NOM	PER	their families
+537	13131	13131	PRON	PER	their
+816	13134	13135	NOM	PER	the clans
+817	13164	13164	NOM	PER	whites
+187	13166	13166	PROP	PER	Navajos
+803	13173	13175	NOM	ORG	the U.S. government
+754	13178	13181	NOM	PER	Navajo - Churro sheep
+369	13213	13214	NOM	LOC	the land
+228	13219	13219	NOM	PER	people
+822	13254	13256	NOM	PER	U.S. military men
+823	13269	13281	NOM	PER	U.S. progressive agricultural authorities within the ideology and apparatus of the New Deal
+824	13283	13284	NOM	PER	These officials
+825	13299	13302	NOM	PER	male - headed households
+826	13305	13306	NOM	PER	the modernizers
+827	13339	13340	NOM	LOC	Navajo lands
+828	13354	13360	NOM	PER	government scientists in the Department of Agriculture
+89	13357	13360	PROP	ORG	the Department of Agriculture
+806	13367	13368	NOM	PER	the women
+830	13379	13379	NOM	PER	families
+831	13381	13383	NOM	PER	White - settler
+545	13386	13387	NOM	LOC	the world
+833	13408	13418	NOM	PER	scientific specialists who could not systematically think even with each other
+783	13423	13424	NOM	PER	Navajo herders
+777	13426	13426	NOM	PER	weavers
+792	13430	13430	NOM	PER	officials
+754	13444	13444	PRON	PER	their
+385	13444	13445	NOM	PER	their people
+754	13455	13455	PRON	PER	their
+838	13455	13457	NOM	PER	their human families
+228	13478	13478	NOM	PER	people
+228	13490	13490	PRON	PER	their
+437	13521	13521	NOM	LOC	land
+841	13540	13540	NOM	PER	households
+842	13546	13547	NOM	PER	married women
+228	13560	13560	PRON	PER	their
+205	13568	13569	NOM	PER	each other
+844	13580	13582	NOM	LOC	Land Management Units
+845	13627	13629	NOM	PER	the whole people
+846	13664	13666	NOM	PER	people in hózhó
+847	13676	13678	NOM	LOC	the Colorado Plateau
+90	13705	13706	PROP	GPE	Navajo Nation
+848	13827	13828	NOM	PER	either people
+150	13890	13891	PROP	PER	the Diné
+482	13950	13951	NOM	PER	the Diné
+482	13953	13953	PRON	PER	their
+850	13953	13954	NOM	PER	their allies
+24	13971	13971	PROP	GPE	Navajo
+802	13987	13988	NOM	LOC	the reservation
+852	13990	13995	NOM	PER	The traditional Diné of Black Mesa
+22	13994	13995	PROP	GPE	Black Mesa
+232	13997	13997	NOM	PER	others
+852	14002	14002	PRON	PER	they
+854	14013	14032	NOM	PER	a research population studied from to at the Southwest Range and Sheep Breeding Laboratory at Fort Wingate , New Mexico
+91	14020	14022	PROP	LOC	the Southwest Range
+92	14024	14032	PROP	FAC	Sheep Breeding Laboratory at Fort Wingate , New Mexico
+84	14031	14032	PROP	GPE	New Mexico
+855	14048	14071	NOM	PER	a rancher in Gonzales , California , who used them in a shoot - in - a - barrel safari enterprise for Hollywood notables
+93	14051	14051	PROP	GPE	Gonzales
+94	14053	14053	PROP	GPE	California
+856	14057	14057	PRON	PER	them
+857	14070	14071	NOM	PER	Hollywood notables
+856	14074	14074	PRON	PER	their
+858	14090	14091	NOM	LOC	scrubby pasture
+859	14112	14113	NOM	PER	hunting fantasists
+856	14118	14118	PRON	PER	them
+783	14132	14133	NOM	PER	Navajo herders
+777	14135	14135	NOM	PER	weavers
+862	14137	14143	NOM	PER	an Anglo scientist committed to Churro sheep
+856	14145	14145	PRON	PER	their
+385	14145	14146	NOM	PER	their people
+864	14148	14151	NOM	PER	Navajo and Anglo students
+865	14153	14156	NOM	PER	Hispanic and Anglo ranchers
+866	14160	14187	NOM	PER	Rarámuri Indians of the Sierra Madre Occidental of northern Mexico , who interbred Churro from the Navajo Sheep Project with their own rough sheep to recover genetic diversity
+867	14163	14169	NOM	GPE	the Sierra Madre Occidental of northern Mexico
+150	14173	14173	PROP	PER	Churro
+95	14175	14178	PROP	FAC	the Navajo Sheep Project
+856	14180	14180	PRON	PER	their
+868	14189	14192	NOM	FAC	activists on Black Mesa
+22	14191	14192	PROP	GPE	Black Mesa
+869	14199	14200	NOM	FAC	these crossroads
+870	14204	14205	NOM	PER	Diné herders
+188	14216	14217	PROP	PER	Buster Naegle
+871	14223	14231	NOM	FAC	the ranch in Gonzales in to raise paint horses
+93	14226	14226	PROP	GPE	Gonzales
+189	14243	14244	PROP	PER	Lyle McNeal
+872	14246	14248	NOM	PER	an animal scientist
+96	14251	14255	PROP	GPE	Cal Poly San Luis Obispo
+189	14267	14267	PROP	PER	McNeal
+95	14269	14272	PROP	FAC	the Navajo Sheep Project
+97	14278	14280	PROP	FAC	Navajo - Churro
+873	14290	14299	NOM	PER	many actors and full of obstacles as well as successes
+802	14304	14305	NOM	LOC	the reservation
+875	14307	14307	PRON	PER	Diné
+189	14315	14316	PROP	PER	Lyle McNeal
+189	14325	14325	PRON	PER	his
+98	14334	14334	PROP	GPE	Resistance
+876	14334	14337	NOM	LOC	Resistance on Black Mesa
+22	14336	14337	PROP	GPE	Black Mesa
+189	14340	14340	PRON	PER	his
+877	14350	14351	NOM	GPE	four states
+878	14370	14399	PROP	PER	Diné Churro sheep herders and weavers including Glenna Begay , Lena Nez , and others , Carol Halberstadt , a poet , activist , and lover of wool from Massachusetts
+470	14373	14373	NOM	PER	herders
+777	14375	14375	NOM	PER	weavers
+150	14377	14378	PROP	PER	Glenna Begay
+150	14380	14381	PROP	PER	Lena Nez
+232	14384	14384	NOM	PER	others
+150	14386	14387	PROP	PER	Carol Halberstadt
+556	14389	14390	NOM	PER	a poet
+883	14392	14392	NOM	PER	activist
+99	14399	14399	PROP	GPE	Massachusetts
+100	14423	14425	PROP	GPE	Black Mesa Diné
+101	14446	14448	PROP	FAC	the Diné College
+102	14450	14450	PROP	GPE	Tsaile
+12	14452	14452	PROP	GPE	Arizona
+103	14460	14462	PROP	FAC	The Navajo Lifeway
+884	14468	14476	NOM	PER	community - based partnerships to restore economy and culture
+885	14478	14479	NOM	FAC	The college
+104	14481	14487	PROP	FAC	the Dibé be’iína / Sheep Is Life
+150	14492	14492	PROP	PER	Churro
+886	14510	14511	NOM	FAC	boarding schools
+887	14522	14523	NOM	PER	the young
+888	14531	14539	NOM	PER	Kosher Navajo - Churro sheep jerky , guard llamas
+889	14541	14545	NOM	PER	the American Livestock Breeds Conservancy
+890	14547	14552	NOM	PER	the Navajo - Churro Sheep Association
+891	14554	14563	NOM	FAC	the Agricultural Research Service National Center for Genetic Resources Preservation
+105	14565	14570	PROP	FAC	the Slow Food Foundation for Biodiversity
+106	14572	14576	PROP	FAC	Two Grey Hills Trading Post
+107	14578	14582	PROP	FAC	the Teec Nos Pos Chapter
+107	14584	14584	PRON	GPE	its
+892	14584	14589	NOM	FAC	its regional wool - processing facility
+893	14591	14598	NOM	FAC	the Ganados del Valle Hispanic agricultural development corporation
+108	14600	14605	PROP	FAC	Tierra Wool and Los Ojos Handweavers
+109	14612	14613	PROP	LOC	Heifer International
+894	14624	14626	NOM	PER	the sheep themselves
+894	14640	14640	PRON	PER	they
+894	14646	14646	PRON	PER	they
+894	14648	14648	PRON	PER	their
+385	14648	14649	NOM	PER	their people
+894	14651	14651	PRON	PER	their
+896	14651	14652	NOM	LOC	their land
+897	14672	14674	NOM	PER	ordinary human beings
+728	14680	14680	NOM	LOC	waters
+899	14685	14686	NOM	PER	The critters
+900	14693	14693	NOM	GPE	country
+782	14703	14703	NOM	PER	humans
+902	14705	14705	NOM	PER	nonhumans
+903	14713	14713	NOM	PER	beings
+903	14715	14715	NOM	PER	beings
+22	14723	14724	PROP	LOC	Black Mesa
+905	14731	14744	NOM	PER	the activists — the thinkers / makers — of the Black Mesa Water Coalition
+906	14734	14737	NOM	PER	the thinkers / makers
+907	14740	14743	NOM	GPE	the Black Mesa Water
+110	14744	14744	PROP	ORG	Coalition
+908	14750	14759	NOM	PER	the weavers , herders , and sheep of the region
+470	14753	14753	NOM	PER	herders
+910	14758	14759	NOM	GPE	the region
+150	14764	14764	PROP	PER	Diné
+110	14771	14771	PRON	PER	they
+111	14781	14781	PROP	GPE	Maine
+911	14791	14791	NOM	PER	sheep
+911	14793	14793	PRON	PER	their
+385	14793	14794	NOM	PER	their people
+913	14796	14797	NOM	LOC	damaged lands
+0	14803	14803	PRON	PER	my
+914	14855	14855	PRON	PER	we
+205	14857	14858	NOM	PER	each other
+0	14867	14867	PRON	PER	I
+916	14871	14875	NOM	GPE	the Black Mesa Water Coalition
+917	14892	14893	NOM	ORG	The bmwc
+918	14898	14929	NOM	PER	a group of young intertribal , interethnic people , mostly students at the time , committed to addressing water depletion , natural resource exploitation , and health in Navajo and Hopi communities
+919	14901	14905	NOM	PER	young intertribal , interethnic people
+920	14907	14911	NOM	PER	mostly students at the time
+24	14926	14926	PROP	GPE	Navajo
+921	14928	14929	NOM	PER	Hopi communities
+148	14934	14935	PROP	PER	Peabody Energy
+110	14937	14937	PRON	PER	they
+112	14946	14949	PROP	FAC	the Black Mesa Mine
+113	14951	14953	PROP	FAC	Mohave Generating Station
+922	14966	14967	NOM	PER	The coalition
+22	14969	14970	PROP	FAC	Black Mesa
+923	14972	14986	NOM	GPE	a critical place for learning to transition out of coal - based economies and ecologies
+913	14998	14999	NOM	LOC	damaged lands
+22	15010	15011	PROP	LOC	Black Mesa
+24	15020	15020	PROP	GPE	Navajo
+22	15022	15023	PROP	LOC	Black Mesa
+925	15025	15032	NOM	LOC	the mother encircled by the four sacred mountains
+926	15029	15032	NOM	LOC	the four sacred mountains
+927	15034	15035	NOM	LOC	The waters
+928	15037	15038	NOM	PER	the mother
+928	15045	15045	PRON	PER	her
+148	15070	15071	PROP	LOC	Peabody Energy
+0	15084	15084	PRON	PER	My
+929	15084	15085	NOM	PER	My colleague
+147	15086	15087	PROP	PER	Anna Tsing
+22	15097	15098	PROP	GPE	Black Mesa
+930	15101	15102	NOM	GPE	a world
+620	15126	15127	NOM	PER	local people
+437	15132	15132	NOM	LOC	land
+933	15137	15138	NOM	PER	many partners
+22	15144	15145	PROP	LOC	Black Mesa
+115	15167	15171	PROP	FAC	a Black Mesa Solar Project
+116	15178	15182	PROP	FAC	the Navajo Wool Market Project
+934	15184	15187	NOM	PER	the Green Economy Project
+117	15190	15194	PROP	FAC	the Climate Justice Solutions Project
+917	15199	15200	NOM	PER	the bmwc
+936	15204	15205	NOM	PER	These activists
+937	15221	15222	NOM	PER	indigenous communities
+938	15238	15238	PRON	PER	These
+939	15262	15264	NOM	LOC	a damaged world
+940	15271	15272	NOM	PER	young adults
+917	15278	15279	NOM	ORG	the bmwc
+0	15304	15304	PRON	PER	my
+6	15317	15319	PROP	LOC	the surging Chthulucene
+942	15327	15327	PRON	PER	We
+943	15355	15360	NOM	PER	all the other critters of Terra
+2	15360	15360	PROP	GPE	Terra
+942	15364	15364	PRON	PER	our
+190	15418	15418	PROP	PER	Critters
+942	15436	15436	PRON	PER	We
+942	15443	15443	PRON	PER	we
+0	15456	15456	PRON	PER	I
+944	15458	15459	NOM	PER	a compostist
+945	15462	15463	NOM	PER	a posthumanist
+190	15465	15465	PROP	PER	Critters
+946	15467	15467	NOM	PER	human
+205	15474	15475	NOM	PER	each other
+120	15509	15510	PROP	PER	Lynn Margulis
+195	15536	15536	NOM	LOC	earth
+949	15561	15567	NOM	LOC	four naturalsocial ecologies of a damaged planet
+280	15565	15567	NOM	LOC	a damaged planet
+951	15569	15570	NOM	GPE	Actual places
+328	15590	15590	NOM	PER	artists
+285	15592	15592	NOM	PER	scientists
+954	15594	15594	NOM	PER	activists
+205	15608	15609	NOM	PER	each other
+205	15615	15615	PRON	PER	they
+205	15617	15618	NOM	PER	each other
+957	15626	15633	NOM	LOC	more livable worlds that I call the Chthulucene
+0	15630	15630	PRON	PER	I
+6	15632	15633	PROP	LOC	the Chthulucene
+191	15635	15636	PROP	PER	Isabelle Stengers
+0	15642	15642	PRON	PER	me
+958	15646	15647	NOM	PER	human people
+205	15652	15653	NOM	PER	each other
+960	15687	15687	PRON	PER	our
+280	15738	15740	NOM	LOC	a damaged planet
+962	15757	15757	PRON	PER	oneself
+963	15761	15762	NOM	PER	safely other
+960	15774	15774	PRON	PER	we
+964	15782	15784	NOM	PER	All of us
+960	15784	15784	PRON	PER	us
+195	15797	15797	NOM	LOC	earth
+119	15805	15805	PROP	LOC	Gaia
