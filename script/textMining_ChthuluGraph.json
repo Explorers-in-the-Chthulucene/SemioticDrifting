@@ -1,0 +1,89 @@
+{"ch_1" :{ "agent": {
+                    "human": ["Marilyn Strathern","Tanya Berokoff","Da Costa","Vinciane Despret","Isabelle Stengers","Alfred North Whitehead","Europeans","Bob Matsuyama","John Batman","John Bowlby","Beatriz da Costa","Matali Crasset","Wurundjeri people","Rusten Hogness","B. F. Skinner"],
+                    "non-human": ["pigeons"],
+                    "organization": ["Palomar Racing Pigeon Club","Keio University","University of California","La Défense","District of Columbia","U.S. Coast Guard"]
+},
+           "place": ["Batman Park","Irvine","California","Beauvois en Cambresis","The pigeon loft","lab","zoo","park","Melbourne","Southern California","Irvine","San Jose","Australia","Papua New Guinea","Europe","Cairo","Istanbul","Berlin","Yarra river","Southern Europe"],
+           "concept": {
+                    "Terrapolis" : "description"
+                    }
+        },
+
+"ch_2" : { "agent": {
+                    "human": ["Bruno Latour","Anna Tsing","Man species","Eugene Stoermer","Isabelle Stengers","Adolf Eichmann","Ursula Le Guin","Hannah Arendt","Thom van Dooren","Brad Werner","Valerie Hartouni","Marilyn Strathern","Michael Klare","M. Beth Dempster","Carl Schmitt","Thom Van Dooren","Eugene Stoermer","James Lovelock","Potnia Melissa","Lynn Margulis","Paul Crutzen","Eileen Crist","Philippe Pignarre","Hesiod "],
+                    "non-human" : ["Medusa","Potnia Theron","The Gorgons","Gaia","Pimoa cthulhu","Matsutake","Potnia Melissa","Harpies","Athena","Corals","Terra "],
+                    "organization": ["Burning Man","Capitalist Restructuring University","Hampshire College"]                    
+                    },
+            "place": ["Sonoma","Mendocino Counties","North Central California","Utah","Papua New Guinea","California","San Francisco"],
+            "concept": {
+                "Terrapolis" : "description",
+                "Earthbound" : "description",
+                "Anthropocene" : "description",
+                "Capitalocene" : "description",
+                "Chthulucene" : "description",
+                "Holocene" : "description"
+                }
+        },
+
+"ch_3" : { "agent": {
+                    "human": ["Alison Jolly","Lynn Margulis","Glenna Begay","Lena Nez","Glenna Begay","The Diné","John Boyden","Hopi","Nicole King","Christine Wertheim","Hanta Rasamimanana","Margaret Wertheim","Lyle McNeal","Carla Hustak","Natasha Myers","Beth Dempster","Kit Carson","Scott Gilbert","Margaret McFall-Ngai","John McCain","Deborah Ross","Gloria O’Neill","Toni Morrison","Hopi","Inupiat","Carol Halberstadt","Lena Nez","Glenna Begay"],
+                    "non-human" : ["Mixotricha","Alice in Wonderland","Orchids","Coyote","Xena","Sheep","Critters","Great Barrier Reef"],
+                    "organization" : ["Peabody Energy","Navajo Sheep Project","Institute for Figuring","Black Mesa Trust","Peabody Coal Company","Warhol Museum","International Rights of Nature Tribunal","Crochet Coral Reef","Departments of Geosciences","Life and Earth Café","UMass Amherst","Navajo tribal council"]
+                    },
+            "place": ["Los Angeles","Pittsburgh","Republic of Madagascar","Black Mesa","Arizona","Bosque Redondo","Paris","Bacterial World","Colorado Plateau"],
+            "concept": {
+                "concept_name1" : "description",
+                "concept_name2" : "description"
+                }
+        },
+
+"ch_4" : { "agent": {
+                    "human": ["H. P. Lovecraft","Jason Moore","Jim Clifford","Thom van Dooren"],
+                    "non-human" : ["Spider Woman","Tangaroa","Pachamama","Oya","Medusa","A’akuluujjusi","Haniyasu"]                    
+                    },
+            "concept": {
+                "Gaia" : "description",
+                "Anthropocene" : "description",
+                "Terra" : "description"
+                }
+},
+"ch_5" : { "agent": {
+        "human": ["Plato", "Rusten Hogness", "des daughters", "ranchers", "Donna Haraway"],
+        "non-human" : ["Cayenne", "Cyborgs", "horses", "mares"],
+        "organization" : ["HorseAid", "University of Chicago", "Purdue University", "Iowa State College", "Big Pharma", "Eli Lilly", "McGill University", "pharmaceutical company Ayerst", "NAERIC"]            
+        },
+    "place": ["Manitoba", "United States", "Canada", "Quebec", "Montreal", "PMU farms"],
+    "concept": {
+            "concept_name1" : "description",
+            "concept_name2" : "description"
+            },
+  "story" : ["DES story", "Premarin story"]
+},
+
+"ch_6" : { "agent": {
+    "human": ["Ursula K. Le Guin", "Lauren Oya Olamina", "Octavia Butler", "Jocelyne Porcher", "Thelma Rowell"],
+    "non-human" : ["ants", "Acacias", "Plants"],
+    "organization" : ["Earthseed", "Therolinguists"]                    
+    },
+"place": ["Niger river", "Los Angeles","Northern California", "Terra", "Athshea", "Forest"],
+"concept": {
+        "concept_name1" : "description",
+        "concept_name2" : "description"
+        },
+"story" : ["Parable of the sower", "The Word for World Is Forest", "The Author of the Acacia Seeds"]        
+
+},
+
+"ch_7" : { "agent": {
+        "human": ["Vinciane Despret", "Isabelle Stengers", "Virginia Woolf", "Amotz Zahavi", "Donna Haraway", "Thelma Rowell", "breeders" ],
+        "non-human" : ["birds", "babbler", "Earth others", "pigs", "cows", "camels"],
+        "organization" : [""]                     
+        },
+    "place": ["Negev desert", "non industrial French farms", "Gobi Desert", "southern Israeli desert", "" ],
+    "concept": {
+            "concept_name1" : "description",
+            "concept_name2" : "description"
+            },
+"story" : ["pigs and cows breeders", "Women Who Make a Fuss: The Unfaithful Daughters of Virginia Woolf"]  
+}
+}
