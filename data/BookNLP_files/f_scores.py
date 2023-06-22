@@ -2,10 +2,10 @@
 # this file contains lists of entities to be recognized
 named_chars =  []
 per = ["Vinciane Despret", "singing blackbird", "Thelma Rowell", "Soay sheep", "Hannah Arendt", "Miss Manners", "Amotz Zahavi", "Arabian babblers", "Jocelyne Porcher", "Isabelle Stengers", "Virginia Woolf", "Beatriz da Costa"  ]
-oddper = [{"Curiosity": "Curiosity always leads its practitioners a bit too far off the path, and that way lie stories."}]
+# oddper = [{"Curiosity": "Curiosity always leads its practitioners a bit too far off the path, and that way lie stories."}]
 general = ["birds", "scientists", "observers", "a polite inquirer", "humans", "critters", "apparatuses", "farmers", "breeders", "pigs", "cows", "animals", "women", "camels", "father", "sons", "old man", "the heirs", "beasts", "anyone listening", "anyone attuned", "storyteller", "people", "racing pigeons, also called carrier pigeons", "fanciers", "collegues", "Matali Crasset", "colombophiles", "visitors", "avian voyageurs"]
 gpe = ["Cerisy", "Southern California", "Baghdad", "Damascus", "New Yorl", "Berlin", "France", "Iran", "California", "Caudry"]
-loc = ["Negev desert", "southern Israeli desert" "a world of propositions not available before", "nonindustrial French farms", "Western worlds", "village", "the mortal world", "markets", "places of travel and labour", "Worlds-at-stake", "Gobi desert", "chateau", "public spaces", "innovative pigeon lofts", "leisure park", "ecological park", "farmland", "nature reserve", ""]
+loc = ["Negev desert", "southern Israeli desert" "a world of propositions not available before", "nonindustrial French farms", "Western worlds", "village", "the mortal world", "markets", "places of travel and labour", "Worlds-at-stake", "Gobi desert", "chateau", "public spaces", "innovative pigeon lofts", "leisure park", "ecological park", "farmland", "nature reserve"]
 org = ["The Beauvois association of carier pigeon fanciers"]
 
 concepts = [{"haraway" : ["vocation", "going visiting", "thinking-with", "rendering-capable", "worlding", "live and die", "multispecies flourishing", "fabulate", "response-ability", "earth-bound", "make a fuss", "cat's cradle", "ongoingness", "string figure games", "companion species", "past, present, yet to come (so far)", "they stay with the trouble", "speculative fabulation" ]}, {"Despret": ["the virtue of politeness", "anthropo-zoo-genesis", "make a fuss", "thinking from a heritage = loyalty", "start from", "inherit"]}, {"Arendt" : ["going-visiting", "make a fuss"]}, {"Birds and scientists": ["becoming-with", "create narratives"]} ]

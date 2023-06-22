@@ -1,0 +1,170 @@
+AgentiveEntity
+	Composite
+		Cyborg
+		
+	Animated
+		Human
+			Vinciane Despret
+			Thelma Rowell
+			Hannah Arendt
+			Miss Manners
+			Amotz Zahavi
+			Jocelyne Porcher
+			Isabelle Stengers
+			Virginia Woolf
+			Beatriz da Costa
+			Matali Crasset	
+			Farmer	
+			Breeder
+			Woman
+			Father
+			Son
+			Man
+			Heirs --> Human per forza?
+			Fancier	
+			Scientist
+			Inquirer
+			Colombophile
+			Visitor
+			
+		Animal
+			Soay sheep
+			Bird
+				Singing blackbird 
+				Arabian babbler
+				Racing pigeon
+			Pig
+			Cow
+			Camel	
+			
+		Apparatus
+			Associacion		
+			
+		Critter
+		
+		Observers
+		
+		Anyone listening
+		
+		Anyone attuned
+		
+		Storyteller
+		
+		Plant
+		
+	Inanimated
+		Technology
+		
+		Object/StativeObject
+		
+		
+Place
+	LOC
+		NegevDesert
+		SouthernIsraeliDesert
+		Village
+		World
+		Market		
+		GobiDesert
+		Chateau
+		PigeonLofts
+		LeisurePark
+		EcologicalPark 
+		Farmland 
+		NatureReserve 
+
+	GPE
+		Cerisy
+		Southern California
+		Baghdad
+		Damascus
+		New York
+		Berlin
+		France
+		Iran
+		California
+		Caudry
+						
+				
+Descriptor
+	Modality
+	
+	Qualifier
+		Artist
+		Designer
+		Philosopher
+		Scientist
+		Ornithologist		
+		
+	Adjective	
+	
+Concept [COSE RIPETUTE SONO INTERSEZIONI, COME IN PROT?]
+	NounConcept
+		Vocation
+		ResponseAbility
+		Ongoingness
+	
+	VerbConcept
+		RenderingCapable
+		MultispeciesFlourishing	
+		BecomingWith
+		
+		PracticeConcept
+			GoVisiting
+			ThinkWith
+			Worlding
+			LiveAndDie
+			MakeAFuss
+			SF [UN NOUN MA UNA PRATICA! DOVREBBE ESSERE CLASSE A SE?]
+			StayWithTheTrouble
+			Politeness
+			ThinkFrom
+	
+	PeopleConcept
+		Earthbound
+	
+	SpaceConcept
+		ThinkFrom
+		GoVisiting
+		orlding
+	
+	TimeConcept
+		Ongoingness
+		BecomingWith	
+		LiveAndDie
+			
+
+Frame
+
+
+Role
+
+Any other class we need to define frame?
+
+		
+
+
+
+----------------------------------------------------------------------------------------
+
+RoleInFrame/Situation (domain:AgentiveEntity, con constraint sul tipo, and Range:Frame/Situation
+
+Left out (instances of some class already defined above):
+
+beasts
+people
+collegues
+The Beauvois association of carier pigeon fanciers
+WorldOfPropositions 
+westernworld
+mortal world
+places of travel and labour
+Worlds-at-stake
+public spaces
+Cat's cradle
+companion species
+PastPresentYetToCome (LiveAndDie)
+Fabulate, create narratives (sf)
+thinking from an heritage, loyalty, start from, inherit (ThinkFrom)
+
+all roles we are going to identify are classes and all occurrences of the role in the text are instances of that role class.
