@@ -1,0 +1,66 @@
+1. Vinciane Despret thinks-with other beings, human and not.
+
+	F: Collaboration, thinking collaboration
+	FE: thinking_entity_1, thinking_entity_2
+	LU: thinks-with
+
+2. That is a rare and precious vocation
+
+3. Vocation: calling, calling with, called by, calling as if the world mattered, calling out, going too far, going visiting
+
+	F: Explaination
+	FE: Explained_thing, (explaination)
+	LU: :
+	
+4. Despret listened to a singing blackbird one morning—a living blackbird outside her particular window—and that way learned what importance sounds like
+
+	F: listening
+	FE: Listener, (Listened_entity, Location)
+	LU: listen
+					> causes
+	F: learning
+	FE: Learner_entity, (Learned_entity)
+	LU: learned
+	
+5. She thinks in attunement with those she thinks with —recursively, inventively, relentlessly— with joy and verve. 
+	
+	F: Collaboration, thinking collaboration
+	FE: thinking_entity_1, thinking_entity_2, (modality)
+	LU: thinks-with, attunement
+	
+6. She studies how beings render each other capable in actual encounters, and she theorizes- makes cogently available—that kind of theory and method.
+
+	F: learning
+	FE: Learner_entity, (Learned_entity)
+	LU: studies
+				> uses
+	F: Collaboration
+	FE: Entity_1, Entity_2, (Location)
+	LU: render-capable
+				> causes
+	F:theorizing
+	FE: Theorizing_entity, Theorized_entity
+	LU: theorizes, theory
+	
+7. Despret is not interested in thinking by discovering the stupidities of others, or by reducing the field of attention to prove a point.
+
+	F: care
+	FE: Caring_entity, (Focus)
+	LU: interested
+				>uses
+	F: learning
+	FE: Learner_entity, (Learned_entity)
+	LU: discovering
+	
+8. Her kind of thinking enlarges, even invents, the competencies of all the players, including herself, such that the domain of ways of being and knowing dilates, expands, adds both ontological and epistemological possibilities, proposes and enacts what was not there before.
+
+	F: Transformation_expanding
+	FE: Activator_entity, Transformed_entity,
+	LU: enlarges, dilates, expands, adds
+	
+9. That is her worlding practice. 
+
+10. She is a philosopher and a scientist who is allergic to denunciation and 
+hungry for discovery, needy for what must be known and built together, with and for earthly beings, living, dead, and yet to come.
+
+	

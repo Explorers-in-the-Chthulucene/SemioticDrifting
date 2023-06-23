@@ -36,25 +36,24 @@ def parse_paragraph(sentence):
     g.bind("boxer", boxer)
     g.bind("boxing", boxing)
 
-
-
-    
-    print(g.serialize(format="turtle"))
+    return g
 
 
 
 
+# print(g.serialize(format="turtle"))
 
 '''def parse_text(text):
     # split text in paragraphs
     paragraphs = []
     for paragraph in paragraphs:
         parse_paragraph(paragraph)'''
-
-print(parse_paragraph('''Hannah Arendt and Virginia Woolf both understood the high stakes 
+'''
+print(parse_paragraph("Hannah Arendt and Virginia Woolf both understood the high stakes 
 of training the mind and imagination to go visiting, to venture off the 
 beaten path to meet unexpected, non-natal kin, and to strike up conversations, to pose and respond to interesting questions, to propose together something unanticipated, to take up the unasked-for obligations 
-of having met'''))
+of having met"))'''
+
 # see what classes come out and align with tailored ontology
 # join each paragraph graph together ANZI no I have to make a graph that organizes the superstructure of the book and for every paragraph points to its graph
 
