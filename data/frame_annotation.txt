@@ -37,7 +37,7 @@
 	F: Collaboration
 	FE: Entity_1, Entity_2, (Location)
 	LU: render-capable
-				> causes
+				> causes 
 	F:theorizing
 	FE: Theorizing_entity, Theorized_entity
 	LU: theorizes, theory
