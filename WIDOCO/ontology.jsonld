@@ -1,0 +1,1311 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ongoingness"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkWith"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#overlapsWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Storytelling"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Modality"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Quality"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ongoingness"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasCondition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Politeness"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#BecomeWith"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RenderCapable"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#overlapsWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RenderCapable"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Agent"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Category"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cognizer"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Consequences"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Content"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Evidence"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Experiencer"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Idea"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Item"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Location"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Manner"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perceiver_agentive"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Persistent_characteristic"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Person"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Phenomenon"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Purpose"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Requirement"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Stimulus"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Student"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Subject"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker_1"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker_2"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasCondition"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Amotz_Zahavi"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Beatriz_da_Costa"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Hannah_Arendt"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Isabelle_Stengers"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Jocelyne_Porcher"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Matali_Crasset"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Miss_Manners"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thelma_Rowell"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vinciane_Despret"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Virginia_Woolf"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkWith"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#overlapsWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Worlding"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Critter"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inanimated"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Baghdad"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Berlin"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#California"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Caudry"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cerisy"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Damascus"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#France"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Iran"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#New_York"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Southern_California"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PlayingSF"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#BecomeWith"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PlayingSF"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RenderCapable"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Storytelling"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkFrom"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkWith"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkFrom"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Being_in_category"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause_expansion"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Collaborative_thinking"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_to_believe"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_up_with"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Mental_stimulus_stimulus_focus"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Needing"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#People_by_vocation"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perception_active"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Studying"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasCondition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ResponseAbility"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Bird"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Camel"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cow"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Pig"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Soay_sheep"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Chateau"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#EcologicalPark"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Farmland"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GobiDesert"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LeisurePark"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Market"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NatureReserve"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NegevDesert"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PigeonLofts"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#SouthernIsraeliDesert"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Village"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#World"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator" : [ {
+    "@value" : "Giusy Grieco"
+  }, {
+    "@value" : "Maddalena Ghiotto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Amotz_Zahavi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Artist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Baghdad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Beatriz_da_Costa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#BecomeWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Being_in_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Berlin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Bird",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Breeder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#California",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Camel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Caudry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause_expansion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cerisy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Chateau",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cognizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Collaborative_thinking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Colombophile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_to_believe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_up_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Consequences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Critter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cyborg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Critter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Damascus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Designer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#EcologicalPark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ethologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Evidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Experiencer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Fancier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Farmer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Farmland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Father",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GoVisit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GobiDesert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Hannah_Arendt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Heir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Idea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inanimated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inheritance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inquirer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Iran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Isabelle_Stengers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Jocelyne_Porcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LeisurePark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Man",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Manner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Market",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Matali_Crasset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Mental_stimulus_stimulus_focus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Miss_Manners",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Modality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NatureReserve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Needing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NegevDesert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#New_York",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inanimated"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Technology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ongoingness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ornithologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#People_by_vocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perceiver_agentive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perception_active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Persistent_characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Phenomenon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Philosopher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Pig",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PigeonLofts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PlayingSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Politeness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ResponseAbility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RenderCapable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Requirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ResponseAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Scientist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Soay_sheep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Son",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#SouthernIsraeliDesert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Southern_California",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Stimulus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Storytelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Studying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inanimated"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thelma_Rowell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Village",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vinciane_Despret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Virginia_Woolf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Visitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Woman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#World",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Worlding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#agentiveRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#descriptorRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#evokes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#isEvokedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generates"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasFramenetID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasMainReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#involvesRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#isEvokedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#locationRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#overlapsWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept"
+  } ]
+} ]
