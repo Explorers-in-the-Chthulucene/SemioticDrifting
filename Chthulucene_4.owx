@@ -1,0 +1,1294 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="chthulu" IRI="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene/"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+        <Literal>Giusy Grieco</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+        <Literal>Maddalena Ghiotto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#ActivityConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentiveEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amotz_Zahavi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baghdad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beatriz_da_Costa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BecomeWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Being_in_category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Berlin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breeder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#California"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caudry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause_expansion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cerisy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chateau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collaborative_thinking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colombophile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coming_to_believe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coming_up_with"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cyborg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Damascus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Designer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EcologicalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experiencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fancier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farmland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoVisit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GobiDesert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hannah_Arendt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanComm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanProp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inanimated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inheritance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inquirer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iran"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isabelle_Stengers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jocelyne_Porcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LOC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeisurePark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Market"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Matali_Crasset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Miss_Manners"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModeConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Needing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegevDesert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#New_York"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ongoingness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ornithologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People_by_vocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perceiver_agentive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perception_active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persistent_characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Philosopher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PigeonLofts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayingSF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Politeness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RenderCapable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResponseAbility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soay_sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Son"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthernIsraeliDesert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Southern_California"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storytelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Studying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thelma_Rowell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThinkFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThinkWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thinker_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thinker_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Village"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vinciane_Despret"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virginia_Woolf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#World"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worlding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#agentiveRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#descriptorRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evokes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#impliedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#impliesActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEvokedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locationRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overlapsWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFramenetID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInstance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMainReference"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ActivityConcept"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amotz_Zahavi"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Animated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animated"/>
+        <Class IRI="#AgentiveEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Association"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baghdad"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beatriz_da_Costa"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BecomeWith"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BecomeWith"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#generates"/>
+            <Class IRI="#Ongoingness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BecomeWith"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#overlapsWith"/>
+            <Class IRI="#RenderCapable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Being_in_category"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Berlin"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breeder"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camel"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caudry"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause_expansion"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cerisy"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chateau"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cognizer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaborative_thinking"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colombophile"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coming_to_believe"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coming_up_with"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concept"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#ModeConcept"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concept"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#ActivityConcept"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consequences"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Content"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critter"/>
+        <Class IRI="#AgentiveEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cyborg"/>
+        <Class IRI="#Critter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Damascus"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Designer"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EcologicalPark"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethologist"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiencer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fancier"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farmer"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farmland"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#France"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPE"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoVisit"/>
+        <Class IRI="#PracticeConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoVisit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#ThinkWith"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoVisit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#overlapsWith"/>
+            <Class IRI="#Worlding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GobiDesert"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hannah_Arendt"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heir"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanComm"/>
+        <Class IRI="#Animated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanProp"/>
+        <Class IRI="#Animated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idea"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inanimated"/>
+        <Class IRI="#AgentiveEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inheritance"/>
+        <Class IRI="#PracticeConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inheritance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#PlayingSF"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inheritance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#ThinkFrom"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inquirer"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iran"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isabelle_Stengers"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Item"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jocelyne_Porcher"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LOC"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeisurePark"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manner"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Market"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matali_Crasset"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Miss_Manners"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modality"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModeConcept"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureReserve"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Needing"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegevDesert"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#New_York"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Inanimated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ongoingness"/>
+        <Class IRI="#PracticeConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ongoingness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#ResponseAbility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Animated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ornithologist"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#People_by_vocation"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perceiver_agentive"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception_active"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persistent_characteristic"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phenomenon"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philosopher"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pig"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PigeonLofts"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayingSF"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayingSF"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#ThinkWith"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayingSF"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#overlapsWith"/>
+            <Class IRI="#Storytelling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Politeness"/>
+        <Class IRI="#ModeConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracticeConcept"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenderCapable"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RenderCapable"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#generates"/>
+            <Class IRI="#Ongoingness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseAbility"/>
+        <Class IRI="#ModeConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientist"/>
+        <Class IRI="#Vocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soay_sheep"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Son"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthernIsraeliDesert"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Southern_California"/>
+        <Class IRI="#GPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stimulus"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storytelling"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studying"/>
+        <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subject"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technology"/>
+        <Class IRI="#Inanimated"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thelma_Rowell"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinkFrom"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinkWith"/>
+        <Class IRI="#ActivityConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinkWith"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#Politeness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinkWith"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#BecomeWith"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinkWith"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#impliesActivity"/>
+            <Class IRI="#RenderCapable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thinker_1"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thinker_2"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Village"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vinciane_Despret"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Virginia_Woolf"/>
+        <Class IRI="#HumanProp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitor"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vocation"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#HumanComm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#World"/>
+        <Class IRI="#LOC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worlding"/>
+        <Class IRI="#PracticeConcept"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActivityConcept"/>
+        <Class IRI="#ModeConcept"/>
+        <Class IRI="#PracticeConcept"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Category"/>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Cognizer"/>
+        <Class IRI="#Consequences"/>
+        <Class IRI="#Content"/>
+        <Class IRI="#Evidence"/>
+        <Class IRI="#Experiencer"/>
+        <Class IRI="#Idea"/>
+        <Class IRI="#Item"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Manner"/>
+        <Class IRI="#Perceiver_agentive"/>
+        <Class IRI="#Persistent_characteristic"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#Phenomenon"/>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#Stimulus"/>
+        <Class IRI="#Student"/>
+        <Class IRI="#Subject"/>
+        <Class IRI="#Thinker_1"/>
+        <Class IRI="#Thinker_2"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Amotz_Zahavi"/>
+        <Class IRI="#Beatriz_da_Costa"/>
+        <Class IRI="#Hannah_Arendt"/>
+        <Class IRI="#Isabelle_Stengers"/>
+        <Class IRI="#Jocelyne_Porcher"/>
+        <Class IRI="#Matali_Crasset"/>
+        <Class IRI="#Miss_Manners"/>
+        <Class IRI="#Thelma_Rowell"/>
+        <Class IRI="#Vinciane_Despret"/>
+        <Class IRI="#Virginia_Woolf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#HumanComm"/>
+        <Class IRI="#HumanProp"/>
+        <Class IRI="#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animated"/>
+        <Class IRI="#Critter"/>
+        <Class IRI="#Inanimated"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Baghdad"/>
+        <Class IRI="#Berlin"/>
+        <Class IRI="#California"/>
+        <Class IRI="#Caudry"/>
+        <Class IRI="#Cerisy"/>
+        <Class IRI="#Damascus"/>
+        <Class IRI="#France"/>
+        <Class IRI="#Iran"/>
+        <Class IRI="#New_York"/>
+        <Class IRI="#Southern_California"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BecomeWith"/>
+        <Class IRI="#PlayingSF"/>
+        <Class IRI="#RenderCapable"/>
+        <Class IRI="#Storytelling"/>
+        <Class IRI="#ThinkFrom"/>
+        <Class IRI="#ThinkWith"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Being_in_category"/>
+        <Class IRI="#Cause_expansion"/>
+        <Class IRI="#Collaborative_thinking"/>
+        <Class IRI="#Coming_to_believe"/>
+        <Class IRI="#Coming_up_with"/>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+        <Class IRI="#Needing"/>
+        <Class IRI="#People_by_vocation"/>
+        <Class IRI="#Perception_active"/>
+        <Class IRI="#Studying"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Camel"/>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Pig"/>
+        <Class IRI="#Soay_sheep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chateau"/>
+        <Class IRI="#EcologicalPark"/>
+        <Class IRI="#Farmland"/>
+        <Class IRI="#GobiDesert"/>
+        <Class IRI="#LeisurePark"/>
+        <Class IRI="#Market"/>
+        <Class IRI="#NatureReserve"/>
+        <Class IRI="#NegevDesert"/>
+        <Class IRI="#PigeonLofts"/>
+        <Class IRI="#SouthernIsraeliDesert"/>
+        <Class IRI="#Village"/>
+        <Class IRI="#World"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GPE"/>
+        <Class IRI="#LOC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Modality"/>
+        <Class IRI="#Quality"/>
+        <Class IRI="#Vocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Object"/>
+        <Class IRI="#Technology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Politeness"/>
+        <Class IRI="#ResponseAbility"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#agentiveRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#descriptorRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isEvokedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#locationRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#evokes"/>
+        <ObjectProperty IRI="#isEvokedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generatedBy"/>
+        <ObjectProperty IRI="#generates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#impliedIn"/>
+        <ObjectProperty IRI="#impliesActivity"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#overlapsWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#agentiveRole"/>
+        <Class IRI="#AgentiveEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#descriptorRole"/>
+        <Class IRI="#Descriptor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evokes"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesRole"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locationRole"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#agentiveRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#descriptorRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evokes"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generates"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#ModeConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <Class IRI="#ActivityConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locationRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFramenetID"/>
+        <Class IRI="#Frame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInstance"/>
+        <Class IRI="#Frame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLabel"/>
+        <Class IRI="#Frame"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMainReference"/>
+        <Class IRI="#Animated"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFramenetID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInstance"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLabel"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMainReference"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

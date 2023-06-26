@@ -53,26 +53,31 @@
 			<yjs:DefaultLabelStyle x:Key="5" verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 			<yjs:SolidColorFill x:Key="6" color="#FF49AEE2"/>
 			<yjs:SolidColorFill x:Key="7" color="#FF0075B1"/>
-			<yjs:SolidColorFill x:Key="8" color="#FFC5ADD4"/>
+			<yjs:SolidColorFill x:Key="8" color="#FF0075B1"/>
 			<yjs:SolidColorFill x:Key="9" color="#FF0075B1"/>
-			<yjs:SolidColorFill x:Key="10" color="#FF0075B1"/>
-			<yjs:SolidColorFill x:Key="11" color="#FF0075B1"/>
-			<yjs:Stroke x:Key="12" fill="#FF663800"/>
-			<yjs:SolidColorFill x:Key="13" color="#FF9EE063"/>
+			<yjs:SolidColorFill x:Key="10" color="#FF49AEE2"/>
+			<yjs:SolidColorFill x:Key="11" color="#FF9DD6F3"/>
+			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.5,0.019384670104926227"/>
+			<yjs:SolidColorFill x:Key="13" color="#FF49AEE2"/>
 			<yjs:SolidColorFill x:Key="14" color="#FF663800"/>
 			<yjs:Arrow x:Key="15" type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="#FF663800" cropLength="1"/>
 			<yjs:Arrow x:Key="16" type="NONE" stroke="#FF000000" fill="BLACK"/>
-			<y:SmartEdgeLabelModel x:Key="17"/>
-			<yjs:Stroke x:Key="18" fill="{y:GraphMLReference 14}"/>
-			<y:SmartEdgeLabelModelParameter x:Key="19" Model="{y:GraphMLReference 17}" Distance="5"/>
-			<yjs:PolylineEdgeStyle x:Key="20" stroke="{y:GraphMLReference 18}" targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}"/>
-			<y:SmartEdgeLabelModelParameter x:Key="21" Distance="5">
+			<y:SmartEdgeLabelModelParameter x:Key="17" Distance="5">
 				<y:SmartEdgeLabelModelParameter.Model>
 					<y:SmartEdgeLabelModel/>
 				</y:SmartEdgeLabelModelParameter.Model>
 			</y:SmartEdgeLabelModelParameter>
-			<yjs:Stroke x:Key="22" fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-			<y:SmartEdgeLabelModel x:Key="23"/>
+			<y:SmartEdgeLabelModel x:Key="18"/>
+			<yjs:PolylineEdgeStyle x:Key="19" targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+				<yjs:PolylineEdgeStyle.stroke>
+					<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+				</yjs:PolylineEdgeStyle.stroke>
+			</yjs:PolylineEdgeStyle>
+			<y:SmartEdgeLabelModelParameter x:Key="20" Distance="5">
+				<y:SmartEdgeLabelModelParameter.Model>
+					<y:SmartEdgeLabelModel/>
+				</y:SmartEdgeLabelModelParameter.Model>
+			</y:SmartEdgeLabelModelParameter>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -89,10 +94,10 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-320.8142201834862" Y="142.7442660550459" Width="85" Height="80"/>
+				<y:RectD X="-465.6857798165138" Y="107.7442660550459" Width="85" Height="80"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 10}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF0075B1" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -174,101 +179,11 @@
 			</port>
 		</node>
 		<node id="n1">
-			<data key="d0">2</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>VerbConcept</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-591.25" Y="130.8692660550459" Width="68.62385321100918" Height="64.58715596330275"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-219.5,-153,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n2">
-			<data key="d0">3</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>NounConcept</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-457.4977064220184" Y="50.8692660550459" Width="68.62385321100918" Height="64.58715596330275"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-204.5,-138,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n3">
 			<data key="d0">4</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>TimeConcept</y:Label.Text>
+						<y:Label.Text>PracticeConcept</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -276,7 +191,7 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-487.9977064220184" Y="293.91284403669727" Width="68.62385321100918" Height="64.58715596330275"/>
+				<y:RectD X="-618.4323394495414" Y="213.53211009174328" Width="68.62385321100918" Height="64.58715596330275"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
@@ -308,12 +223,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n4">
+		<node id="n2">
 			<data key="d0">5</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>PeopleConcept</y:Label.Text>
+						<y:Label.Text>ModeConcept</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -321,7 +236,7 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-404.9369266055046" Y="313.119266055046" Width="68.62385321100918" Height="64.58715596330275"/>
+				<y:RectD X="-539.5584862385322" Y="258.9128440366973" Width="68.62385321100918" Height="64.58715596330275"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
@@ -353,12 +268,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n5">
+		<node id="n3">
 			<data key="d0">6</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>SpaceConcept</y:Label.Text>
+						<y:Label.Text>ActivityConcept</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -366,10 +281,10 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-312.6261467889908" Y="306.79357798165137" Width="68.62385321100918" Height="64.58715596330275"/>
+				<y:RectD X="-457.4977064220184" Y="271.7935779816515" Width="68.62385321100918" Height="64.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 13}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -405,7 +320,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n6">
+		<node id="n4">
 			<data key="d0">7</data>
 			<data key="d4">
 				<x:List>
@@ -491,8 +406,15 @@
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p9">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
-		<node id="n7">
+		<node id="n5">
 			<data key="d0">8</data>
 			<data key="d4">
 				<x:List>
@@ -505,10 +427,10 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="97.12385321100919" Y="-276.3532110091743" Width="68.62385321100918" Height="64.58715596330275"/>
+				<y:RectD X="122.99082568807353" Y="-268.6467889908257" Width="68.62385321100918" Height="64.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF49AEE2" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 10}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -579,7 +501,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n8">
+		<node id="n6">
 			<data key="d0">9</data>
 			<data key="d4">
 				<x:List>
@@ -645,73 +567,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n9">
-			<data key="d0">10</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Cyborg</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="394.2522935779816" Y="-136.41284403669727" Width="55.62385321100918" Height="49.58715596330275"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF9DD6F3" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-129.5,-63,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p5">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n10">
+		<node id="n7">
 			<data key="d0">11</data>
 			<data key="d4">
 				<x:List>
@@ -727,7 +583,7 @@
 				<y:RectD X="288.9977064220184" Y="-376.76376146788994" Width="55.62385321100918" Height="49.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FF9DD6F3" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 11}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -764,7 +620,7 @@
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.019384670104926227"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -780,7 +636,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n11">
+		<node id="n8">
 			<data key="d0">12</data>
 			<data key="d4">
 				<x:List>
@@ -829,7 +685,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n12">
+		<node id="n9">
 			<data key="d0">13</data>
 			<data key="d4">
 				<x:List>
@@ -845,7 +701,7 @@
 				<y:RectD X="-465.6857798165138" Y="-151.6192660550459" Width="85" Height="80"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 9}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 8}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -1005,66 +861,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n13">
-			<data key="d0">14</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Becoming-with</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-611.6261467889908" Y="41.837155963302735" Width="68.62385321100918" Height="64.58715596330275"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FFB670E0" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-189.5,-123,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n14">
+		<node id="n10">
 			<data key="d0">15</data>
 			<data key="d4">
 				<x:List>
@@ -1080,7 +877,7 @@
 				<y:RectD X="-239.89076834862385" Y="-122.75" Width="85" Height="80"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 11}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 9}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -1171,13 +968,27 @@
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p12">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p13">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
-		<node id="n15">
+		<node id="n11">
 			<data key="d0">16</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Plant</y:Label.Text>
+						<y:Label.Text>Organization</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -1224,7 +1035,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n16">
+		<node id="n12">
 			<data key="d0">17</data>
 			<data key="d4">
 				<x:List>
@@ -1283,7 +1094,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n17">
+		<node id="n13">
 			<data key="d0">18</data>
 			<data key="d4">
 				<x:List>
@@ -1356,18 +1167,18 @@
 				</data>
 			</port>
 		</node>
-		<node id="n18">
+		<node id="n14">
 			<data key="d0">19</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[<p>Discipline</p><p><strong>[only Human]</strong></p>]]></y:Label.Text>
+						<y:Label.Text>Vocation</y:Label.Text>
 						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
+								<yjs:DefaultLabelStyle.font>
 									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1454,13 +1265,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n19">
+		<node id="n15">
 			<data key="d0">20</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[Qualifier
-(att/app)]]></y:Label.Text>
+						<y:Label.Text>Descriptor</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -1569,8 +1379,15 @@
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p13">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
-		<node id="n20">
+		<node id="n16">
 			<data key="d0">21</data>
 			<data key="d4">
 				<x:List>
@@ -1629,7 +1446,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n21">
+		<node id="n17">
 			<data key="d0">22</data>
 			<data key="d4">
 				<x:List>
@@ -1688,7 +1505,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n22">
+		<node id="n18">
 			<data key="d0">23</data>
 			<data key="d4">
 				<x:List>
@@ -1747,12 +1564,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n23">
+		<node id="n19">
 			<data key="d0">24</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Despret</y:Label.Text>
+						<y:Label.Text>HumanProp</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -1763,7 +1580,7 @@
 				<y:RectD X="492.7522935779816" Y="-286.99426605504595" Width="55.62385321100918" Height="49.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 8}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FFD7ECF7" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -1820,12 +1637,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n24">
+		<node id="n20">
 			<data key="d0">25</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Zahavi</y:Label.Text>
+						<y:Label.Text>HumanComm</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -1836,7 +1653,7 @@
 				<y:RectD X="484.2522935779816" Y="-214.47477064220186" Width="55.62385321100918" Height="49.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 8}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FFD7ECF7" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -1900,7 +1717,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n25">
+		<node id="n21">
 			<data key="d0">26</data>
 			<data key="d4">
 				<x:List>
@@ -1916,7 +1733,7 @@
 				<y:RectD X="484.2522935779816" Y="-376.76376146788994" Width="55.62385321100918" Height="49.58715596330275"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 8}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="#FFD3ADEF" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -1987,87 +1804,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n26">
-			<data key="d0">27</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[Quantifier
-[how many?]]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="188.125" Y="213.73451834862385" Width="68.62385321100918" Height="64.58715596330275"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 6}" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-129.5,-63,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p5">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p6">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n27">
+		<node id="n22">
 			<data key="d0">28</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[Quality
-[adjective]]]></y:Label.Text>
+						<y:Label.Text>Quality</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -2142,12 +1884,12 @@
 				</data>
 			</port>
 		</node>
-		<node id="n28">
+		<node id="n23">
 			<data key="d0">29</data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text>Location</y:Label.Text>
+						<y:Label.Text>Place</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
 						</y:Label.Style>
@@ -2155,10 +1897,10 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-200.8130733944954" Y="400.3692660550459" Width="85" Height="80"/>
+				<y:RectD X="-210.97133027522932" Y="150.2385321100918" Width="85" Height="80"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 9}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 8}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -2214,8 +1956,29 @@
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p7">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
-		<node id="n29">
+		<node id="n24">
 			<data key="d0">30</data>
 			<data key="d4">
 				<x:List>
@@ -2302,123 +2065,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n30">
-			<data key="d0">32</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[LexicalUnit
-(lemmatized)]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-568.7173165137615" Y="-287.565366972477" Width="85" Height="80"/>
-			</data>
-			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 10}" shape="ELLIPSE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-219.5,-153,85,80"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p5">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p6">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p7">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p8">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n31">
-			<data key="d0">33</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 2}" Style="{y:GraphMLReference 5}">
-						<y:Label.Text><![CDATA[POS xsd:string]]></y:Label.Text>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-685.2219036697247" Y="-126.6192660550459" Width="85" Height="30"/>
-			</data>
-			<data key="d7">
-				<yjs:ArrowNodeStyle shape="PARALLELOGRAM" angle="0.20943951023931953" stroke="{y:GraphMLReference 12}" fill="{y:GraphMLReference 13}"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-184.89076834862385,-58.5,55.62385321100919,30"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n32">
+		<node id="n25">
 			<data key="d0">34</data>
 			<data key="d4">
 				<x:List>
@@ -2431,10 +2078,10 @@
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-239.89076834862385" Y="-276.3532110091743" Width="85" Height="80"/>
+				<y:RectD X="-246.64076834862385" Y="-283.1032110091743" Width="85" Height="80"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 11}" shape="ELLIPSE"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 9}" shape="ELLIPSE"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -2533,7 +2180,7 @@
 				</data>
 			</port>
 		</node>
-		<node id="n33">
+		<node id="n26">
 			<data key="d0">35</data>
 			<data key="d4">
 				<x:List>
@@ -2549,7 +2196,7 @@
 				<y:RectD X="-426.1261467889908" Y="-277.1032110091743" Width="75.125" Height="30"/>
 			</data>
 			<data key="d7">
-				<yjs:ArrowNodeStyle shape="PARALLELOGRAM" angle="0.20943951023931953" stroke="{y:GraphMLReference 12}" fill="{y:GraphMLReference 13}"/>
+				<yjs:ArrowNodeStyle shape="PARALLELOGRAM" angle="0.20943951023931953" stroke="#FF663800" fill="#FF9EE063"/>
 			</data>
 			<data key="d8">
 				<y:ViewState>
@@ -2571,18 +2218,357 @@
 				</data>
 			</port>
 		</node>
-		<edge id="e0" source="n1" target="n0" sourceport="p0" targetport="p0">
+		<node id="n27">
+			<data key="d0">36</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text>Critter</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="65.99082568807353" Y="-341.3967889908257" Width="68.62385321100918" Height="64.58715596330275"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 10}" shape="ELLIPSE"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-144.5,-78,85,80"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n28">
+			<data key="d0">37</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text>Cyborg</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="168.49770642201838" Y="-399.1467889908257" Width="55.62385321100918" Height="49.58715596330275"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 11}" shape="ELLIPSE"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-99.5,-33,85,80"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n29">
+			<data key="d0">38</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text>LOC</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-262.7477064220184" Y="258.9128440366973" Width="68.62385321100918" Height="64.58715596330275"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 13}" shape="ELLIPSE"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-144.5,-78,85,80"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n30">
+			<data key="d0">39</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text>GPE</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 3}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-174.49770642201838" Y="278.9128440366972" Width="68.62385321100918" Height="64.58715596330275"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 4}" fill="{y:GraphMLReference 13}" shape="ELLIPSE"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-144.5,-78,85,80"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n1" target="n0" sourceport="p2" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}"/>
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e1" source="n2" target="n0" sourceport="p0" targetport="p1">
+		<edge id="e1" source="n2" target="n0" sourceport="p2" targetport="p3">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e2" source="n3" target="n0" sourceport="p2" targetport="p4">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e3" source="n5" target="n4" sourceport="p3" targetport="p5">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e4" source="n6" target="n4" sourceport="p3" targetport="p6">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e5" source="n4" target="n10" sourceport="p7" targetport="p8">
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;owl:subClassOf&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
+						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasRoleinFrame&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 17}" SegmentRatio="0.012145727706566502" Distance="5.000000000000012"/>
+							<y:SmartEdgeLabelModelParameter Distance="5">
+								<y:SmartEdgeLabelModelParameter.Model>
+									<y:SmartEdgeLabelModel/>
+								</y:SmartEdgeLabelModelParameter.Model>
+							</y:SmartEdgeLabelModelParameter>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
@@ -2595,23 +2581,10 @@
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
+				<yjs:PolylineEdgeStyle stroke="#FF663800" targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}"/>
 			</data>
 		</edge>
-		<edge id="e2" source="n1" target="n2" sourceport="p1" targetport="p1">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 18}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow type="CROSS" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 14}" cropLength="5"/>
-					</yjs:PolylineEdgeStyle.targetArrow>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e3" source="n3" target="n0" sourceport="p2" targetport="p2">
+		<edge id="e6" source="n7" target="n5" sourceport="p3" targetport="p4">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2620,7 +2593,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e4" source="n4" target="n0" sourceport="p2" targetport="p3">
+		<edge id="e7" source="n13" target="n5" sourceport="p3" targetport="p6">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2629,7 +2602,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e5" source="n5" target="n0" sourceport="p2" targetport="p4">
+		<edge id="e8" source="n11" target="n5" sourceport="p3" targetport="p7">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2638,7 +2611,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e6" source="n7" target="n6" sourceport="p3" targetport="p5">
+		<edge id="e9" source="n8" target="n6" sourceport="p3" targetport="p4">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2647,7 +2620,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e7" source="n8" target="n6" sourceport="p3" targetport="p6">
+		<edge id="e10" source="n12" target="n6" sourceport="p3" targetport="p5">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2656,7 +2629,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e8" source="n13" target="n1" sourceport="p3" targetport="p2">
+		<edge id="e11" source="n14" target="n15" sourceport="p6" targetport="p9">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2665,26 +2638,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e9" source="n6" target="n14" sourceport="p7" targetport="p8">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 19}">
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasRoleinFrame&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
-						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d13">
-				<y:GraphMLReference ResourceKey="20"/>
-			</data>
-		</edge>
-		<edge id="e10" source="n10" target="n7" sourceport="p3" targetport="p4">
+		<edge id="e12" source="n16" target="n14" sourceport="p4" targetport="p7">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2693,7 +2647,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e11" source="n9" target="n7" sourceport="p3" targetport="p8">
+		<edge id="e13" source="n17" target="n14" sourceport="p4" targetport="p8">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2702,7 +2656,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e12" source="n17" target="n7" sourceport="p3" targetport="p6">
+		<edge id="e14" source="n18" target="n14" sourceport="p4" targetport="p9">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2711,7 +2665,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e13" source="n15" target="n7" sourceport="p3" targetport="p7">
+		<edge id="e15" source="n19" target="n13" sourceport="p6" targetport="p5">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2720,7 +2674,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e14" source="n11" target="n8" sourceport="p3" targetport="p4">
+		<edge id="e16" source="n20" target="n13" sourceport="p7" targetport="p6">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2729,7 +2683,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e15" source="n16" target="n8" sourceport="p3" targetport="p5">
+		<edge id="e17" source="n21" target="n7" sourceport="p8" targetport="p5">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2738,7 +2692,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e16" source="n9" target="n16" sourceport="p4" targetport="p4">
+		<edge id="e18" source="n22" target="n15" sourceport="p7" targetport="p11">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2747,26 +2701,7 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e17" source="n6" target="n19" sourceport="p8" targetport="p8">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 19}">
-						<y:Label.Text><![CDATA[<p><strong>isQualifiedBy</strong> owl:sameAs <strong>dul:hasQuality</strong></p>]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d13">
-				<y:GraphMLReference ResourceKey="20"/>
-			</data>
-		</edge>
-		<edge id="e18" source="n18" target="n19" sourceport="p6" targetport="p9">
+		<edge id="e19" source="n24" target="n15" sourceport="p8" targetport="p12">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>
@@ -2775,111 +2710,11 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e19" source="n20" target="n18" sourceport="p4" targetport="p7">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e20" source="n21" target="n18" sourceport="p4" targetport="p8">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e21" source="n22" target="n18" sourceport="p4" targetport="p9">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e22" source="n23" target="n17" sourceport="p6" targetport="p5">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e23" source="n24" target="n17" sourceport="p7" targetport="p6">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e24" source="n25" target="n10" sourceport="p8" targetport="p5">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e25" source="n26" target="n19" sourceport="p6" targetport="p10">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e26" source="n27" target="n19" sourceport="p7" targetport="p11">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e27" source="n5" target="n28" sourceport="p3" targetport="p6">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 19}">
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;locatedIn&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
-						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d13">
-				<y:GraphMLReference ResourceKey="20"/>
-			</data>
-		</edge>
-		<edge id="e28" source="n29" target="n19" sourceport="p8" targetport="p12">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE" dashStyle="Dot"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e29" source="n12" target="n0" sourceport="p8" targetport="p5">
+		<edge id="e20" source="n9" target="n0" sourceport="p8" targetport="p5">
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[<p><strong>isGeneratedBy (subProperty?)</strong></p>]]></y:Label.Text>
+						<y:Label.Text>&lt;p&gt;&lt;strong&gt;evokes&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:SmartEdgeLabelModelParameter Distance="5">
 								<y:SmartEdgeLabelModelParameter.Model>
@@ -2905,19 +2740,10 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e30" source="n12" target="n12" sourceport="p9" targetport="p10">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e31" source="n14" target="n12" sourceport="p10" targetport="p11">
+		<edge id="e21" source="n10" target="n9" sourceport="p10" targetport="p11">
 			<data key="d11">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 21}">
+					<y:Label LayoutParameter="{y:GraphMLReference 17}">
 						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasFrame&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.Style>
 							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
@@ -2937,56 +2763,10 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e32" source="n12" target="n30" sourceport="p12" targetport="p7">
+		<edge id="e22" source="n10" target="n25" sourceport="p11" targetport="p11">
 			<data key="d11">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 21}">
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;evokedBy&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
-						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e33" source="n30" target="n31" sourceport="p8" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 21}">
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasPOS&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
-						<y:Label.Style>
-							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
-								<yjs:MarkupLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:MarkupLabelStyle.font>
-							</yjs:MarkupLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
-					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE"/>
-					</yjs:PolylineEdgeStyle.stroke>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e34" source="n14" target="n32" sourceport="p11" targetport="p11">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 21}">
+					<y:Label LayoutParameter="{y:GraphMLReference 17}">
 						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasRole&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.Style>
 							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
@@ -3006,18 +2786,13 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e35" source="n12" target="n12" sourceport="p19" targetport="p18">
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}"/>
-			</data>
-		</edge>
-		<edge id="e36" source="n12" target="n33" sourceport="p16" targetport="p1">
+		<edge id="e23" source="n9" target="n26" sourceport="p16" targetport="p1">
 			<data key="d11">
 				<x:List>
 					<y:Label>
 						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasLabel&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 23}" Distance="5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 18}" Distance="5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
@@ -3037,13 +2812,13 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e37" source="n12" target="n32" sourceport="p17" targetport="p12">
+		<edge id="e24" source="n9" target="n25" sourceport="p17" targetport="p12">
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasFrameElement&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
+						<y:Label.Text>&lt;p&gt;&lt;strong&gt;involvesRole&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 23}" SegmentRatio="0" Distance="-4.999999999999995"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 18}" SegmentRatio="0" Distance="-4.999999999999995"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
@@ -3063,7 +2838,64 @@
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e38" source="n0" target="n0" sourceport="p8" targetport="p9">
+		<edge id="e25" source="n27" target="n4" sourceport="p9" targetport="p9">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e26" source="n28" target="n27" sourceport="p6" targetport="p10">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e27" source="n15" target="n10" sourceport="p13" targetport="p12">
+			<data key="d11">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 20}">
+						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasRoleInFrame&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
+						<y:Label.Style>
+							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
+								<yjs:MarkupLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
+								</yjs:MarkupLabelStyle.font>
+							</yjs:MarkupLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="{y:GraphMLReference 14}" lineCap="SQUARE"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e28" source="n29" target="n23" sourceport="p4" targetport="p7">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e29" source="n30" target="n23" sourceport="p4" targetport="p8">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e30" source="n23" target="n10" sourceport="p9" targetport="p13">
+			<data key="d11">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 20}">
+						<y:Label.Text>&lt;p&gt;&lt;strong&gt;hasRoleInFrame&lt;/strong&gt;&lt;/p&gt;</y:Label.Text>
+						<y:Label.Style>
+							<yjs:MarkupLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textFill="BLACK">
+								<yjs:MarkupLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
+								</yjs:MarkupLabelStyle.font>
+							</yjs:MarkupLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 15}" sourceArrow="{y:GraphMLReference 16}">
 					<yjs:PolylineEdgeStyle.stroke>

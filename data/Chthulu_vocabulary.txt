@@ -1,9 +1,8 @@
 AgentiveEntity
-	Composite
-		Cyborg
-		
+	Critter		
+		Cyborg	
 	Animated
-		Human
+		HumanProp
 			Vinciane Despret
 			Thelma Rowell
 			Hannah Arendt
@@ -14,50 +13,30 @@ AgentiveEntity
 			Virginia Woolf
 			Beatriz da Costa
 			Matali Crasset	
+		HumanComm
 			Farmer	
 			Breeder
 			Woman
 			Father
 			Son
 			Man
-			Heirs --> Human per forza?
+			Heir
 			Fancier	
 			Scientist
 			Inquirer
 			Colombophile
-			Visitor
-			
+			Visitor	
 		Animal
 			Soay sheep
 			Bird
-				Singing blackbird 
-				Arabian babbler
-				Racing pigeon
 			Pig
 			Cow
-			Camel	
-			
-		Apparatus
-			Associacion		
-			
-		Critter
-		
-		Observers
-		
-		Anyone listening
-		
-		Anyone attuned
-		
-		Storyteller
-		
-		Plant
-		
+			Camel		
+		Organization
+			Association	
 	Inanimated
 		Technology
-		
-		Object/StativeObject
-		
-		
+		Object		
 Place
 	LOC
 		NegevDesert
@@ -72,7 +51,6 @@ Place
 		EcologicalPark 
 		Farmland 
 		NatureReserve 
-
 	GPE
 		Cerisy
 		Southern California
@@ -83,88 +61,71 @@ Place
 		France
 		Iran
 		California
-		Caudry
-						
-				
+		Caudry							
 Descriptor
 	Modality
-	
-	Qualifier
+	Quality	
+	Vocation
 		Artist
 		Designer
 		Philosopher
 		Scientist
-		Ornithologist		
-		
-	Adjective	
-	
-Concept [COSE RIPETUTE SONO INTERSEZIONI, COME IN PROT?]
-	NounConcept
-		Vocation
-		ResponseAbility
-		Ongoingness
-	
-	VerbConcept
-		RenderingCapable
-		MultispeciesFlourishing	
-		BecomingWith
-		
-		PracticeConcept
-			GoVisiting
-			ThinkWith
-			Worlding
-			LiveAndDie
-			MakeAFuss
-			SF [UN NOUN MA UNA PRATICA! DOVREBBE ESSERE CLASSE A SE?]
-			StayWithTheTrouble
-			Politeness
-			ThinkFrom
-	
-	PeopleConcept
-		Earthbound
-	
-	SpaceConcept
+		Ornithologist	
+		Ethologist	
+		Scientist	
+Concept
+	ActivityConcept
+		BecomeWith
+		PlayingSF
+		RenderCapable
+		Storytelling
 		ThinkFrom
-		GoVisiting
-		orlding
-	
-	TimeConcept
-		Ongoingness
-		BecomingWith	
-		LiveAndDie
-			
-
+		ThinkWith		
+	ModeConcept
+		Politeness
+		ResponseAbility
+	PracticeConcept	
+		Worlding		
+		Ongoingness	
 Frame
-
-
+	Collaborative_thinking
+	Perception_active
+	Coming_to_believe
+	Studying
+	Coming_up_with
+	Mental_stimulus_stimulus_focus
+	Cause_expansion
+	Being_in_category
+	People_by_vocation
+	Needing
 Role
+	Thinker_1
+	Thinker_2
+	Manner
+	Perceiver_agentive
+	Phenomenon
+	Location
+	Cognizer
+	Content
+	Evidence
+	Student
+	Subject
+	Idea
+	Experiencer
+	Stimulus
+	Agent
+	Cause
+	Item
+	Purpose
+	Category
+	Person
+	Persistent_characteristic 
+	Requirement
+	Consequences
+RoleInFrame
 
-Any other class we need to define frame?
-
-		
 
 
 
-----------------------------------------------------------------------------------------
 
-RoleInFrame/Situation (domain:AgentiveEntity, con constraint sul tipo, and Range:Frame/Situation
 
-Left out (instances of some class already defined above):
-
-beasts
-people
-collegues
-The Beauvois association of carier pigeon fanciers
-WorldOfPropositions 
-westernworld
-mortal world
-places of travel and labour
-Worlds-at-stake
-public spaces
-Cat's cradle
-companion species
-PastPresentYetToCome (LiveAndDie)
-Fabulate, create narratives (sf)
-thinking from an heritage, loyalty, start from, inherit (ThinkFrom)
-
-all roles we are going to identify are classes and all occurrences of the role in the text are instances of that role class.
