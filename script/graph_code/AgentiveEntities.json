@@ -1,0 +1,87 @@
+{
+    "chthulu:AgentiveEntity" : { 
+        "chthulu:Animated" : {            
+            "chthulu:HumanProp" : {
+                "chthulu:Vinciane Despret" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Despret",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Thelma Rowell" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Rowell",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Hannah Arendt" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Arendt",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Miss Manners" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Manners",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Amotz Zahavi" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Zahavi",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Jocelyne Porcher" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Porcher",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Isabelle Stengers" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Stengers",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Virginia Woolf" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Woolf",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Beatriz da Costa" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "da Costa",
+                    "chthulu:hasAgentiveRole" : ""
+                },
+                "chthulu:Matali Crasset" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "Crasset",
+                    "chthulu:hasAgentiveRole" : ""
+                }
+            },
+            "chthulu:Animal" : {
+                "chthulu:Soay_sheep" : {
+                    "instance" : ""
+                },
+                "chthulu:Bird" : {
+                    "instance" : "",
+                    "chthulu:hasMainReference" : "blackbird",
+                    "chthulu:hasAgentiveRole" : ""
+                }
+            },
+            "chthulu:HumanComm" : {
+                "instance" : "beings",
+                "chthulu:hasMainReference" : "beings",
+                "chthulu:hasAgentiveRole" : ""
+            }					
+        },
+
+        "chthulu:Critter" : { "chthulu:Cyborg" : {
+            "instance" : ""
+            }
+        },
+
+        "chthulu:Inanimated" : {
+            "chthulu:Technology" : {
+                "instance" : ""
+            },
+            "chthulu:Object" : {
+                "instance" : ""
+            }
+        }
+    }
+}

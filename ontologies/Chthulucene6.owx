@@ -26,9 +26,6 @@
         <Literal xml:lang="en">This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#ActivityConcept"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Agent"/>
     </Declaration>
     <Declaration>
@@ -44,9 +41,6 @@
         <Class IRI="#Animated"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Artist"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Association"/>
     </Declaration>
     <Declaration>
@@ -54,9 +48,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Beatriz_da_Costa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BecomeWith"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Being_in_category"/>
@@ -134,13 +125,7 @@
         <Class IRI="#Descriptor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Designer"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#EcologicalPark"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ethologist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Evidence"/>
@@ -170,9 +155,6 @@
         <Class IRI="#GPE"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GoVisit"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#GobiDesert"/>
     </Declaration>
     <Declaration>
@@ -192,9 +174,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Inanimated"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Inheritance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Inquirer"/>
@@ -242,9 +221,6 @@
         <Class IRI="#Modality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModeConcept"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#NatureReserve"/>
     </Declaration>
     <Declaration>
@@ -260,13 +236,7 @@
         <Class IRI="#Object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ongoingness"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ornithologist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#People_by_vocation"/>
@@ -287,9 +257,6 @@
         <Class IRI="#Phenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Philosopher"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Pig"/>
     </Declaration>
     <Declaration>
@@ -299,34 +266,16 @@
         <Class IRI="#Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PlayingSF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Politeness"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PracticeConcept"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Purpose"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Quality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RenderCapable"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Requirement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ResponseAbility"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Role"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scientist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Soay_sheep"/>
@@ -344,9 +293,6 @@
         <Class IRI="#Stimulus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Storytelling"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Student"/>
     </Declaration>
     <Declaration>
@@ -360,12 +306,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Thelma_Rowell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ThinkFrom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ThinkWith"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Thinker_1"/>
@@ -395,10 +335,10 @@
         <Class IRI="#World"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Worlding"/>
+        <ObjectProperty IRI="#agentiveRole"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#agentiveRole"/>
+        <ObjectProperty IRI="#conceptRole"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#descriptorRole"/>
@@ -410,19 +350,7 @@
         <ObjectProperty IRI="#generatedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#generates"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCondition"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#impliedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#impliesActivity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#involvesRole"/>
@@ -432,9 +360,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#locationRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#overlapsWith"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasFramenetID"/>
@@ -452,10 +377,6 @@
         <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#ActivityConcept"/>
-        <Class IRI="#Concept"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Agent"/>
         <Class IRI="#Role"/>
     </SubClassOf>
@@ -472,10 +393,6 @@
         <Class IRI="#AgentiveEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Artist"/>
-        <Class IRI="#Vocation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Association"/>
         <Class IRI="#Organization"/>
     </SubClassOf>
@@ -488,26 +405,22 @@
         <Class IRI="#HumanProp"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BecomeWith"/>
-        <Class IRI="#ActivityConcept"/>
+        <Class IRI="#Being_in_category"/>
+        <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BecomeWith"/>
+        <Class IRI="#Being_in_category"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#generates"/>
-            <Class IRI="#Ongoingness"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BecomeWith"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#overlapsWith"/>
-            <Class IRI="#RenderCapable"/>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Category"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Being_in_category"/>
-        <Class IRI="#Frame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Item"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Berlin"/>
@@ -546,6 +459,34 @@
         <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cause_expansion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause_expansion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause_expansion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Item"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause_expansion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Purpose"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cerisy"/>
         <Class IRI="#GPE"/>
     </SubClassOf>
@@ -562,6 +503,27 @@
         <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Collaborative_thinking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Manner"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaborative_thinking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Thinker_1"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaborative_thinking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Thinker_2"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Colombophile"/>
         <Class IRI="#HumanComm"/>
     </SubClassOf>
@@ -570,22 +532,43 @@
         <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Coming_to_believe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Cognizer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coming_to_believe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Content"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coming_to_believe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Evidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Coming_up_with"/>
         <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Concept"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasCondition"/>
-            <Class IRI="#ModeConcept"/>
-        </ObjectAllValuesFrom>
+        <Class IRI="#Coming_up_with"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Cognizer"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Concept"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#ActivityConcept"/>
-        </ObjectAllValuesFrom>
+        <Class IRI="#Coming_up_with"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Idea"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Consequences"/>
@@ -612,16 +595,8 @@
         <Class IRI="#GPE"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Designer"/>
-        <Class IRI="#Vocation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#EcologicalPark"/>
         <Class IRI="#LOC"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ethologist"/>
-        <Class IRI="#Vocation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Evidence"/>
@@ -656,24 +631,6 @@
         <Class IRI="#Place"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GoVisit"/>
-        <Class IRI="#PracticeConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GoVisit"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#ThinkWith"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GoVisit"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#overlapsWith"/>
-            <Class IRI="#Worlding"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#GobiDesert"/>
         <Class IRI="#LOC"/>
     </SubClassOf>
@@ -700,24 +657,6 @@
     <SubClassOf>
         <Class IRI="#Inanimated"/>
         <Class IRI="#AgentiveEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Inheritance"/>
-        <Class IRI="#PracticeConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Inheritance"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#PlayingSF"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Inheritance"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#ThinkFrom"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Inquirer"/>
@@ -772,6 +711,27 @@
         <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Experiencer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Manner"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_stimulus_stimulus_focus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Stimulus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Miss_Manners"/>
         <Class IRI="#HumanProp"/>
     </SubClassOf>
@@ -780,16 +740,33 @@
         <Class IRI="#Descriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ModeConcept"/>
-        <Class IRI="#Concept"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#NatureReserve"/>
         <Class IRI="#LOC"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Needing"/>
         <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Needing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Cognizer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Needing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Consequences"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Needing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Requirement"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NegevDesert"/>
@@ -804,27 +781,26 @@
         <Class IRI="#Inanimated"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ongoingness"/>
-        <Class IRI="#PracticeConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ongoingness"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasCondition"/>
-            <Class IRI="#ResponseAbility"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Organization"/>
         <Class IRI="#Animated"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ornithologist"/>
-        <Class IRI="#Vocation"/>
+        <Class IRI="#People_by_vocation"/>
+        <Class IRI="#Frame"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#People_by_vocation"/>
-        <Class IRI="#Frame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Persistent_characteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#People_by_vocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Person"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Perceiver_agentive"/>
@@ -833,6 +809,27 @@
     <SubClassOf>
         <Class IRI="#Perception_active"/>
         <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception_active"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception_active"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Perceiver_agentive"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception_active"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Phenomenon"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Persistent_characteristic"/>
@@ -847,42 +844,12 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Philosopher"/>
-        <Class IRI="#Vocation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Pig"/>
         <Class IRI="#Animal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PigeonLofts"/>
         <Class IRI="#LOC"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PlayingSF"/>
-        <Class IRI="#ActivityConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PlayingSF"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#ThinkWith"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PlayingSF"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#overlapsWith"/>
-            <Class IRI="#Storytelling"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Politeness"/>
-        <Class IRI="#ModeConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PracticeConcept"/>
-        <Class IRI="#Concept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Purpose"/>
@@ -893,27 +860,8 @@
         <Class IRI="#Descriptor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RenderCapable"/>
-        <Class IRI="#ActivityConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RenderCapable"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#generates"/>
-            <Class IRI="#Ongoingness"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Requirement"/>
         <Class IRI="#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ResponseAbility"/>
-        <Class IRI="#ModeConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scientist"/>
-        <Class IRI="#Vocation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Soay_sheep"/>
@@ -936,16 +884,33 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Storytelling"/>
-        <Class IRI="#ActivityConcept"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Student"/>
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Studying"/>
         <Class IRI="#Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studying"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Manner"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studying"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Student"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studying"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involvesRole"/>
+            <Class IRI="#Subject"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Subject"/>
@@ -958,35 +923,6 @@
     <SubClassOf>
         <Class IRI="#Thelma_Rowell"/>
         <Class IRI="#HumanProp"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThinkFrom"/>
-        <Class IRI="#ActivityConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThinkWith"/>
-        <Class IRI="#ActivityConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThinkWith"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasCondition"/>
-            <Class IRI="#Politeness"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThinkWith"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#BecomeWith"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThinkWith"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#impliesActivity"/>
-            <Class IRI="#RenderCapable"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Thinker_1"/>
@@ -1024,15 +960,6 @@
         <Class IRI="#World"/>
         <Class IRI="#LOC"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Worlding"/>
-        <Class IRI="#PracticeConcept"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#ActivityConcept"/>
-        <Class IRI="#ModeConcept"/>
-        <Class IRI="#PracticeConcept"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Agent"/>
         <Class IRI="#Category"/>
@@ -1094,14 +1021,6 @@
         <Class IRI="#Southern_California"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BecomeWith"/>
-        <Class IRI="#PlayingSF"/>
-        <Class IRI="#RenderCapable"/>
-        <Class IRI="#Storytelling"/>
-        <Class IRI="#ThinkFrom"/>
-        <Class IRI="#ThinkWith"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Being_in_category"/>
         <Class IRI="#Cause_expansion"/>
         <Class IRI="#Collaborative_thinking"/>
@@ -1147,12 +1066,12 @@
         <Class IRI="#Object"/>
         <Class IRI="#Technology"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Politeness"/>
-        <Class IRI="#ResponseAbility"/>
-    </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#agentiveRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#conceptRole"/>
         <ObjectProperty IRI="#hasRole"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1171,20 +1090,13 @@
         <ObjectProperty IRI="#evokes"/>
         <ObjectProperty IRI="#isEvokedBy"/>
     </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#generatedBy"/>
-        <ObjectProperty IRI="#generates"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#impliedIn"/>
-        <ObjectProperty IRI="#impliesActivity"/>
-    </InverseObjectProperties>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#overlapsWith"/>
-    </SymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#agentiveRole"/>
         <Class IRI="#AgentiveEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conceptRole"/>
+        <Class IRI="#Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#descriptorRole"/>
@@ -1195,18 +1107,6 @@
         <Class IRI="#Frame"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#generates"/>
-        <Class IRI="#Concept"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasCondition"/>
-        <Class IRI="#Concept"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#impliesActivity"/>
-        <Class IRI="#Concept"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#involvesRole"/>
         <Class IRI="#Frame"/>
     </ObjectPropertyDomain>
@@ -1214,12 +1114,12 @@
         <ObjectProperty IRI="#locationRole"/>
         <Class IRI="#Place"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#overlapsWith"/>
-        <Class IRI="#Concept"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#agentiveRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#conceptRole"/>
         <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1231,28 +1131,12 @@
         <Class IRI="#Concept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#generates"/>
-        <Class IRI="#Concept"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCondition"/>
-        <Class IRI="#ModeConcept"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#impliesActivity"/>
-        <Class IRI="#ActivityConcept"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#involvesRole"/>
         <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#locationRole"/>
         <Class IRI="#Role"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#overlapsWith"/>
-        <Class IRI="#Concept"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasFramenetID"/>
@@ -1286,6 +1170,129 @@
         <DataProperty IRI="#hasMainReference"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Being_in_category</IRI>
+        <Literal xml:lang="en">Frame where an Item belongs to a Category, as (often implicitly) conceived of
+  by a Cognizer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cause_expansion</IRI>
+        <Literal xml:lang="en">Frame where an Agent or non-human Cause causes an Item to change its
+  physical size.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collaborative_thinking</IRI>
+        <Literal>Frame where two beings in an equal position with respect to each other affects each other&apos;s reasoning and understanding of the world</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coming_to_believe</IRI>
+        <Literal>A person (the Cognizer) comes to believe something (the Content),   
+  sometimes after a process of reasoning. This change in belief is    
+  usually initiated by a person or piece of Evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coming_up_with</IRI>
+        <Literal>Words in this frame have to do with a Cognizer creating a new       
+  intellectual entity, the Idea. These words are similar to words     
+  of physical creation such as build and make, and in some cases      
+  may be understood as metaphorically based on such words. However,   
+  the Ideas in this frame are predominantly conceptual in nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mental_stimulus_stimulus_focus</IRI>
+        <Literal>A Stimulus serves to bring about an emotion of mental stimulation   
+  in an Experiencer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Needing</IRI>
+        <Literal>Frame where a speaker believes that some state of affairs or entity (the      
+  Requirement) must be present in order to cause some other
+  dependent state of affairs to occur (the Dependent).  In the        
+  typical case, the Cognizer desires the occurrence of the
+  Dependent and so also desires the obtainment or occurrence of the   
+  Requirement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#People_by_vocation</IRI>
+        <Literal>This frame contains  words for Individuals as viewed in terms of    
+  their vocation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Perception_active</IRI>
+        <Literal>This frame contains perception words whose perceivers
+  intentionally direct their attention to some entity or phenomenon   
+  in order to have a perceptual experience.  For this reason we       
+  call the perceiver role in this frame Perceiver_agentive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#agentiveRole</IRI>
+        <Literal>Property connecting an AgentiveEntity to the Role it assumes in a Frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conceptRole</IRI>
+        <Literal>Property connecting a Cpncept to the Role it assumes in a Frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#descriptorRole</IRI>
+        <Literal>Pproperty connecting a Descriptor to the Role it assumes in a Frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evokes</IRI>
+        <Literal>property connecting a Frame to the Concepts, if present, evoked in the text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#generatedBy</IRI>
+        <Literal>property connecting a Concept to another Concept that generates it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFramenetID</IRI>
+        <Literal>The FrameNet ID corresponding to the identified Frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInstance</IRI>
+        <Literal>The sentence where the Frame is identified as a string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLabel</IRI>
+        <Literal>The name of the Frame in string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMainReference</IRI>
+        <Literal>property that connects the Animated class to the main way it is reference in the text. For example chthulu:VinicianeDespret chthulu:hasMainReference &quot;Despret&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesRole</IRI>
+        <Literal>Property connecting a frame to its Frame Elements (hence, the sematic roles identified in a Frame).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isEvokedBy</IRI>
+        <Literal>Property connecting  the Concepts, if present, evoked in the text of a certain Frame.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#locationRole</IRI>
+        <Literal>Property connecting a Location to the Role it assumes in a Frame</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

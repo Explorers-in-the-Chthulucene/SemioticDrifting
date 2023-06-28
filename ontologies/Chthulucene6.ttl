@@ -24,77 +24,66 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveRoleInFrame
-:AgentiveRoleInFrame rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :hasRoleInFrame ;
-                     rdfs:domain :AgentiveEntity ;
-                     rdfs:range :RoleInFrame .
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#agentiveRole
+:agentiveRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasRole ;
+              rdfs:domain :AgentiveEntity ;
+              rdfs:range :Role ;
+              rdfs:comment "Property connecting an AgentiveEntity to the Role it assumes in a Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#DescriptorRoleInFrame
-:DescriptorRoleInFrame rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :hasRoleInFrame ;
-                       rdfs:domain :Descriptor ;
-                       rdfs:range :Role .
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#conceptRole
+:conceptRole rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasRole ;
+             rdfs:domain :Concept ;
+             rdfs:range :Role ;
+             rdfs:comment "Property connecting a Cpncept to the Role it assumes in a Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LocationRoleInFrame
-:LocationRoleInFrame rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :hasRoleInFrame ;
-                     rdfs:domain :Place ;
-                     rdfs:range :RoleInFrame .
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#descriptorRole
+:descriptorRole rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasRole ;
+                rdfs:domain :Descriptor ;
+                rdfs:range :Role ;
+                rdfs:comment "Pproperty connecting a Descriptor to the Role it assumes in a Frame" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#evokes
 :evokes rdf:type owl:ObjectProperty ;
-        rdfs:domain :Concept ;
-        rdfs:range :Frame .
+        owl:inverseOf :isEvokedBy ;
+        rdfs:domain :Frame ;
+        rdfs:range :Concept ;
+        rdfs:comment "property connecting a Frame to the Concepts, if present, evoked in the text." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generates
-:generates rdf:type owl:ObjectProperty ;
-           rdfs:domain :Concept ;
-           rdfs:range :Concept .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasCondition
-:hasCondition rdf:type owl:ObjectProperty ;
-              rdfs:domain :Concept ;
-              rdfs:range :ModeConcept .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasFrame
-:hasFrame rdf:type owl:ObjectProperty ;
-          rdfs:domain :RoleInFrame ;
-          rdfs:range :Frame .
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generatedBy
+:generatedBy rdf:type owl:ObjectProperty ;
+             rdfs:comment "property connecting a Concept to another Concept that generates it" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole
-:hasRole rdf:type owl:ObjectProperty ;
-         rdfs:domain :RoleInFrame ;
-         rdfs:range :Role .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRoleInFrame
-:hasRoleInFrame rdf:type owl:ObjectProperty .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#impliesActivity
-:impliesActivity rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Concept ;
-                 rdfs:range :ActivityConcept .
+:hasRole rdf:type owl:ObjectProperty .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#involvesRole
 :involvesRole rdf:type owl:ObjectProperty ;
               rdfs:domain :Frame ;
-              rdfs:range :Role .
+              rdfs:range :Role ;
+              rdfs:comment "Property connecting a frame to its Frame Elements (hence, the sematic roles identified in a Frame)." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#overlapsWith
-:overlapsWith rdf:type owl:ObjectProperty ;
-              rdfs:domain :Concept ;
-              rdfs:range :Concept .
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#isEvokedBy
+:isEvokedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:comment "Property connecting  the Concepts, if present, evoked in the text of a certain Frame." .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#locationRole
+:locationRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasRole ;
+              rdfs:domain :Place ;
+              rdfs:range :Role ;
+              rdfs:comment "Property connecting a Location to the Role it assumes in a Frame" .
 
 
 #################################################################
@@ -104,35 +93,34 @@
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasFramenetID
 :hasFramenetID rdf:type owl:DatatypeProperty ;
                rdfs:domain :Frame ;
-               rdfs:range xsd:int .
+               rdfs:range xsd:int ;
+               rdfs:comment "The FrameNet ID corresponding to the identified Frame" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasInstance
 :hasInstance rdf:type owl:DatatypeProperty ;
              rdfs:domain :Frame ;
-             rdfs:range rdfs:Literal .
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "The sentence where the Frame is identified as a string" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasLabel
 :hasLabel rdf:type owl:DatatypeProperty ;
           rdfs:domain :Frame ;
-          rdfs:range rdfs:Literal .
+          rdfs:range rdfs:Literal ;
+          rdfs:comment "The name of the Frame in string" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasMainReference
 :hasMainReference rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Animated ;
-                  rdfs:range rdfs:Literal .
+                  rdfs:range rdfs:Literal ;
+                  rdfs:comment "property that connects the Animated class to the main way it is reference in the text. For example chthulu:VinicianeDespret chthulu:hasMainReference \"Despret\"" .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ActivityConcept
-:ActivityConcept rdf:type owl:Class ;
-                 rdfs:subClassOf :Concept .
-
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Agent
 :Agent rdf:type owl:Class ;
@@ -158,11 +146,6 @@
           rdfs:subClassOf :AgentiveEntity .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Artist
-:Artist rdf:type owl:Class ;
-        rdfs:subClassOf :Vocation .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Association
 :Association rdf:type owl:Class ;
              rdfs:subClassOf :Organization .
@@ -178,14 +161,19 @@
                   rdfs:subClassOf :HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#BecomeWith
-:BecomeWith rdf:type owl:Class ;
-            rdfs:subClassOf :ActivityConcept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Being_in_category
 :Being_in_category rdf:type owl:Class ;
-                   rdfs:subClassOf :Frame .
+                   rdfs:subClassOf :Frame ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Category
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Item
+                                   ] ;
+                   rdfs:comment """Frame where an Item belongs to a Category, as (often implicitly) conceived of
+  by a Cognizer."""@en .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Berlin
@@ -230,7 +218,25 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause_expansion
 :Cause_expansion rdf:type owl:Class ;
-                 rdfs:subClassOf :Frame .
+                 rdfs:subClassOf :Frame ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :involvesRole ;
+                                   owl:someValuesFrom :Agent
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :involvesRole ;
+                                   owl:someValuesFrom :Cause
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :involvesRole ;
+                                   owl:someValuesFrom :Item
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :involvesRole ;
+                                   owl:someValuesFrom :Purpose
+                                 ] ;
+                 rdfs:comment """Frame where an Agent or non-human Cause causes an Item to change its
+  physical size."""@en .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cerisy
@@ -250,7 +256,20 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Collaborative_thinking
 :Collaborative_thinking rdf:type owl:Class ;
-                        rdfs:subClassOf :Frame .
+                        rdfs:subClassOf :Frame ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :involvesRole ;
+                                          owl:someValuesFrom :Manner
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :involvesRole ;
+                                          owl:someValuesFrom :Thinker_1
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :involvesRole ;
+                                          owl:someValuesFrom :Thinker_2
+                                        ] ;
+                        rdfs:comment "Frame where two beings in an equal position with respect to each other affects each other's reasoning and understanding of the world" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Colombophile
@@ -260,12 +279,40 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_to_believe
 :Coming_to_believe rdf:type owl:Class ;
-                   rdfs:subClassOf :Frame .
+                   rdfs:subClassOf :Frame ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Cognizer
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Content
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Evidence
+                                   ] ;
+                   rdfs:comment """A person (the Cognizer) comes to believe something (the Content),   
+  sometimes after a process of reasoning. This change in belief is    
+  usually initiated by a person or piece of Evidence.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_up_with
 :Coming_up_with rdf:type owl:Class ;
-                rdfs:subClassOf :Frame .
+                rdfs:subClassOf :Frame ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :involvesRole ;
+                                  owl:someValuesFrom :Cognizer
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :involvesRole ;
+                                  owl:someValuesFrom :Idea
+                                ] ;
+                rdfs:comment """Words in this frame have to do with a Cognizer creating a new       
+  intellectual entity, the Idea. These words are similar to words     
+  of physical creation such as build and make, and in some cases      
+  may be understood as metaphorically based on such words. However,   
+  the Ideas in this frame are predominantly conceptual in nature.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept
@@ -306,19 +353,9 @@
 :Descriptor rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Designer
-:Designer rdf:type owl:Class ;
-          rdfs:subClassOf :Vocation .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#EcologicalPark
 :EcologicalPark rdf:type owl:Class ;
                 rdfs:subClassOf :LOC .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ethologist
-:Ethologist rdf:type owl:Class ;
-            rdfs:subClassOf :Vocation .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Evidence
@@ -463,7 +500,21 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Mental_stimulus_stimulus_focus
 :Mental_stimulus_stimulus_focus rdf:type owl:Class ;
-                                rdfs:subClassOf :Frame .
+                                rdfs:subClassOf :Frame ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :involvesRole ;
+                                                  owl:someValuesFrom :Experiencer
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :involvesRole ;
+                                                  owl:someValuesFrom :Manner
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :involvesRole ;
+                                                  owl:someValuesFrom :Stimulus
+                                                ] ;
+                                rdfs:comment """A Stimulus serves to bring about an emotion of mental stimulation   
+  in an Experiencer.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Miss_Manners
@@ -476,11 +527,6 @@
           rdfs:subClassOf :Descriptor .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ModeConcept
-:ModeConcept rdf:type owl:Class ;
-             rdfs:subClassOf :Concept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NatureReserve
 :NatureReserve rdf:type owl:Class ;
                rdfs:subClassOf :LOC .
@@ -488,7 +534,25 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Needing
 :Needing rdf:type owl:Class ;
-         rdfs:subClassOf :Frame .
+         rdfs:subClassOf :Frame ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvesRole ;
+                           owl:someValuesFrom :Cognizer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvesRole ;
+                           owl:someValuesFrom :Consequences
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :involvesRole ;
+                           owl:someValuesFrom :Requirement
+                         ] ;
+         rdfs:comment """Frame where a speaker believes that some state of affairs or entity (the      
+  Requirement) must be present in order to cause some other
+  dependent state of affairs to occur (the Dependent).  In the        
+  typical case, the Cognizer desires the occurrence of the
+  Dependent and so also desires the obtainment or occurrence of the   
+  Requirement.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NegevDesert
@@ -512,14 +576,19 @@
               rdfs:subClassOf :Animated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Ornithologist
-:Ornithologist rdf:type owl:Class ;
-               rdfs:subClassOf :Vocation .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#People_by_vocation
 :People_by_vocation rdf:type owl:Class ;
-                    rdfs:subClassOf :Frame .
+                    rdfs:subClassOf :Frame ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :involvesRole ;
+                                      owl:someValuesFrom :Persistent_characteristic
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :involvesRole ;
+                                      owl:someValuesFrom :Person
+                                    ] ;
+                    rdfs:comment """This frame contains  words for Individuals as viewed in terms of    
+  their vocation.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perceiver_agentive
@@ -529,7 +598,23 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perception_active
 :Perception_active rdf:type owl:Class ;
-                   rdfs:subClassOf :Frame .
+                   rdfs:subClassOf :Frame ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Location
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Perceiver_agentive
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :involvesRole ;
+                                     owl:someValuesFrom :Phenomenon
+                                   ] ;
+                   rdfs:comment """This frame contains perception words whose perceivers
+  intentionally direct their attention to some entity or phenomenon   
+  in order to have a perceptual experience.  For this reason we       
+  call the perceiver role in this frame Perceiver_agentive.""" .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Persistent_characteristic
@@ -547,11 +632,6 @@
             rdfs:subClassOf :Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Philosopher
-:Philosopher rdf:type owl:Class ;
-             rdfs:subClassOf :Vocation .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Pig
 :Pig rdf:type owl:Class ;
      rdfs:subClassOf :Animal .
@@ -566,22 +646,6 @@
 :Place rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PlayingSF
-:PlayingSF rdf:type owl:Class ;
-           rdfs:subClassOf :ActivityConcept .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Politeness
-:Politeness rdf:type owl:Class ;
-            rdfs:subClassOf :ModeConcept ;
-            owl:disjointWith :ResponseAbility .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PracticeConcept
-:PracticeConcept rdf:type owl:Class ;
-                 rdfs:subClassOf :Concept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Purpose
 :Purpose rdf:type owl:Class ;
          rdfs:subClassOf :Role .
@@ -592,32 +656,13 @@
          rdfs:subClassOf :Descriptor .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RenderCapable
-:RenderCapable rdf:type owl:Class ;
-               rdfs:subClassOf :ActivityConcept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Requirement
 :Requirement rdf:type owl:Class ;
              rdfs:subClassOf :Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ResponseAbility
-:ResponseAbility rdf:type owl:Class ;
-                 rdfs:subClassOf :ModeConcept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role
 :Role rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#RoleInFrame
-:RoleInFrame rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Scientist
-:Scientist rdf:type owl:Class ;
-           rdfs:subClassOf :Vocation .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Soay_sheep
@@ -645,11 +690,6 @@
           rdfs:subClassOf :Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Storytelling
-:Storytelling rdf:type owl:Class ;
-              rdfs:subClassOf :ActivityConcept .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Student
 :Student rdf:type owl:Class ;
          rdfs:subClassOf :Role .
@@ -657,7 +697,19 @@
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Studying
 :Studying rdf:type owl:Class ;
-          rdfs:subClassOf :Frame .
+          rdfs:subClassOf :Frame ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvesRole ;
+                            owl:someValuesFrom :Manner
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvesRole ;
+                            owl:someValuesFrom :Student
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :involvesRole ;
+                            owl:someValuesFrom :Subject
+                          ] .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Subject
@@ -673,16 +725,6 @@
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thelma_Rowell
 :Thelma_Rowell rdf:type owl:Class ;
                rdfs:subClassOf :HumanProp .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkFrom
-:ThinkFrom rdf:type owl:Class ;
-           rdfs:subClassOf :ActivityConcept .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#ThinkWith
-:ThinkWith rdf:type owl:Class ;
-           rdfs:subClassOf :ActivityConcept .
 
 
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker_1
@@ -730,22 +772,9 @@
        rdfs:subClassOf :LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Worlding
-:Worlding rdf:type owl:Class ;
-          rdfs:subClassOf :PracticeConcept .
-
-
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ActivityConcept
-                :ModeConcept
-                :PracticeConcept
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Agent
@@ -771,18 +800,6 @@
                 :Subject
                 :Thinker_1
                 :Thinker_2
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :AgentiveEntity
-                :Concept
-                :Descriptor
-                :Frame
-                :Place
-                :Role
-                :RoleInFrame
               )
 ] .
 
@@ -830,17 +847,6 @@
                 :Iran
                 :New_York
                 :Southern_California
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :BecomeWith
-                :PlayingSF
-                :RenderCapable
-                :Storytelling
-                :ThinkFrom
-                :ThinkWith
               )
 ] .
 
