@@ -5,13 +5,15 @@ import pandas as pd
 chthuluGraph = Graph()
 
 #PREFIXES definition
-chthulu = Namespace("http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene") # for all ontology classes and properties
+chthuluns = "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#"
+chthulu = Namespace(chthuluns) # for all ontology classes and properties
 chthuluGraph.bind(chthulu, "chthulu")
 
 rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#") #for type
 chthuluGraph.bind(rdf, "rdf")
 
-owl = Namespace("http://www.w3.org/2002/07/owl#") #for defining what is a Class and what is a Property etc..
+owlns = "http://www.w3.org/2002/07/owl#"
+owl = Namespace(owlns) #for defining what is a Class and what is a Property etc..
 chthuluGraph.bind(owl, "owl")
 
 rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#") #for defining subClassOf
@@ -21,6 +23,9 @@ dbr = Namespace("http://dbpedia.org/resource/")
 dbo = Namespace("http://dbpedia.org/ontology/")
 chthuluGraph.bind(dbr, "dbr")
 chthuluGraph.bind(dbo, "dbo")
+
+# concept ontology prefix
+chthuluConcepts = "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#"
 
 # dictionary of words to identify frames
 framesLU = {"Collaborative_thinking" : ["thinks-with", "attunement"], 
@@ -78,9 +83,12 @@ def find_concept(sentence):
       for word in value:
          if word in sentence:
             concepts.append(key)
+            # create triples to align with concepts ontology, the triples of chthulugraph will be created later
+            triple = (URIRef(chthuluns+key+"_1"), URIRef(owlns+"sameAs"), URIRef(chthuluConcepts+f"{key}"))
+            chthuluGraph.add(triple)    
     return concepts
 
-
+print(find_concept("Vinciane Despret thinks-with other beings, human and not."))
 
 # triples for concepts
 
