@@ -6,19 +6,18 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="chco" IRI="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts"/>
+    <Prefix name="chco" IRI="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+        <AnnotationProperty IRI=""/>
         <Literal>Giusy Grieco</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+        <AnnotationProperty IRI=""/>
         <Literal>Maddalena Ghiotto</Literal>
     </Annotation>
     <Annotation>
@@ -110,7 +109,7 @@
         <NamedIndividual IRI="#Worlding"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/creator"/>
+        <AnnotationProperty IRI=""/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ActivityConcept"/>
