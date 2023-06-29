@@ -38,6 +38,9 @@
         <Class IRI="#PracticeConcept"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#exampleOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#generatedBy"/>
     </Declaration>
     <Declaration>
@@ -45,6 +48,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#impliedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#impliesActivity"/>
@@ -182,13 +191,119 @@
         <Class IRI="#PracticeConcept"/>
         <NamedIndividual IRI="#Worlding"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#BecomingWith"/>
+        <NamedIndividual IRI="#Ongoingness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <NamedIndividual IRI="#BecomingWith"/>
+        <NamedIndividual IRI="#RenderCapable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exampleOf"/>
+        <NamedIndividual IRI="#GoVisit"/>
+        <NamedIndividual IRI="#Worlding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <NamedIndividual IRI="#GoVisit"/>
+        <NamedIndividual IRI="#ThinkWith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <NamedIndividual IRI="#Inheritance"/>
+        <NamedIndividual IRI="#ThinkFrom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <NamedIndividual IRI="#Inheritance"/>
+        <NamedIndividual IRI="#PlayingSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generatedBy"/>
+        <NamedIndividual IRI="#Ongoingness"/>
+        <NamedIndividual IRI="#BecomingWith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generatedBy"/>
+        <NamedIndividual IRI="#Ongoingness"/>
+        <NamedIndividual IRI="#RenderCapable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#Ongoingness"/>
+        <NamedIndividual IRI="#ResponseAbility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <NamedIndividual IRI="#PlayingSF"/>
+        <NamedIndividual IRI="#Storytelling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <NamedIndividual IRI="#RenderCapable"/>
+        <NamedIndividual IRI="#BecomingWith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlapsWith"/>
+        <NamedIndividual IRI="#Storytelling"/>
+        <NamedIndividual IRI="#PlayingSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliedIn"/>
+        <NamedIndividual IRI="#ThinkFrom"/>
+        <NamedIndividual IRI="#Inheritance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#ThinkWith"/>
+        <NamedIndividual IRI="#Politeness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliedIn"/>
+        <NamedIndividual IRI="#ThinkWith"/>
+        <NamedIndividual IRI="#GoVisit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <NamedIndividual IRI="#ThinkWith"/>
+        <NamedIndividual IRI="#BecomingWith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#impliesActivity"/>
+        <NamedIndividual IRI="#ThinkWith"/>
+        <NamedIndividual IRI="#RenderCapable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#Worlding"/>
+        <NamedIndividual IRI="#GoVisit"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#exampleOf"/>
+        <ObjectProperty IRI="#hasExample"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#generatedBy"/>
         <ObjectProperty IRI="#generates"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#impliedIn"/>
+        <ObjectProperty IRI="#impliesActivity"/>
+    </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#overlapsWith"/>
     </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exampleOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#generates"/>
         <Class IRI="#Concept"/>
@@ -196,6 +311,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCondition"/>
         <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExample"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#impliedIn"/>
+        <Class IRI="#ActivityConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#impliesActivity"/>
@@ -206,12 +329,28 @@
         <Class IRI="#Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#exampleOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#generates"/>
         <Class IRI="#Concept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCondition"/>
         <Class IRI="#ModeConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExample"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#impliedIn"/>
+        <Class IRI="#Concept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#impliesActivity"/>
@@ -237,6 +376,21 @@
         <DataProperty IRI="#hasMainReference"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActivityConcept</IRI>
+        <Literal>ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as &quot;thinking&quot;, &quot;becoming&quot; in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ModeConcept</IRI>
+        <Literal>ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform &quot;think&quot; in &quot;think-with&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PracticeConcept</IRI>
+        <Literal>A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as &quot;SF&quot;, &quot;Worlding&quot;, &quot;Ongoingness&quot;.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

@@ -55,30 +55,6 @@
 
 
 #################################################################
-#    Data properties
-#################################################################
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID
-:hasFramenetID rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance
-:hasInstance rdf:type owl:DatatypeProperty ;
-             rdfs:range rdfs:Literal .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel
-:hasLabel rdf:type owl:DatatypeProperty ;
-          rdfs:range rdfs:Literal .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference
-:hasMainReference rdf:type owl:DatatypeProperty ;
-                  rdfs:range rdfs:Literal .
-
-
-#################################################################
 #    Classes
 #################################################################
 
