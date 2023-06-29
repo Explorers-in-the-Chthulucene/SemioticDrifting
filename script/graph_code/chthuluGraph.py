@@ -40,9 +40,9 @@ framesLU = {"Collaborative_thinking" : ["thinks-with", "attunement"],
             "People_by_vocation" : ["who", "scientist"], 
             "Needing" : ["needy"]}
 # dictionary of words to identify concepts
-conceptsLU = {"ThinkWith": ["thinks-with", "kind of thinking", "built together"], 
+conceptsLU = {"ThinkWith": ["thinks-with", "thinks with", "thinking", "theory", "built together"], 
               "GoVisit": ["going visiting"], 
-              "RenderCapable" :["render each other capable"], 
+              "RenderCapable" :["capable", "competencies"], 
               "Worlding" : ["worlding"], 
               "Ongoingness" : ["yet to come"]}
 # list of vocations
@@ -74,11 +74,11 @@ def find_frame(sentence):
       for word in value:
          if word in sentence:
             frames.append(key)
-    return frames
+    return set(frames)
 
 
  # checks if a concept is evoked in a sentence
-def find_concept(sentence, frame_inst, chthuluGraph ):
+def find_concept(sentence, frame_inst, chthuluGraph):
     concepts = []
     for key, value in conceptsLU.items():
         for word in value:
@@ -90,7 +90,7 @@ def find_concept(sentence, frame_inst, chthuluGraph ):
         triple = (instance, URIRef(owlns+"sameAs"), URIRef(chthuluConcns+f"{concept}"))
         print(triple)
         # triple for chthuluGraph
-        class_triple = (instance, RDF.type, URIRef(chthuluns+f"{concept}"))
+        class_triple = (instance, RDF.type, URIRef(chthuluns+f"Concept"))
         print(class_triple)
         evokedBy = (instance, URIRef(chthuluns+"isEvokedBy"), frame_inst)
         print(evokedBy)
@@ -102,6 +102,8 @@ def find_concept(sentence, frame_inst, chthuluGraph ):
         chthuluGraph.add(evokedBy)
         chthuluGraph.add(evokes)        
 
+        print("\nthis is the length of chthulugraph after adding concept_type, concept_alignment, evokes, isEvokedBy IN FIND_CONCEPT FUNC\n")
+        print(str(len(chthuluGraph))+"\n===============================================\n")
     return chthuluGraph
 
 
@@ -112,7 +114,6 @@ def get_ontology_info(chthuluGraph):
     chthuluOnt.parse("ontologies\Chthulucene7.ttl", format="ttl")
     chthulu = Namespace(chthuluns)
     chthuluOnt.bind(chthulu, "chthulu")
-    print(str(len(chthuluOnt))+"==\n")
 
     #iterates over triples that have a specific property
     classes = chthuluOnt.triples((None, RDF.type, OWL.Class)) 
@@ -132,7 +133,6 @@ def get_ontology_info(chthuluGraph):
             chthuluGraph.add((s, p, o))
 
     #print(chthuluGraph.serialize(format="ttl"))      
-    print(str(len(chthuluGraph))+"==\n")
     return chthuluGraph
 
 
@@ -146,27 +146,60 @@ def get_concepts_info(chthuluGraph):
     chco = Namespace(chthuluConcns)
     conceptOnt.bind(chco, "chco")
 
-    all_info = conceptOnt.triples((None, None, None))
-    print(str(len(conceptOnt))+"==\n")
+    for triple in conceptOnt:
+        chthuluGraph.add(triple)
+    print("this is the length of conceptOnt\n")
+    print(str(len(conceptOnt))+"\n========================================\n")
    
-    for s, p, o in all_info:
-       chthuluGraph.add((s, p, o))
-
     #print(chthuluGraph.serialize(format="ttl")) 
-    print(str(len(chthuluGraph))+"==\n")
+    print("this is the length of chthuluGraph with concept statements before being returned\n")
+    print(str(len(chthuluGraph))+"\n===============================================\n")
     return chthuluGraph
 
 
-def find_superclass(subclass, chthuluGraph):
-    concept_var = False
+def find_superclass(subclass, instance, role_instance, chthuluGraph):
+    temp = False
+    # check if it's a concept and doesn't have a superclass
+    currentclass = subclass.split("#")
+    print(currentclass)
 
-    triples = chthuluGraph.triples
+    if currentclass[1] == "Concept":
+        temp = True
+        conceptRole = (instance, URIRef(chthuluns+"conceptRole"), role_instance)
+        print(conceptRole)
+        chthuluGraph.add(conceptRole)
+    
+    else:     
+        for s, p, o in chthuluGraph.triples((subclass, RDFS.subClassOf, None)):
+            superclass = o.split("#")
+            superclass = superclass[1]
+
+            # create hasRole relation
+            print(superclass)
+            if superclass == "HumanProp" or superclass == "HumanComm" or superclass == "Animal" or superclass == "AgentiveEntity":
+                agentiveRole = (instance, URIRef(chthuluns+"agentiveRole"), role_instance)
+                print(agentiveRole)
+                chthuluGraph.add(agentiveRole)
+            
+            if superclass == "Descriptor":
+                descriptorRole = (instance, URIRef(chthuluns+"descriptorRole"), role_instance)
+                print(descriptorRole)
+                chthuluGraph.add(descriptorRole)
+            
+            if superclass == "Place":
+                locationRole = (instance, URIRef(chthuluns+"locationRole"), role_instance)
+                print(locationRole)
+                chthuluGraph.add(locationRole)
+
+    print("\n\n this is the length of chthuluGraph, adding one hasRole statement\n")
+    print(str(len(chthuluGraph))+"\n===============================================\n")
+    return temp, chthuluGraph
 
 
 # ================================= MAIN ========================== #
 
 def main(tokens, alignment):
-    i = 0
+    i = 5
 
     chthuluGraph = Graph()
     global chthuluns 
@@ -175,13 +208,15 @@ def main(tokens, alignment):
     chthulu = Namespace(chthuluns)
     chthuluGraph.bind(chthulu, "chthulu")
 
+    print("this is chthuluGraph len at the start\n")
+    print(str(len(chthuluGraph))+"\n=================================================\n")
 
     chthuluGraph = get_ontology_info(chthuluGraph)
-    print(str(len(chthuluGraph))+"\n=================================================")
+    print("this is chthuluGraph after importing triples from ontology\n")
+    print(str(len(chthuluGraph))+"\n=================================================\n")
     chthuluGraph = get_concepts_info(chthuluGraph)
-    print(str(len(chthuluGraph)))
-
-    
+    print("this is chthuluGraph after importing the concepts RDF\n")
+    print(str(len(chthuluGraph))+"\n====================================\n")
 
 
     # while loop to parse only the first paragraph, namely 9 sentences
@@ -192,6 +227,7 @@ def main(tokens, alignment):
         # create Frame triples
         frames = find_frame(sentence)
         for frame in frames:
+            concept_var = False
             info = alignment.query(f"F_LABEL == '{frame}'")
 
             for idx, row in info.iterrows():
@@ -199,7 +235,9 @@ def main(tokens, alignment):
                     info = info.drop(idx)
                     filtered_info = info
 
+            filtered_info = info
             for idx, row in filtered_info.iterrows():   
+                # FOR EACH ROW
                 # create individual and class type triple
                 frame_instance = URIRef(chthuluns+frame+"_"+str(row["Token_ID_within_document"]))
                 frame_type = (frame_instance, RDF.type, URIRef(chthuluns+f"{frame}"))
@@ -209,94 +247,67 @@ def main(tokens, alignment):
                 role_type = (role_instance, RDF.type, URIRef(chthuluns+str(row["ROLE"])))
                 chthuluGraph.add(role_type)
 
+                  # create involvesRole relation
+                involvesRole = (frame_instance, URIRef(chthuluns+"involvesRole"), role_instance)
+                chthuluGraph.add(involvesRole)
+                #print(chthuluGraph.serialize(format="ttl"))
+
                 if row["ENT_TYPE"] != "None":
                     arg_instance = URIRef(chthuluns+str(row["FE_INSTANCE"])+"_"+str(row["Token_ID_within_document"]))
                     arg_class = URIRef(chthuluns+str(row["ENT_TYPE"]))
                     arg_type = (arg_instance, RDF.type, arg_class)
                     chthuluGraph.add(arg_type)
                     
-                # create involvesRole relation
-                involvesRole = (frame_instance, URIRef(chthuluns+"involvesRole"), role_instance)
-                print(involvesRole)
-                chthuluGraph.add(involvesRole)
-                print(chthuluGraph.serialize(format="ttl"))
+                    print("\n======================\nthis is the length of chthuluGraph, after adding frame_type, arg_type, role_type and involvesRole\n")
+                    print(str(len(chthuluGraph))+"\n===============================================\n")
 
-                concept_var, graph = find_superclass(arg_class, chthuluGraph)
+                    print("we are looking for the superclass of this class:\n")
+                    print(arg_class+"\n")
+                    print("this class is the type of the current row's instance which is\n")
+                    print(arg_instance)
 
-       
+                    temp, chthuluGraph = find_superclass(arg_class, arg_instance, role_instance, chthuluGraph)
+                    if temp == True:
+                        concept_var = True
+                       
+                    # create concept relations 
+                    if concept_var == True and arg_class[-3:] == "ept":
+                      
+                        # create triples to align with concepts ontology
+                        for key, value in conceptsLU.items():
+                            for word in value:
+                                if word == row["FE_INSTANCE"]:
+                                    print(key)
+                                    conc_sameas = (arg_instance, URIRef(owlns+"sameAs"), URIRef(chthuluConcns+key))
+                                    print(conc_sameas)
+                        
+                        # triple for chthuluGraph                    
+                        evokedBy = (arg_instance, URIRef(chthuluns+"isEvokedBy"), frame_instance)
+                        print(evokedBy)
+                        evokes = (frame_instance, URIRef(chthuluns+"evokes"), arg_instance)
+                        print(evokes)
+                        #add triples
+                        chthuluGraph.add(conc_sameas)     
+                        chthuluGraph.add(evokedBy)
+                        chthuluGraph.add(evokes)    
+                    
+                        print("\nthis is the length of chthulugraph after adding concept_alignment, evokes, isEvokedBy\n")
+                        print(print(str(len(chthuluGraph))+"\n===============================================\n"))
 
-       
+
+            # after iterating on rows see if, even without having a role, the frame evokes a concept
+            if concept_var == False: 
+                
+                chthuluGraph = find_concept(sentence, frame_instance, chthuluGraph)
+                print("\nthis is the length of chthulugraph after adding concept_alignment, evokes, isEvokedBy IN FIND_CONCEPT FUNC\n")
+                print(print(str(len(chthuluGraph))+"\n===============================================\n"))
+                    
         i += 1
-   
+
+    return chthuluGraph.serialize(destination="script\graph_code\cthuluGraph.ttl")
 
 
 
 if __name__ == '__main__':
     main(tokens, alignment)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#use rdfs for subclassof etc
-
-# 1 What are good practices to make kin?
-cq1 = '''
-PREFIX ns1: <http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT ?subject 
-WHERE {
-  ?subject rdfs:subClassOf owl:ActivityConcept .
-}
-'''
-
-cq2 = '''
-PREFIX ns1: <http://www.semanticweb.org/ghiot/ontologies/2023/2/Chthulucene/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT ?obj ?superclass
-WHERE {
-  ?subj owl:someValuesFrom ?obj;
-        rdf:type owl:Restriction .
-    ?obj rdfs:subClassOf ?superclass .
- 
-}
-'''
-
-
-'''
-resultCQ1 = chthuluGraph.query(cq1)
-for el in resultCQ1:
-  print(el)'''
-
-'''resultCQ2 = chthuluGraph.query(cq2)
-for el in resultCQ2:
-    print(el)'''

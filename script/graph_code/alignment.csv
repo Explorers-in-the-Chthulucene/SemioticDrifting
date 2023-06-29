@@ -1,36 +1,36 @@
 FRAME,F_LABEL,ROLE,FE_INSTANCE,Token_ID_within_document,POS_tag,fine_POS_tag,DEP_REL,ENT_TYPE
-1820,Being_in_category,Category, Worlding practice,199,NOUN,NN,attr,Worlding
-1820,Being_in_category,Item, That kind of theory and method,195,None,None,None,ThinkWith
-77,Cause_expansion,Agent, Her,146,PRON,PRP$,poss,Vinciane_Despret
-77,Cause_expansion,Cause, Kind of thinking,149,None,None,None,ThinkWith
-77,Cause_expansion,Item, The competencies of all the players,156,None,None,None,RenderCapable
+1820,Being_in_category,Category,Worlding,199,NOUN,NN,attr,Concept
+1820,Being_in_category,Item,theory,195,None,None,None,Concept
+77,Cause_expansion,Agent,Her,146,PRON,PRP$,poss,Vinciane_Despret
+77,Cause_expansion,Cause,thinking,149,None,None,None,Concept
+77,Cause_expansion,Item,competencies,156,None,None,None,Concept
 77,Cause_expansion,Purpose,The domain of ways of being and knowling dilates,68,None,None,None,None
-0,Collaborative_thinking,Thinker,Despret, 1,PROPN,NNP,nsubj,Vinciane_Despret
-0,Collaborative_thinking,Thinker,beings, 6,NOUN,NNS,pobj,AnimatedEntity
+0,Collaborative_thinking,Thinker,Despret,1,PROPN,NNP,nsubj,Vinciane_Despret
+0,Collaborative_thinking,Thinker,beings,6,NOUN,NNS,pobj,Animated
 0,Collaborative_thinking,Thinker,She,73,PRON,PRP,nsubj,Vinciane_Despret
-0,Collaborative_thinking,Thinker,Those she thinks with,78,PRON,DT,pobj,AnimatedEntity
+0,Collaborative_thinking,Thinker,Those,78,PRON,DT,pobj,Animated
 0,Collaborative_thinking,Manner,Recursively,83,ADV,RB,advmod,Modality
 0,Collaborative_thinking,Manner,Inventively,85,ADV,RB,advmod,Modality
 0,Collaborative_thinking,Manner,Relentlessly,87,ADV,RB,advmod,Modality
-23,Coming_to_believe,Cognizer, Despret,47,PROPN,NNP,nsubj,Vinciane_Despret
-23,Coming_to_believe,Content, what importance sounds like,68,None,None,None,None
-23,Coming_to_believe,Evidence, Singing blackbird,52,NOUN,NN,pobj,Bird
-27,Coming_up_with,Cognizer, Kind of thinking,149,None,None,None,ThinkWith
-27,Coming_up_with,Idea, What was not there before,189,None,None,None,None
-27,Coming_up_with,Cognizer, She,107,PRON,PRP,nsubj,Vinciane_Despret
-27,Coming_up_with,Idea, That kind of theory and method,114,None,None,None,ThinkWith
-2046,Mental_stimulus_stimulus_focus,Experiencer, Despret, 121,PROPN,NNP,nsubj,Vinciane_Despret
-2046,Mental_stimulus_stimulus_focus,Stimulus,Thinking,126,VERB,VBG,pcomp,ThinkWith
-2046,Mental_stimulus_stimulus_focus,Manner,By reducing the field of attention,136,None,None,None,Modality
-2046,Mental_stimulus_stimulus_focus,Manner, By discovering the stupidities of others,128,None,None,None,Modality
-1375,Needing,Cognizer, who,208,PRON,WP,nsubj,Vinciane_Despret
-1375,Needing,Requirement, What must be known and built together,220,None,None,None,None
-1071,People_by_vocation,Person, She,201,PRON,PRP,nsubj,Vinciane_Despret
+23,Coming_to_believe,Cognizer,Despret,47,PROPN,NNP,nsubj,Vinciane_Despret
+23,Coming_to_believe,Content,what importance sounds like,68,None,None,None,None
+23,Coming_to_believe,Evidence,blackbird,52,NOUN,NN,pobj,Bird
+27,Coming_up_with,Cognizer,thinking,149,None,None,None,Concept
+27,Coming_up_with,Idea,What was not there before,189,None,None,None,None
+27,Coming_up_with,Cognizer,She,107,PRON,PRP,nsubj,Vinciane_Despret
+27,Coming_up_with,Idea,theory,114,None,None,None,Concept
+2046,Mental_stimulus_stimulus_focus,Experiencer,Despret,121,PROPN,NNP,nsubj,Vinciane_Despret
+2046,Mental_stimulus_stimulus_focus,Stimulus,Thinking,126,VERB,VBG,pcomp,Concept
+2046,Mental_stimulus_stimulus_focus,Manner,reducing,136,None,None,None,Modality
+2046,Mental_stimulus_stimulus_focus,Manner,discovering,128,None,None,None,Modality
+1375,Needing,Cognizer,who,208,PRON,WP,nsubj,Vinciane_Despret
+1375,Needing,Requirement,What must be known and built together,220,None,None,None,None
+1071,People_by_vocation,Person,She,201,PRON,PRP,nsubj,Vinciane_Despret
 1071,People_by_vocation,Persistent_characteristic,Philosopher,204,NOUN,NN,attr,Vocation
 1071,People_by_vocation,Persistent_characteristic,Scientist,207,NOUN,NN,conj,Vocation
-66,Perception_active,Perceiver_agentive, Despret, 47,PROPN,NNP,nsubj,HumanProp
-66,Perception_active,Phenomenon, Singing blackbird,52,NOUN,NN,pobj,Bird
-66,Perception_active,Location_of_protagonist, window,62,NOUN,NN,pobj,LOC
-1130,Studying,Student, She, 94,PRON,PRP,nsubj,Vinciane_Despret
-1130,Studying,Subject,How beings render each other capable,96,None,None,None,RenderCapable
-1130,Studying,Manner,Actual_encounters,104,NOUN,NNS,pobj,LOC
+66,Perception_active,Perceiver_agentive,Despret,47,PROPN,NNP,nsubj,Vinciane_Despret
+66,Perception_active,Phenomenon,blackbird,52,NOUN,NN,pobj,Bird
+66,Perception_active,Location_of_protagonist,window,62,NOUN,NN,pobj,LOC
+1130,Studying,Student,She,94,PRON,PRP,nsubj,Vinciane_Despret
+1130,Studying,Subject,capable,96,None,None,None,Concept
+1130,Studying,Manner,encounters,104,NOUN,NNS,pobj,LOC
