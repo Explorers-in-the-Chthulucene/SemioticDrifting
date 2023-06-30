@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#"
+     xml:base="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologies="http://www.semanticweb.org/ghiot/ontologies/2023/5/"
+     xmlns:chthuluConcepts="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts">
+        <ontologies:chthuluConcepts>Giusy Grieco</ontologies:chthuluConcepts>
+        <ontologies:chthuluConcepts>Maddalena Ghiotto</ontologies:chthuluConcepts>
+        <rdfs:comment xml:lang="en">This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:comment>ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as &quot;thinking&quot;, &quot;becoming&quot; in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:comment>ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform &quot;think&quot; in &quot;think-with&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"/>
+        <rdfs:comment>A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as &quot;SF&quot;, &quot;Worlding&quot;, &quot;Ongoingness&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <generates rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness"/>
+        <overlapsWith rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"/>
+        <exampleOf rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding"/>
+        <impliesActivity rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"/>
+        <impliesActivity rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom"/>
+        <overlapsWith rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"/>
+        <generatedBy rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"/>
+        <generatedBy rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <overlapsWith rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <overlapsWith rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <overlapsWith rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <impliedIn rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness"/>
+        <impliedIn rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit"/>
+        <impliesActivity rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"/>
+        <impliesActivity rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"/>
+        <hasExample rdf:resource="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

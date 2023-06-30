@@ -1,0 +1,230 @@
+@prefix : <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#> .
+
+<http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> rdf:type owl:Ontology ;
+                                                                      <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> "Giusy Grieco" ,
+                                                                                                                                           "Maddalena Ghiotto" ;
+                                                                      rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts
+<http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf
+:exampleOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasExample ;
+           rdfs:domain :Concept ;
+           rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy
+:generatedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :generates ;
+             rdfs:domain :Concept ;
+             rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates
+:generates rdf:type owl:ObjectProperty ;
+           rdfs:domain :Concept ;
+           rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition
+:hasCondition rdf:type owl:ObjectProperty ;
+              rdfs:domain :Concept ;
+              rdfs:range :ModeConcept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample
+:hasExample rdf:type owl:ObjectProperty ;
+            rdfs:domain :Concept ;
+            rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn
+:impliedIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :impliesActivity ;
+           rdfs:domain :ActivityConcept ;
+           rdfs:range :Concept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity
+:impliesActivity rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Concept ;
+                 rdfs:range :ActivityConcept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith
+:overlapsWith rdf:type owl:ObjectProperty ,
+                       owl:SymmetricProperty ;
+              rdfs:domain :Concept ;
+              rdfs:range :Concept .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID
+:hasFramenetID rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance
+:hasInstance rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel
+:hasLabel rdf:type owl:DatatypeProperty ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference
+:hasMainReference rdf:type owl:DatatypeProperty ;
+                  rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept
+:ActivityConcept rdf:type owl:Class ;
+                 rdfs:subClassOf :Concept ;
+                 rdfs:comment "ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as \"thinking\", \"becoming\" in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved." .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept
+:Concept rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCondition ;
+                           owl:allValuesFrom :ModeConcept
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :impliesActivity ;
+                           owl:allValuesFrom :ActivityConcept
+                         ] .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept
+:ModeConcept rdf:type owl:Class ;
+             rdfs:subClassOf :Concept ;
+             rdfs:comment "ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform \"think\" in \"think-with\"." .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept
+:PracticeConcept rdf:type owl:Class ;
+                 rdfs:subClassOf :Concept ;
+                 rdfs:comment "A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as \"SF\", \"Worlding\", \"Ongoingness\"." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith
+:BecomingWith rdf:type owl:NamedIndividual ,
+                       :ActivityConcept ;
+              :generates :Ongoingness ;
+              :overlapsWith :RenderCapable .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit
+:GoVisit rdf:type owl:NamedIndividual ,
+                  :PracticeConcept ;
+         :exampleOf :Worlding ;
+         :impliesActivity :ThinkWith .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance
+:Inheritance rdf:type owl:NamedIndividual ,
+                      :PracticeConcept ;
+             :impliesActivity :ThinkFrom ;
+             :overlapsWith :PlayingSF .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness
+:Ongoingness rdf:type owl:NamedIndividual ,
+                      :PracticeConcept ;
+             :generatedBy :BecomingWith ,
+                          :RenderCapable ;
+             :hasCondition :ResponseAbility .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF
+:PlayingSF rdf:type owl:NamedIndividual ,
+                    :ActivityConcept ;
+           :overlapsWith :Storytelling .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness
+:Politeness rdf:type owl:NamedIndividual ,
+                     :ModeConcept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable
+:RenderCapable rdf:type owl:NamedIndividual ,
+                        :ActivityConcept ;
+               :overlapsWith :BecomingWith .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility
+:ResponseAbility rdf:type owl:NamedIndividual ,
+                          :ModeConcept .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling
+:Storytelling rdf:type owl:NamedIndividual ,
+                       :ActivityConcept ;
+              :overlapsWith :PlayingSF .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom
+:ThinkFrom rdf:type owl:NamedIndividual ,
+                    :ActivityConcept ;
+           :impliedIn :Inheritance .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith
+:ThinkWith rdf:type owl:NamedIndividual ,
+                    :ActivityConcept ;
+           :hasCondition :Politeness ;
+           :impliedIn :GoVisit ;
+           :impliesActivity :BecomingWith ,
+                            :RenderCapable .
+
+
+###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding
+:Worlding rdf:type owl:NamedIndividual ,
+                   :PracticeConcept ;
+          :hasExample :GoVisit .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ActivityConcept
+                :ModeConcept
+                :PracticeConcept
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

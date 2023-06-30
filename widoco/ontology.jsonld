@@ -1,0 +1,307 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"
+    }, {
+      "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts" : [ {
+    "@value" : "Giusy Grieco"
+  }, {
+    "@value" : "Maddalena Ghiotto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as \"thinking\", \"becoming\" in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform \"think\" in \"think-with\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"
+  }, {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as \"SF\", \"Worlding\", \"Ongoingness\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit"
+  } ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith"
+  }, {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept"
+  } ]
+} ]
