@@ -44,20 +44,8 @@ chco:overlapsWith a owl:ObjectProperty,
     rdfs:domain chco:Concept ;
     rdfs:range chco:Concept .
 
-chthulu:Amotz_Zahavi a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
-
 chthulu:Association a owl:Class ;
     rdfs:subClassOf chthulu:Organization .
-
-chthulu:Baghdad a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
-chthulu:Beatriz_da_Costa a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
-
-chthulu:Berlin a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
 
 chthulu:Bird a owl:Class ;
     rdfs:subClassOf chthulu:Animal .
@@ -65,29 +53,14 @@ chthulu:Bird a owl:Class ;
 chthulu:Breeder a owl:Class ;
     rdfs:subClassOf chthulu:HumanComm .
 
-chthulu:California a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
 chthulu:Camel a owl:Class ;
     rdfs:subClassOf chthulu:Animal .
-
-chthulu:Caudry a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
 
 chthulu:Cause_expansion_146 a chthulu:Cause_expansion ;
     chthulu:involvesRole chthulu:Agent_146 .
 
-chthulu:Cerisy a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
-chthulu:Chateau a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
 chthulu:Collaborative_thinking a owl:Class ;
     rdfs:subClassOf chthulu:Frame .
-
-chthulu:Colombophile a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
 
 chthulu:Coming_to_believe a owl:Class ;
     rdfs:subClassOf chthulu:Frame .
@@ -107,50 +80,17 @@ chthulu:Content a owl:Class ;
 chthulu:Cow a owl:Class ;
     rdfs:subClassOf chthulu:Animal .
 
-chthulu:Damascus a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
 chthulu:Despret_121 a chthulu:Vinciane_Despret ;
     chthulu:agentiveRole chthulu:Experiencer_121 .
-
-chthulu:EcologicalPark a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
 
 chthulu:Evidence a owl:Class ;
     rdfs:subClassOf chthulu:Role .
 
-chthulu:Fancier a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:Farmer a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:Farmland a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
-chthulu:Father a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:France a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
-chthulu:GobiDesert a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
 chthulu:Hannah_Arendt a owl:Class ;
     rdfs:subClassOf chthulu:HumanProp .
 
-chthulu:Heir a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
 chthulu:Her_146 a chthulu:Vinciane_Despret ;
     chthulu:agentiveRole chthulu:Agent_146 .
-
-chthulu:Inquirer a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:Iran a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
 
 chthulu:Isabelle_Stengers a owl:Class ;
     rdfs:subClassOf chthulu:HumanProp .
@@ -158,20 +98,8 @@ chthulu:Isabelle_Stengers a owl:Class ;
 chthulu:Jocelyne_Porcher a owl:Class ;
     rdfs:subClassOf chthulu:HumanProp .
 
-chthulu:LeisurePark a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
 chthulu:Location a owl:Class ;
     rdfs:subClassOf chthulu:Role .
-
-chthulu:Man a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:Market a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
-chthulu:Matali_Crasset a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
 
 chthulu:Mental_stimulus_stimulus_focus_121 a chthulu:Mental_stimulus_stimulus_focus ;
     chthulu:involvesRole chthulu:Experiencer_121 .
@@ -182,20 +110,8 @@ chthulu:Mental_stimulus_stimulus_focus_128 a chthulu:Mental_stimulus_stimulus_fo
 chthulu:Mental_stimulus_stimulus_focus_136 a chthulu:Mental_stimulus_stimulus_focus ;
     chthulu:involvesRole chthulu:Manner_136 .
 
-chthulu:Miss_Manners a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
-
-chthulu:NatureReserve a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
 chthulu:Needing_208 a chthulu:Needing ;
     chthulu:involvesRole chthulu:Cognizer_208 .
-
-chthulu:NegevDesert a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
-chthulu:New_York a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
 
 chthulu:Object a owl:Class ;
     rdfs:subClassOf chthulu:Inanimated .
@@ -221,9 +137,6 @@ chthulu:Philosopher_204 a chthulu:Vocation ;
 chthulu:Pig a owl:Class ;
     rdfs:subClassOf chthulu:Animal .
 
-chthulu:PigeonLofts a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
 chthulu:Purpose a owl:Class ;
     rdfs:subClassOf chthulu:Role .
 
@@ -245,15 +158,6 @@ chthulu:She_94 a chthulu:Vinciane_Despret ;
 chthulu:Soay_sheep a owl:Class ;
     rdfs:subClassOf chthulu:Animal .
 
-chthulu:Son a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:SouthernIsraeliDesert a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
-chthulu:Southern_California a owl:Class ;
-    rdfs:subClassOf chthulu:GPE .
-
 chthulu:Studying_104 a chthulu:Studying ;
     chthulu:involvesRole chthulu:Manner_104 .
 
@@ -263,26 +167,8 @@ chthulu:Studying_94 a chthulu:Studying ;
 chthulu:Technology a owl:Class ;
     rdfs:subClassOf chthulu:Inanimated .
 
-chthulu:Thelma_Rowell a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
-
 chthulu:Thinker a owl:Class ;
     rdfs:subClassOf chthulu:Role .
-
-chthulu:Village a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
-
-chthulu:Virginia_Woolf a owl:Class ;
-    rdfs:subClassOf chthulu:HumanProp .
-
-chthulu:Visitor a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:Woman a owl:Class ;
-    rdfs:subClassOf chthulu:HumanComm .
-
-chthulu:World a owl:Class ;
-    rdfs:subClassOf chthulu:LOC .
 
 chthulu:agentiveRole a owl:ObjectProperty ;
     rdfs:comment "Property connecting an AgentiveEntity to the Role it assumes in a Frame" ;
@@ -631,9 +517,6 @@ chco:ActivityConcept a owl:Class ;
     rdfs:subClassOf chco:Concept .
 
 chthulu:Concept a owl:Class .
-
-chthulu:GPE a owl:Class ;
-    rdfs:subClassOf chthulu:Place .
 
 chthulu:HumanProp a owl:Class ;
     rdfs:subClassOf chthulu:Animated .
