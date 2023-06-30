@@ -56,11 +56,6 @@ chthulu:evokes rdf:type owl:ObjectProperty ;
                rdfs:comment "property connecting a Frame to the Concepts, if present, evoked in the text." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#generatedBy
-chthulu:generatedBy rdf:type owl:ObjectProperty ;
-                    rdfs:comment "property connecting a Concept to another Concept that generates it" .
-
-
 ###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole
 chthulu:hasRole rdf:type owl:ObjectProperty .
 

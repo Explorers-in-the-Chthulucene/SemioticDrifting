@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix chco: <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> .
+@base <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#> .
 
 <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> rdf:type owl:Ontology ;
                                                                       <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> "Giusy Grieco" ,
@@ -74,30 +74,6 @@ chco:overlapsWith rdf:type owl:ObjectProperty ,
                            owl:SymmetricProperty ;
                   rdfs:domain chco:Concept ;
                   rdfs:range chco:Concept .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID
-chco:hasFramenetID rdf:type owl:DatatypeProperty ;
-                   rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance
-chco:hasInstance rdf:type owl:DatatypeProperty ;
-                 rdfs:range rdfs:Literal .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel
-chco:hasLabel rdf:type owl:DatatypeProperty ;
-              rdfs:range rdfs:Literal .
-
-
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference
-chco:hasMainReference rdf:type owl:DatatypeProperty ;
-                      rdfs:range rdfs:Literal .
 
 
 #################################################################
