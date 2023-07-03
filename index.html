@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChthuluGraph</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="plugins/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+	
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+<div id="overlayer">
+	<span class="loader">
+	  <div class="dot dot-1"></div>
+	  <div class="dot dot-2"></div>
+	  <div class="dot dot-3"></div>
+	</span>
+</div>
+
+<!-- SVG Import -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="hamburger" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+		  <title>Filter</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M32 144h448M112 256h288M208 368h96"/>
+	</symbol>
+	<symbol id="location" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M16.272 10.272a4 4 0 1 1-8 0a4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z"/><path d="M5.794 16.518a9 9 0 1 1 12.724-.312l-6.206 6.518l-6.518-6.206Zm11.276-1.691l-4.827 5.07l-5.07-4.827a7 7 0 1 1 9.897-.243Z"/></g></symbol>
+  
+	<symbol id="check" viewBox="0 0 16 16">
+	  <title>Check</title>
+	  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+	</symbol>
+	<symbol id="bootstrap" viewBox="0 0 118 94">
+	  <title>Bootstrap</title>
+	  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+	</symbol>
+	<symbol id="home" viewBox="0 0 16 16">
+	  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+	</symbol>
+	<symbol id="speedometer2" viewBox="0 0 16 16">
+	  <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+	  <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+	</symbol>
+	<symbol id="table" viewBox="0 0 16 16">
+	  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+	</symbol>
+	<symbol id="people-circle" viewBox="0 0 16 16">
+	  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+	  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+	</symbol>
+	<symbol id="grid" viewBox="0 0 16 16">
+	  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+	</symbol>
+	<symbol id="collection" viewBox="0 0 16 16">
+	  <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+	</symbol>
+	<symbol id="calendar3" viewBox="0 0 16 16">
+	  <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+	  <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+	</symbol>
+	<symbol id="chat-quote-fill" viewBox="0 0 16 16">
+	  <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+	</symbol>
+	<symbol id="cpu-fill" viewBox="0 0 16 16">
+	  <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+	  <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+	</symbol>
+	<symbol id="gear-fill" viewBox="0 0 16 16">
+	  <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+	</symbol>
+	<symbol id="speedometer" viewBox="0 0 16 16">
+	  <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+	  <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+	</symbol>
+	<symbol id="toggles2" viewBox="0 0 16 16">
+	  <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+	  <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+	  <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+	</symbol>
+	<symbol id="tools" viewBox="0 0 16 16">
+	  <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+	</symbol>
+	<symbol id="chevron-right" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+	</symbol>
+	<symbol id="geo-fill" viewBox="0 0 16 16">
+	  <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+	</symbol>
+  </svg>
+
+<!-- MENU -->
+<header class="site-header position-fixed py-1 text-white">
+  	<nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+	
+		<div class="container-fluid">
+		  
+		  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo"/></a>
+
+		  <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
+		  
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+		    <div class="offcanvas-header">
+		      <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+		      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		    </div>
+		    <div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="about.html">About</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="about.html">Results</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="about.html">Datasets</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			      <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Documentation</a>
+			      <ul class="dropdown-menu dropdown-menu-dark">
+			        <li><a href="about.html" class="dropdown-item" href="#scrollspyHeading3">Analyses</a></li>
+			        <li><a href="about.html" class="dropdown-item" href="#scrollspyHeading3">VebOWL Visualisation</a></li>
+			        <li><a href="contact.html" class="dropdown-item" href="#scrollspyHeading5">Sustainability (correzioni)</a></li>
+			      </ul>
+			    </li>
+			    <li class="nav-item">
+			      <a class="btn btn-primary btn-lg rounded-pill" href="index.html">Github Repo</a>
+			    </li>
+			  </ul>
+			 </div>
+		  </div>
+
+	  	</div>
+
+	</nav>
+</header>
+
+<!-- BANNER -->
+<section id="intro" class="padding-large jarallax">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="section-title my-5">
+					<h2 style="text-shadow: 0 0 10px #FF0000;" class="text-white display-2">Chthulu<em>Graph</em></h2>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="0">
+					<div class="card-body">
+						<h3>A Knowledge Representation Heuristic Method</h3>
+						<p>Taking inspiration from this paper <a href="https://arxiv.org/abs/1811.01409">"Semantic Role Labeling for Knowledge Graph Extraction from Text"</a>  we studied how tools can be used, together with heuristic methods, to produce content for an ontology[...]</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="300">
+					<div class="card-body">
+						<h3>Script materials available</h3>
+						<p>Are you struggling with semantic role labelling? This shall become a great occasion to understand more about the potentialities of knowledge representation and organization.</p>
+						<a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/script">Download here.</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="600">
+					<div class="card-body">
+						<h3>Donna Haraway legacy</h3>
+						<p>What is this project about? Donna Haraway's <i>Staying with the Trouble</i>, is a book that represents a milestone when it comes to questioning human-nature relationship, together with nature/culture division [...]</a>
+						<a href="/stayWithTheTrouble.html">Continue reading.</a>
+						<img src="" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="images/banner.jpg" class="jarallax-img">
+</section>
+
+
+<!-- WIDE BTN -->
+<section id="intro">
+	<div class="d-grid">
+		<a href="#secondPart" class="btn btn-dark" >↓  ↓  ↓  ↓  ↓  ↓  ↓</a>
+	</div>
+</section>
+
+
+<section id="intro">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="section-title my-5">
+				</div>
+			</div>
+		</div>
+			
+<!-- second intro : container del container -->
+			<div class="col-md-12" style="padding-bottom: 50px">
+				<div class=card data-aos="fade-up" data-aos-delay="600" style="padding-left:25px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px;">
+					<p style="text-align: center;">~ ABOUT ~</p>
+					<div class="card" style="margin-top: 95px; margin-bottom: 95px;">
+						<header class="text-center my-5">
+							<span class="text-muted">[THE SOURCE]</span>
+							<h2 style="text-align: center;">Staying w/ the Trouble</h2>
+						</header>
+						<p id="seconPart" style="padding-left: 38px; padding-right: 38px; justify-content:center;">Donna Haraway's philosophy transcends intellectual novelty, reaching into the realm of practical implications that resound with transformative potential. Her groundbreaking work shatters the confines of conventional thought, urging us to reimagine our relationships with the myriad non-human beings who share our planet. By nurturing a sense of ecological responsibility and ethical engagement, Haraway's philosophy challenges dominant power structures and calls for multispecies solidarity. Her resonant voice echoes through contemporary debates on social justice, environmental ethics, and the urgent imperative of sustainable coexistence.
+
+							As we venture into the captivating tapestry of ideas woven within Chapter 7 of "Staying with the Trouble," we embark on a profound journey of unlearning, reevaluation, and reorientation. Haraway's visionary thinking beckons us to discard our preconceived notions and embrace a paradigm shift that transcends anthropocentrism. Through her incisive prose, we are compelled to forge new alliances, to grapple with the complexities of our entangled existence, and to confront the pressing issues of our time with unwavering intellectual rigor, boundless empathy, and an unyielding commitment to the flourishing of all beings.</a>
+					</div>
+
+<!-- creative kit -->
+
+
+<div class="container px-4 py-5" id="icon-grid">
+	<header class="text-center my-5">
+		<span class="text-muted">[HOW?]</span>
+		<h2><strong>The steps</strong></h2>
+	</header>
+
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+	  
+	  <div class="col d-flex align-items-start">
+		<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+		<div>
+		  <h4 class="fw-bold mb-0">Knowledge Extraction</h4>
+		  <p>Paragraph of text beneath the heading to explain the heading.</p>
+		</div>
+	  </div>
+	  <div class="col d-flex align-items-start">
+		<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+		<div>
+		  <h4 class="fw-bold mb-0">Knowledge Graph and Evaluation</h4>
+		  <p>Paragraph of text beneath the heading to explain the heading.</p>
+		</div>
+	  </div>
+	  <div class="col d-flex align-items-start">
+		<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+		<div>
+		  <h4 class="fw-bold mb-0">Ontology Design</h4>
+		  <p>Paragraph of text beneath the heading to explain the heading.</p>
+		</div>
+	  </div>
+	  <div class="col d-flex align-items-start">
+		<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+		<div>
+		  <h4 class="fw-bold mb-0">Further Developments</h4>
+		  <p>Paragraph of text beneath the heading to explain the heading.</p>
+		</div>
+	  </div>
+	</div>
+</div>
+
+				<div class="card" style="margin-top: 40px;">
+						<header class="text-center my-5">
+							<span class="text-muted">[A Curious Practice]</span>
+							<h2 style="text-align: center;"><code>chapter seven</code></h2>
+						</header><!-- metti qui accordion item -->
+						<p id="seconPart" style="padding-left: 38px; padding-right: 38px; justify-content: center;">This project delves into the magnificence of Donna Haraway's philosophy as it unfolds within the pages of "Staying with the Trouble." Within the intricate tapestry of ideas interwoven in Chapter 7, we strive to grasp the transformative power of her profound originality. By delving into the depths of her thinking, we unravel the potential to reshape our understanding of ourselves and the intricate fabric of the world we inhabit.</a>
+							<section class="padding-medium">
+								<div class="container">
+									<div class="row mb-3">
+							
+										<div class="col-md-6">
+											<div class="accordion mb-5" id="accordionExample">
+												<div class="accordion-item" >
+													<h2 class="accordion-header" id="headingOne">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+														Reader | Chap 7 | Chthulu Concepts
+													</h2>
+													<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+													<div class="accordion-body">
+														<button id="btn" type="button" class="btn btn-outline-primary" style="margin-bottom: 25px;">CC | Chthulu Concepts</button>
+														<button id="btn" type="button" class="btn btn-outline-primary" style="margin-bottom: 25px;">CC | Chthulu Concepts</button>
+						
+														<p style="text-align:justify;">Vinciane Despret <a id="keywords">thinks-with</a> other beings, human and not. That is a rare and precious vocation. Vocation: calling, calling with, called by, calling as if the world mattered, calling out, going too far, going visiting. Despret listened to a singing blackbird one morning—a living blackbird outside her particular window—and that way learned what importance sounds like. She thinks in attunement with those she thinks with—recursively, inventively, relentlessly—with joy and verve. She studies how beings render each other capable in actual encounters, and she theorizes— makes cogently available—that kind of theory and method. Despret is not interested in thinking by discovering the stupidities of others, or by reducing the field of attention to prove a point. Her kind of thinking enlarges, even invents, the competencies of all the players, including herself, such that the domain of ways of being and knowing dilates, expands, adds both ontological and epistemological possibilities, proposes and enacts what was not there before. That is her worlding practice. She is a philosopher and a scientist who is allergic to denunciation and hungry for discovery, needy for what must be known and built together, with and for earthly beings, living, dead, and yet to come. Referring both to her own practice for observing scientists and also to the practices of ethologist Thelma Rowell observing her Soay sheep, Despret affirmed “a particular epistemological position to which I am committed, one that I call a virtue: the virtue of politeness.” In every sense, Despret’s cultivation of politeness is a curious practice. She trains her whole being, not just her imagination, in Arendt’s words, “to go visiting.” Visiting is not an easy practice; it demands the ability to find others actively interesting, even or especially others most people already claim to know all too completely, to ask questions that one’s interlocutors truly find interesting, to cultivate the wild virtue of curiosity, to retune one’s ability to sense and respond—and to do all this politely! What is this sort of politeness? It sounds more than a little risky. Curiosity always leads its practitioners a bit too far off the path, and that way lie stories. The first and most important thing at risk in Despret’s practice is an approach that assumes that beings have pre-established natures and abilities that are simply put into play in an encounter. Rather, Despret’s sort of politeness does the energetic work of holding open the possibility that surprises are in store, that something interesting is about to happen, but only if one cultivates the virtue of letting those one visits intra-actively shape what occurs. They are not who/what we expected to visit, and we are not who/what were anticipated either. Visiting is a subjectand object-making dance, and the choreographer is a trickster. Asking questions comes to mean both asking what another finds intriguing and also how learning to engage that changes everybody in unforeseeable ways. Good questions come only to a polite inquirer, especially a polite inquirer provoked by a singing blackbird. With good questions, even or especially mistakes and misunderstandings can become interesting. This is not so much a question of manners, but of epistemology and ontology, and of method alert to off-the-beaten-path practices. At the least, this sort of politeness is not what Miss Manners purveys in her advice column. There are so many examples of Despret learning and teaching polite inquiry. Perhaps the most famous is her visit to the Negev desert field site of the Israeli ornithologist Amotz Zahavi, where she encountered Arabian babblers who defied orthodox accounts of what birds should be doing, even as the scientists also acted off-script scientifically. Specifically, Zahavi asked in excruciating detail, what matters to babblers? He could not do good science otherwise. The babblers’ practices of altruism were off the charts, and they seemed to do it, according to Zahavi, for reasons of competitive prestige not well accounted for by theories like kin selection. Zahavi let the babblers be interesting; he asked them interesting questions; he saw them dance. “Not only were these birds described as dancing together in the morning sunrise, not only were they eager to offer presents to one another, not only would they take pride in caring for each other’s nestlings or in defending an endangered comrade, but also, according to Zahavi’s depiction, their relations relied on trust.” What Despret tells us she came to know is that the specific practices of observation, narration, and the liveliness of the birds were far from independent of each other. This was not just a question of worldviews and related theories shaping research design and interpretations, or of any other purely discursive effect. What scientists actually do in the field affects the ways “animals see their scientists seeing them” and therefore how the animals respond. In a strong sense, observers and birds rendered each other capable in ways not written into preexisting scripts, but invented or provoked, more than simply shown, in practical research. Birds and scientists were in dynamic, moving relations of attunement. The behavior of birds and their observers were made, but not made up. Stories are essential, but are never “mere” stories. Zahavi seemed intent on making experiments with rather than on babblers. He was trying to look at the world with the babblers rather than at them, a very demanding practice. And the same demands were made of Despret, who came to watch scientists but ended up in a much more complex tangle of practices. Birds and scientists do something, and they do it together. They become-with each other. The world in the southern Israeli desert was composed by adding competencies to engage competencies, adding perspectives to engage perspectives, adding subjectivities to engage subjectivities, adding versions to understand versions. In short, this science worked by addition, not subtraction. Worlds enlarged; the babblers and the scientists— Despret included—inhabited a world of propositions not available before. “Both humans and babblers create narratives, rather than just telling them. They create/disclose new scripts.” Good questions were posed; surprising answers made the world richer. Visiting might be risky, but it is definitely not boring. Despret’s work is full of literal collaborations, with people and with animals, not simply metaphors of thinking with each other. I admit I am drawn most by the collaborations that entangle people, critters, and apparatuses. No wonder that Despret’s work with sociologist Jocelyne Porcher and the farmers, pigs, and cows in their care sustains me. Despret and Porcher visited cow and pig breeders on nonindustrial French farms, where the humans and animals lived in daily interaction that led sober, nonromantic, working breeders to say such things as, “We don’t stop talking with our animals.” The question that led Despret and Porcher to the farmers circled around their efforts to think through what it means to claim that these domestic food-producing animals are working, and working with their people. The first difficulty, not surprisingly, was to figure out how to ask questions that interested the breeders, that engaged them in their conversations and labors with their animals. It was decidedly not interesting to the breeders to ask how animals and people are the same or different in general. These are people who make particular animals live and die and who live, and die, by them. The task was to engage these breeders in constructing the questions that mattered to them. The breeders incessantly “uprooted” the researchers’ questions to address the queries that concerned them in their work. The story has many turns, but what interested me most was the insistence of the breeders that their animals “know what we want, but we, we don’t know what they want.” Figuring out what their animals want, so that people and cows could together accomplish successful breeding, was the fundamental conjoined work of the farm. Farmers bad at listening to their animals, bad at talking to them, and bad at responding were not good farmers in their peers’ estimation. The animals paid attention to their farmers; paying equally effective attention to the cows and pigs was the job of good breeders. This is an extension of subjectivities for both people and critters, “becoming what the other suggests to you, accepting a proposal of subjectivity, acting in the manner in which the other addresses you, actualizing and verifying this proposal, in the sense of rendering it true.” The result is bringing into being animals that nourish humans, and humans that nourish animals. Living and dying are both in play. “Working together” in this kind of daily interaction of labor, conversation, and attention seems to me to be the right idiom. Continually hungry for more of Despret’s visiting with critters, their people, and their apparatuses—hungry for more of her elucidations of “anthropo-zoo-genesis” —I have a hard time feeling satisfied with only human people on the menu. That prejudice took a tumble when I read Women Who Make a Fuss: The Unfaithful Daughters of Virginia Woolf, which Isabelle Stengers and Vinciane Despret wrote together with an extraordinary collective of bumptious women. “Think we must!” cries this book, in concert with the famous line from Virginia Woolf’s Three Guineas. In Western worlds, and elsewhere too, women have hardly been included in the patrilines of thinking, most certainly including the patrilines making decisions for (yet another) war. Why should Virginia Woolf, or any other woman, or men for that matter, be faithful to such patrilines and their demands for sacrifice? Infidelity seems the least we should demand of ourselves! This all matters, but the question in this book is not precisely that, but rather what thinking can possibly mean in the civilization in which we find ourselves. “But how do we take back up a collective adventure that is multiple and ceaselessly reinvented, not on an individual basis, but in a way that passes the baton, that is to say, affirms new givens and new unknowns?” We must somehow make the relay, inherit the trouble, and reinvent the conditions for multispecies flourishing, not just in a time of ceaseless human wars and genocides, but in a time of humanpropelled mass extinctions and multispecies genocides that sweep people and critters into the vortex. We must “dare ‘to make’ the relay; that is to create, to fabulate, in order not to despair. In order to induce a transformation, perhaps, but without the artificial loyalty that would resemble ‘in the name of a cause,’ no matter how noble it might be.” Hannah Arendt and Virginia Woolf both understood the high stakes of training the mind and imagination to go visiting, to venture off the beaten path to meet unexpected, non-natal kin, and to strike up conversations, to pose and respond to interesting questions, to propose together something unanticipated, to take up the unasked-for obligations of having met. This is what I have called cultivating response-ability. Visiting is not a heroic practice; making a fuss is not the Revolution; thinking with each other is not Thought. Opening up versions so stories can be ongoing is so mundane, so earth-bound. That is precisely the point. The blackbird sings its importance; the babblers dance their shining prestige; the storytellers crack the established disorder. That is what “going too far” means, and this curious practice is not safe. Like Arendt and Woolf, Despret and her collaborators understand that we are dealing with “the idea of a world that could be habitable.” “The very strength of women who make a fuss is not to represent the True, rather to be witnesses for the possibility of other ways of doing what would perhaps be ‘better.’ The fuss is not the heroic statement of a grand cause . . . It instead affirms the need to resist the stifling impotence created by the ‘no possibility to do otherwise, whether we want it or not,’ which now reigns everywhere.” It is past time to make such a fuss. Despret’s curious practice has no truck with loyalty to a cause or doctrine; but it draws deeply from another virtue that is sometimes confused with loyalty, namely, “thinking from” a heritage. She is tuned to the obligations that inhere in starting from situated histories, situated stories. She retells the parable of the twelve camels in order to tease out what it means to “start from,” that is, to “remain obligated with respect to that from which we speak, think, or act. It means to let ourselves learn from the event and to create from it.” In a sort of cat’s cradle with powerful fables, Despret received the parable from Isabelle Stengers, and then she relayed it to me in early . I relay it back to her here. To inherit is an act “which demands thought and commitment. An act that calls for our transformation by the very deed of inheriting.” In his will, the father in this story left his three quarrelsome sons a seemingly impossible inheritance: eleven camels to be divided in a precise way, half to the eldest son, a quarter to the second son, and a sixth to the third. The perverse requirements of the legacy provoked the confused sons, who were on the verge of failing to fulfill the terms of the will, to visit an old man living in the village. His savvy kindness in giving the sons a twelfth camel allowed the heirs to create a solution to their difficult heritage; they could make their inheritance active, alive, generative. With twelve camels, the fractions worked, and there was one camel left over to give back to the old man. Despret notes that the tale she read left actual camels out of the enlargement and creativity of finding what it means to “start from.” Those storied camels were conventional, discursive, figural beasts, whose only function was to give occasion for the problematic sons to grow in patriarchal understanding, recapitulating more than a little the history of philosophy that Despret—and I—inherited. But by listening, telling, and activating that particular story her way, she makes something that was absent present. She made an interesting, curious fuss without denouncing anybody. Therefore, another heritage emerges and makes claims on anyone listening, anyone attuned. It isn’t just philosophy that has to change; the mortal world shifts. Long-legged, big-lipped, humped camels shake the dust from their hot, hard-worked hides and nuzzle the storyteller for a scratch behind the ears. Despret, and because of her, we, inherit camels now, camels with their people, in their markets and places of travel and labor, in their living and dying in worlds-at-stake, like the contemporary Gobi Desert. We start from what is henceforth a dilated story that makes unexpected demands to cultivate response-ability. If we are to remain faithful to starting from the transformed story, we can no longer not know or not care that camels and people are at stake to each other—across regions, genders, races, species, practices. From now on, call that philosophy, a game of cat’s cradle, not a lineage. We are obligated to speak from situated worlds, but we no longer need start from a humanist patriline and its breath-taking erasures and high-wire acts. The risk of listening to a story is that it can obligate us in ramifying webs that cannot be known in advance of venturing among their myriad threads. In a world of anthropozoogenesis, the figural is more likely than not to grow teeth and bite us in the bum. Despret’s philosophical ethology starts from the dead and missing as well as from the living and visible. She has studied situated human beings’ mourning practices for their dead in ways strongly akin to her practice of philosophical ethology; in both domains, she attends to how—in practice—people can and do solicit the absent into vivid copresence, in many kinds of temporality and materiality. She attends to how practices— activated storytelling—can be on the side of what I call “ongoingness”: that is, nurturing, or inventing, or discovering, or somehow cobbling together ways for living and dying well with each other in the tissues of an earth whose very habitability is threatened. Many kinds of failure of ongoingness crumble lifeways in our times of onrushing extinctions, exterminations, wars, extractions, and genocides. Many kinds of absence, or threatened absence, must be brought into ongoing response-ability, not in the abstract but in homely storied cultivated practice. To my initial surprise, this matter brought Despret and me together with racing pigeons, also called carrier pigeons (in French voyageurs) and with their avid fanciers (in French colombophiles, lovers of pigeons). I wrote an essay for Despret after an extraordinary week with her and her colleagues in the chateau at Cerisy in July , in which I proposed playing string figure games with companion species for cultivating multispecies response-ability. I sent Despret a draft containing my discussion of the wonderful art-technology-environmental-activist project by Beatriz da Costa called PigeonBlog, as well as a discussion of the communities of racing pigeons and their fanciers in Southern California. Pigeon racing is a working-class men’s sport around the world, one made immensely difficult in conditions of urban war (Baghdad, Damascus), racial and economic injustice (New York, Berlin), and displaced labor and play of many kinds across regions (France, Iran, California). I care about art-design-activist practices that join diverse people and varied critters in shared, often vexed public spaces. “Starting from” this caring, not from some delusional caring in general, landed me in innovative pigeon lofts, where, it turned out, Despret, attuned to practices of commemoration, had already begun to roost. In particular, by leading me to Matali Crasset’s Capsule, built in in the leisure park of Caudry, she shared her understanding of the power of holding open actual space for ongoing living and working in the face of threatened absence as a potent practice of commemoration. The Beauvois association of carrier pigeon fanciers asked Crasset, an artist and industrial designer, to build a prototype pigeon loft that would combine beauty, functionality for people and birds, and a pedagogic lure to draw future practitioners into learning demanding skills. Actual pigeons had to thrive inhabiting this loft; actual colombophiles had to experience the loft working; and actual visitors to the ecological park, which was rehabilitating exhausted farmland into a variegated nature reserve for recuperating critters and people, had to be infected with the desire for a life transformed with avian voyageurs. Despret understood that the prototype, the memorial, had to be for both the carrier pigeons and their people—past, present and yet to come. Neither the critters nor the people could have existed or could endure without each other in ongoing, curious practices. Attached to ongoing pasts, they bring each other forward in thick presents and still possible futures; they stay with the trouble in speculative fabulation.
+															</p>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>
+							
+									<div class="col-md-6">
+							
+										<h3 style="color:blue" ><br><br>THE PROJECT FOR HARAWAY'S LEGACY</h3>
+						
+										<p>Without aiming at taming the anti-categorical nature of Haraway's thought, we thought useful and interesting to create an Ontology to try and organize the content of Staying with the trouble with the twofold aim, on the one hand, of making the stories and the thoughts contained in these pages more navigable for people, on the other hand of enhancing the reach of Haraway's connections and thought-travels by linking entities such as, people, places, events and so on, with other existing knowledge on the web. As Haraway would put it, this ontology aims at playing string figures and entangle different sources of knowledge on the web to create a resource where users can exploit digital tools to learn and play around while <a href="about.html">staying with the trouble</a></a>
+											</p>
+									</div>
+							</section>			
+								</div>
+
+<!-- start block quoute 
+<div class="row mb-5">
+	<div class="col-md-6">
+		<blockquote class="blockquote">
+			<p>Neither the critters nor the people could have existed or could endure without each other in ongoing, <b>curious practices</b>. Attached to ongoing pasts, they bring each other forward in thick presents and still possible futures; <b>they stay with the trouble in speculative fabulation</b>.</p>
+			<cite class="mb-5">Donna Haraway, Staying with the Trouble, chap. 7</cite>
+		</blockquote>
+	</div>
+	<div class="col-md-6" style="background: url('images/veronika-jorjobert-27w3ULIIJfI-unsplash.jpg');background-size: cover;">
+	</div>
+</div></div></div></div></div>
+end block quoute -->
+
+<div class="card" style="margin-top: 40px;">
+	<header class="text-center my-5">
+		<a href="SVG\kgEvaluation.svg" title="Knowledge Extraction with semi-automated techniques" class="image-link float-end"><img src="SVG\kgEvaluation.svg"></a>
+		<h2 style="color:orange;">Knowledge Extraction</h2>
+	</header><!-- prova qui-->
+		<div class="col-md-24" style="padding: 25px;color:grey">
+		Considering the originality of the text we are dealing with, we decided to use several automated tools along with our analogical interpretation of the text. Our aims where, on the one hand, achieving a comprehensive understanding of the content of the text on a conceptual level, on the other hand annotate the text syntactically and semantically to be able to inquire deeper in the relation between Haraway's theory and the semiotics that convey it.
+		</div>
+		<div class="row mb-3">
+
+	<section class="padding-medium">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="bootstrap-tabs">
+						<nav>
+						  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Topic Modelling</button>
+							<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">NER, Dependencies and more</button>
+							<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">FRED, FrameNet</button>
+						  </div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+
+						  <div style="color: blue;" class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+							Along with the personal interpretation of our sources , we used BERTopic to extract meaningful topics, especially the central theoretical concepts, from the text. Find below the documentation of this step. 
+							<br> 📈<a href="contents\topic_viz.html">Topics Interactive Visualization</a> 
+							<br> 📈<a href="contents\topic_viz.html">Similarity Heatmap</a> 
+							<br> 📈<a href="contents\topic_viz.html">Barchart</a> 
+							<br> 📈<a href="contents\topic_viz.html">BERTopic Sheet</a> 
+							<script src="https://gist.github.com/teragramgius/3fd7fd0017fc31f8ffb64ce0623c4f10.js"></script></div>
+						  
+						  <div style="color: blue;" class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+							We used BookNLP natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies. The pipeline produces 6 files: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html). Althought the entire output was useful for in-depth analysis of Staying with the trouble it didn't seem to perform very accurately on it, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts. For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. Click here to read the documentation about the workflow. </div>
+						   
+							<div style="color: blue;" class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+							FRED is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data. Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory.
+The identification of frames in the text was carried out following this workflow. Identification of all the main concepts
+Individuation of the significant terms related to each concept and relation of concepts between them
+Abstraction into Frames evoked by the previous conceptualization
+Aligning identified Frames with FrameNet's where possible
+Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit)
+Find here all annotated Frames of our first paragraph.</div>
+
+						</div>
+					</div>
+				</div>					
+			</div>
+	</section>				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="text-align: center; margin-bottom: 30px;">Process Made Visibile: Knowledge Extraction</h2>
+
+
+<header class="text-center">
+
+</header>
+</div>
+		</div>
+		<span>
+
+
+		</span>
+
+<!-- risultati -->
+<div class="col-md-12" style="padding-bottom: 50px">
+	<div class=card data-aos="fade-up" data-aos-delay="600" style="padding-left:25px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px;">
+		<p style="text-align: center;">~ RISULTATI ~</p>
+		<div class="card" style="margin-top: 95px; margin-bottom: 95px;">
+			<header class="text-center my-5">
+				<span class="text-muted">[THE SOURCE]</span>
+				<h2 style="text-align: center;">Staying w/ the Trouble</h2>
+			</header>
+			<p id="seconPart" style="padding-left: 38px; padding-right: 38px; justify-content:center;">Donna Haraway's philosophy transcends intellectual novelty, reaching into the realm of practical implications that resound with transformative potential. Her groundbreaking work shatters the confines of conventional thought, urging us to reimagine our relationships with the myriad non-human beings who share our planet. By nurturing a sense of ecological responsibility and ethical engagement, Haraway's philosophy challenges dominant power structures and calls for multispecies solidarity. Her resonant voice echoes through contemporary debates on social justice, environmental ethics, and the urgent imperative of sustainable coexistence.
+
+				As we venture into the captivating tapestry of ideas woven within Chapter 7 of "Staying with the Trouble," we embark on a profound journey of unlearning, reevaluation, and reorientation. Haraway's visionary thinking beckons us to discard our preconceived notions and embrace a paradigm shift that transcends anthropocentrism. Through her incisive prose, we are compelled to forge new alliances, to grapple with the complexities of our entangled existence, and to confront the pressing issues of our time with unwavering intellectual rigor, boundless empathy, and an unyielding commitment to the flourishing of all beings.</a>
+		</div>
+
+<!-- creative kit -->
+
+
+<div class="container px-4 py-5" id="icon-grid">
+<header class="text-center my-5">
+<span class="text-muted">[HOW?]</span>
+<h2><strong>The steps</strong></h2>
+</header>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+
+<div class="col d-flex align-items-start">
+<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+<div>
+<h4 class="fw-bold mb-0">Knowledge Extraction</h4>
+<p>Paragraph of text beneath the heading to explain the heading.</p>
+</div>
+</div>
+<div class="col d-flex align-items-start">
+<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+<div>
+<h4 class="fw-bold mb-0">Knowledge Graph and Evaluation</h4>
+<p>Paragraph of text beneath the heading to explain the heading.</p>
+</div>
+</div>
+<div class="col d-flex align-items-start">
+<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+<div>
+<h4 class="fw-bold mb-0">Ontology Design</h4>
+<p>Paragraph of text beneath the heading to explain the heading.</p>
+</div>
+</div>
+<div class="col d-flex align-items-start">
+<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+<div>
+<h4 class="fw-bold mb-0">Further Developments</h4>
+<p>Paragraph of text beneath the heading to explain the heading.</p>
+</div>
+</div>
+</div>
+</div>
+
+	
+				
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="padding-large">
+	<div class="container">
+		
+		<div class="row mb-3">
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo":>[WHAT] Semantic Role Labelling</h4>
+
+				<p>Taking inspiration from this paper <a href="https://arxiv.org/abs/1811.01409">"Semantic Role Labeling for Knowledge Graph Extraction from Text"</a>  we studied how tools can be used, together with heuristic methods, to produce content for an ontology that questions the general role ontology modelling, in favour of a more concrete alignment between tools, therefore providing interoperability and leading to a F.A.I.R. use of the technology.
+					</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo">[HOW] Annotated sentences</h4>
+
+				<p>To evaluate semantic role labeling (SRL), you would typically need a labeled dataset consisting of annotated sentences. Each annotated sentence in the dataset should include the following information: <br>
+
+
+					<b>1. Sentence</b>: The original sentence or text where the SRL annotations will be applied. <br>
+					<b>2. Predicate</b>: The word or phrase that expresses the action or state in the sentence. <br>
+					<b>3. Arguments</b>: The words or phrases that play specific roles with respect to the predicate. These roles can include agent, patient, theme, experiencer, location, time, and many others depending on the specific SRL framework being used. <br>
+					<b>4. Labels</b>: Each argument is assigned a specific label indicating its semantic role in relation to the predicate. For example, an argument labeled as "agent" denotes the entity or actor performing the action.</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo">[FURTHER DEVELOPMENTS]</h4>
+
+				<p>Our intent was to use both manually annotated dataset to see the performance of our software and booknlp way of working. This would have brought us evaluating the performance of a SRL-system-of-tools, using varoius metrics, such as precision, recall and F1 score.
+					We leave that "for future generation". In this project indeed, you will still find mixed methods, but with an initial approach to NLP text mining and labelling.
+					</p>
+
+			</div>
+		</div>
+</section>
+
+
+
+
+
+
+
+<section id="events" class="padding-large">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<header class="text-center my-5">
+					<span class="text-muted">[HOW?]</span>
+					<h2><strong>The steps</strong></h2>
+				</header>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<ol class="list-group list-group-flush" data-aos="fade-zoom-in">
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">1.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Extraction</div>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KE</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">2.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Graph and Ontology Evalutation</div>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KR</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+	
+				  </li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="my-3">
+	<section class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h2 style="color:blue">[KNOWLEDGE EXTRACTION]</h2>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<blockquote><p>Considering the originality of the text we are dealing with, we decided to use several automated tools along with our analogical interpretation of the text. Our aims where, on the one hand, achieving a comprehensive understanding of the content of the text on a conceptual level, on the other hand annotate the text syntactically and semantically to be able to inquire deeper in the relation between Haraway's theory and the semiotics that convey it.</p></blockquote>
+				<p style="color: grey;">
+				<h4 style="color:black">[TOPIC MODELLING]</h4>
+				<p>Along with <strong>the personal interpretation of our sources</strong> , we used <a href="https://maartengr.github.io/BERTopic/index.html">BERTopic</a> to extract meaningful topics, especially the central theoretical concepts, from the text.
+<a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Find here</a> the documentation of this step as well as the visualization of the book's extracted topics.</p>
+				<h4 style="color:black">[Named Entity Recognition, POS tagging, dependency and more]</h4>
+				<p>We used <a href="https://github.com/booknlp/booknlp">BookNLP</a> natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies.
+
+					<strong>The pipeline produces <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/script">6 files</a>: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html).</strong>
+					
+					Althought the entire output was useful for in-depth analysis of Staying with the trouble <strong><a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/FSCORE.ipynb"> </strong>it didn't seem to perform very accurately on it</a>, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts.
+					
+				<strong>For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Click here</a></strong> to read the documentation about the workflow</p>
+				<h4 style="color:black">[FRED and FrameNet]</h4>
+				<p> <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a> is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data.
+
+					<strong>Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. </strong>
+					
+					To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory. <br>
+					
+					The identification of frames in the text was carried out following this workflow: <br>					
+						Identification of all the main concepts <br>
+						Individuation of the significant terms related to each concept and relation of concepts between them <br>
+						Abstraction into Frames evoked by the previous conceptualization <br>
+						Aligning identified Frames with FrameNet's where possible <br>
+						Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit) <br>
+					
+					Find here all annotated Frames of our first paragraph.</p>
+
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 style="color:blue">[KNOWLEDGE GRAPH AND ONTOLOGY EVAUTATION]</h2>
+						</div>
+					</div>
+			
+					<div class="row mb-3">
+						<div class="col-md-12">
+							
+							<h4 style="color:black">[KNOWLEDGE GRAPH]</h4>
+							<p>Since the ontology as designed is meant to be populated automatically by means of text parsing, we designed our own algorithm to perform such task. <br>
+								The python code takes in input two datasets: <br> - <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/graph_code/alignment.csv">"alignment.csv"</a>: a dataset manually written to align BookNLP output (ex. POS tagging) with our ontology Classes and indentified Frames and Roles <br> - BookNLP <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/BookNLP/ch_7/ch_7.tokens">.tokens</a> file, to parse each sentence and be able to reach related synctactic and morphological information.
+								
+								<br>In addition, the two RDF of our ontologies <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/ontologies">(ChthuluConcepts.ttl and ChthuluOnt.ttl)</a> exported from protégé are parsed and needed triples for class hierarchies and mapping are added to the main ChthuluGraph. <br>
+								
+								<strong>The libraries pandas and rdflib are used to manipulate the data and build the Knowledge </strong> <br>								
+								Here is the algorithm desing <br>
+								<img src="" alt="">
+								
+								Download the python file <br>
+								
+								Here is the visualization of the final KG: <br>
+								
+
+							
+							</p>
+							<h4 style="color:black">[Named Entity Recognition, POS tagging, dependency and more]</h4>
+							<p>We used <a href="https://github.com/booknlp/booknlp">BookNLP</a> natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies.
+			
+								<strong>The pipeline produces <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/script">6 files</a>: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html).</strong>
+								
+								Althought the entire output was useful for in-depth analysis of Staying with the trouble <strong><a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/FSCORE.ipynb"> </strong>it didn't seem to perform very accurately on it</a>, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts.
+								
+							<strong>For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Click here</a></strong> to read the documentation about the workflow</p>
+							<h4 style="color:black">[FRED and FrameNet]</h4>
+							<p> <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a> is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data.
+			
+								<strong>Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. </strong>
+								
+								To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory. <br>
+								
+								The identification of frames in the text was carried out following this workflow: <br>					
+									Identification of all the main concepts <br>
+									Individuation of the significant terms related to each concept and relation of concepts between them <br>
+									Abstraction into Frames evoked by the previous conceptualization <br>
+									Aligning identified Frames with FrameNet's where possible <br>
+									Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit) <br>
+								
+								Find here all annotated Frames of our first paragraph.</p>
+			
+			
+			
+			
+
+
+
+				<div class="accordion mb-5" id="accordionExample">
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="headingOne">
+				      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        #1: vocabulary completion
+				      </button>
+				    </h2>
+				    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+				      <div class="accordion-body">
+				        <strong style="color:grey">To build our #chthuluontology, we identified concepts and frames, according to the unique storytelling of Donna Haraway. <br> <code> framesLU = </code> <br> <code> {"Collaborative_thinking" : ["thinks-with", "attunement"], 
+							"Perception_active" : ["listened"], 
+							"Coming_to_believe" : ["learned"], 
+							"Studying" : ["studies"], 
+							"Coming_up_with" : ["theorizes", "theory", "proposes"], 
+							"Mental_stimulus_stimulus_focus" : ["interested in"], 
+							"Cause_expansion" : ["enlarges", "dilates", "expands", "adds"], 
+							"Being_in_category" : ["practice"], 
+							"People_by_vocation" : ["who", "scientist"], 
+							"Needing" : ["needy"]} </code> <br> <code>
+				conceptsLU = </code> <br> <code>{"ThinkWith": ["thinks-with", "kind of thinking", "built together"], 
+							  "GoVisit": ["going visiting"], "RenderCapable" :["render each other capable"], 
+							  "Worlding" : ["worlding"], 
+							  "Ongoingness" : ["yet to come"]}</code></div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="headingTwo">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        #2: BookNLP output
+				      </button>
+				    </h2>
+				    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+				      <div class="accordion-body">
+				        <strong> <a href="https://github.com/dbamman/book-nlp">BookNLP</a> delivers a set of outputs. Below you can find the .entities file; as you will notice, some entities are not correct. Furthermore, the recall for the entire book becomes incrementally accurated when it comes to terms such as "situated", a very important expression in Haraway's whole production.
+							<script src="https://gist.github.com/teragramgius/700eff419280cc07fa5f203da62a1853.js"></script>
+				      </div>
+				    </div>
+				  </div>
+				
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</section>
+
+<div class="row">
+	<div class="col-md-6">
+		<figure>
+			<img src="images\Concept_map.png">
+			<figcaption>Concept Map</figcaption>
+		</figure>
+	</div>
+	<div class="col-md-6">
+		<figure>
+			<img src="images\chthulu_4.png">
+			<figcaption></figcaption>
+		</figure>
+	</div>
+</div>
+
+	
+<section id="donate" class="cta jarallax padding-large text-white">
+ 	<div class="container">
+ 		<div class="row justify-content-center">
+ 			
+	 		<div class="section-title justify-content-between col-md-5 mt-5">
+	 			<header>
+		 			<h2><strong>Suggest us something</strong></h2>
+		 			<p class="text-white">This work is open to further developments, feel free to share your thoughts!</p>
+	 			</header>
+	 			<button class="btn btn-primary btn-lg rounded-pill">Contact Us</button>
+	 		</div>
+
+ 		</div>
+ 	</div>
+ 	<img src="images/banner.jpg" class="jarallax-img" />
+</section>
+
+<footer class="padding-large text-white bg-dark">
+	<div class="container">
+	    <div class="row">
+	    	
+	    	<div class="col-12 col-md-6">
+		        <img src="images/logo-color.png">
+		        <p>
+		        	<a href="mailto:giusy.grieco.info@gmail.com">giusy.grieco.info@gmail.com</a><br>
+		        	<a href="mailto:maddalena.ghiotto@studio.unibo.it">maddalena.ghiotto@gmail.com</a><br>
+		        	Via Zamboni 14, Bologna, ITALY.<br>
+		        </p>
+		        <ul class="justify-content-start list-unstyled d-flex">
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-skype"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+		        </ul>
+		    </div>
+
+		    <div class="col-4 col-md-2">
+		        <ul class="nav flex-column">
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Scripts</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">The Team</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+		        </ul>
+		    </div>
+
+	      
+	    </div>
+
+	    <div class="d-flex justify-content-between flex-wrap py-4 my-4 border-top">
+	      <p>This project is born for the Knowledge Representation and Extraction exam at University of Alma Mater Studiorum in Bologna.</p>
+	      <p>Credits to <a href="https://templatesjungle.com/" class="link-primary" target="_blank">TemplatesJungle</a> for parts of this template.</p>
+	      <p>Credits to <a href="https://thecybermuse.com/" class="link-primary" target="_blank">The Cyber Muse</a> for the images of this website.</p>
+	    </div>
+	</div>
+</footer>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$(document).ready(function(){
+	   $('#btn').click(function(){
+		$('#keywords').addClass('highlight');   
+	   }); 
+	});
+	</script>
+
+
+</body>
+</html>
