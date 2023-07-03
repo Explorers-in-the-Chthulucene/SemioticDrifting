@@ -349,23 +349,19 @@ end block quoute -->
 
 						  <div style="color: blue;" class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 							Along with the personal interpretation of our sources , we used BERTopic to extract meaningful topics, especially the central theoretical concepts, from the text. Find below the documentation of this step. 
-							<br> 📈<a href="contents\topic_viz.html">Topics Interactive Visualization</a> 
-							<br> 📈<a href="contents\topic_viz.html">Similarity Heatmap</a> 
-							<br> 📈<a href="contents\topic_viz.html">Barchart</a> 
+							<br> 📈<a href="script/BertTOPIC/topic_viz.html">Topics Interactive Visualization</a> 
+							<br> 📈<a href="script/BertTOPIC/similarity_heatmap">Similarity Heatmap</a> 
+							<br> 📈<a href="script/BertTOPIC/barchart.html">Barchart</a> 
 							<br> 📈<a href="script/BertTOPIC/visualize_doc.html">BERTopic Sheet</a> 
 							<script src="https://gist.github.com/teragramgius/3fd7fd0017fc31f8ffb64ce0623c4f10.js"></script></div>
 						  
 						  <div style="color: blue;" class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-							We used BookNLP natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies. The pipeline produces 6 files: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html). Althought the entire output was useful for in-depth analysis of Staying with the trouble it didn't seem to perform very accurately on it, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts. For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. Click here to read the documentation about the workflow. </div>
+							We used BookNLP natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies. The pipeline produces 6 files: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html). Althought the entire output was useful for in-depth analysis of Staying with the trouble it didn't seem to perform very accurately on it, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts. For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. Click here to read the documentation about the workflow. <script src="https://gist.github.com/teragramgius/9660d401f2b47b3e9feb75eadd68d437.js"></script> </div>
 						   
 							<div style="color: blue;" class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 							FRED is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data. Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory.
-The identification of frames in the text was carried out following this workflow. Identification of all the main concepts
-Individuation of the significant terms related to each concept and relation of concepts between them
-Abstraction into Frames evoked by the previous conceptualization
-Aligning identified Frames with FrameNet's where possible
-Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit)
-Find here all annotated Frames of our first paragraph.</div>
+							The identification of frames in the text was carried out following this workflow. Identification of all the main concepts Individuation of the significant terms related to each concept and relation of concepts between them Abstraction into Frames evoked by the previous conceptualization Aligning identified Frames with FrameNet's where possible Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit) Find here all annotated Frames of our first paragraph.</div>
+							<a href="script/FRED/fred_out_ex.png" title="FRED_output" class="image-link float-end"><img src="script/FRED/fred_out_ex.png"></a>
 
 						</div>
 					</div>
