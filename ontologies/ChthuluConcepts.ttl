@@ -1,17 +1,17 @@
-@prefix : <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl> .
+@prefix : <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix chco: <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl> .
+@prefix chco: <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl> .
+@base <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#> .
 
-<http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> rdf:type owl:Ontology ;
-                                                                      <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> "Giusy Grieco" ,
-                                                                                                                                           "Maddalena Ghiotto" ;
-                                                                      rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."@en ,
-                                                                                   """ChthuluConcepts is an ontology designed to be mapped with Chthulucene ontology. 
+<https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#> rdf:type owl:Ontology ;
+                                                                                                                        <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> "Giusy Grieco" ,
+                                                                                                                                                                                             "Maddalena Ghiotto" ;
+                                                                                                                        rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."@en ,
+                                                                                                                                     """ChthuluConcepts is an ontology designed to be mapped with Chthulucene ontology. 
 The relation between the two ontologies functions as follows:
 in Chthulucene, every named individual retrieved in the text, belonging to the class chthulu:Concept is conceptually equal to one precise named individual in ChthuluConcepts. The two are connected by owl:sameAs property, for example:
 
@@ -39,172 +39,172 @@ The reason for the design and creation of these two ontologies is the possibilit
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf
-:exampleOf rdf:type owl:ObjectProperty ;
-           owl:inverseOf :hasExample ;
-           rdfs:domain :Concept ;
-           rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#exampleOf
+chco:exampleOf rdf:type owl:ObjectProperty ;
+               owl:inverseOf chco:hasExample ;
+               rdfs:domain chco:Concept ;
+               rdfs:range chco:Concept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy
-:generatedBy rdf:type owl:ObjectProperty ;
-             owl:inverseOf :generates ;
-             rdfs:domain :Concept ;
-             rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#generatedBy
+chco:generatedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf chco:generates ;
+                 rdfs:domain chco:Concept ;
+                 rdfs:range chco:Concept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates
-:generates rdf:type owl:ObjectProperty ;
-           rdfs:domain :Concept ;
-           rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#generates
+chco:generates rdf:type owl:ObjectProperty ;
+               rdfs:domain chco:Concept ;
+               rdfs:range chco:Concept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition
-:hasCondition rdf:type owl:ObjectProperty ;
-              rdfs:domain :Concept ;
-              rdfs:range :ModeConcept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#hasCondition
+chco:hasCondition rdf:type owl:ObjectProperty ;
+                  rdfs:domain chco:Concept ;
+                  rdfs:range chco:ModeConcept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample
-:hasExample rdf:type owl:ObjectProperty ;
-            rdfs:domain :Concept ;
-            rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#hasExample
+chco:hasExample rdf:type owl:ObjectProperty ;
+                rdfs:domain chco:Concept ;
+                rdfs:range chco:Concept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn
-:impliedIn rdf:type owl:ObjectProperty ;
-           owl:inverseOf :impliesActivity ;
-           rdfs:domain :ActivityConcept ;
-           rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#impliedIn
+chco:impliedIn rdf:type owl:ObjectProperty ;
+               owl:inverseOf chco:impliesActivity ;
+               rdfs:domain chco:ActivityConcept ;
+               rdfs:range chco:Concept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity
-:impliesActivity rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Concept ;
-                 rdfs:range :ActivityConcept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#impliesActivity
+chco:impliesActivity rdf:type owl:ObjectProperty ;
+                     rdfs:domain chco:Concept ;
+                     rdfs:range chco:ActivityConcept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith
-:overlapsWith rdf:type owl:ObjectProperty ,
-                       owl:SymmetricProperty ;
-              rdfs:domain :Concept ;
-              rdfs:range :Concept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#overlapsWith
+chco:overlapsWith rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain chco:Concept ;
+                  rdfs:range chco:Concept .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept
-:ActivityConcept rdf:type owl:Class ;
-                 rdfs:subClassOf :Concept ;
-                 rdfs:comment "ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as \"thinking\", \"becoming\" in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved." .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#ActivityConcept
+chco:ActivityConcept rdf:type owl:Class ;
+                     rdfs:subClassOf chco:Concept ;
+                     rdfs:comment "ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as \"thinking\", \"becoming\" in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept
-:Concept rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasCondition ;
-                           owl:allValuesFrom :ModeConcept
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :impliesActivity ;
-                           owl:allValuesFrom :ActivityConcept
-                         ] .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Concept
+chco:Concept rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty chco:hasCondition ;
+                               owl:allValuesFrom chco:ModeConcept
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty chco:impliesActivity ;
+                               owl:allValuesFrom chco:ActivityConcept
+                             ] .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept
-:ModeConcept rdf:type owl:Class ;
-             rdfs:subClassOf :Concept ;
-             rdfs:comment "ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform \"think\" in \"think-with\"." .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#ModeConcept
+chco:ModeConcept rdf:type owl:Class ;
+                 rdfs:subClassOf chco:Concept ;
+                 rdfs:comment "ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform \"think\" in \"think-with\"." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept
-:PracticeConcept rdf:type owl:Class ;
-                 rdfs:subClassOf :Concept ;
-                 rdfs:comment "A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as \"SF\", \"Worlding\", \"Ongoingness\"." .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#PracticeConcept
+chco:PracticeConcept rdf:type owl:Class ;
+                     rdfs:subClassOf chco:Concept ;
+                     rdfs:comment "A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as \"SF\", \"Worlding\", \"Ongoingness\"." .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith
-:BecomingWith rdf:type owl:NamedIndividual ,
-                       :ActivityConcept ;
-              :generates :Ongoingness ;
-              :overlapsWith :RenderCapable .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#BecomingWith
+chco:BecomingWith rdf:type owl:NamedIndividual ,
+                           chco:ActivityConcept ;
+                  chco:generates chco:Ongoingness ;
+                  chco:overlapsWith chco:RenderCapable .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit
-:GoVisit rdf:type owl:NamedIndividual ,
-                  :PracticeConcept ;
-         :exampleOf :Worlding ;
-         :impliesActivity :ThinkWith .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#GoVisit
+chco:GoVisit rdf:type owl:NamedIndividual ,
+                      chco:PracticeConcept ;
+             chco:exampleOf chco:Worlding ;
+             chco:impliesActivity chco:ThinkWith .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance
-:Inheritance rdf:type owl:NamedIndividual ,
-                      :PracticeConcept ;
-             :impliesActivity :ThinkFrom ;
-             :overlapsWith :PlayingSF .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Inheritance
+chco:Inheritance rdf:type owl:NamedIndividual ,
+                          chco:PracticeConcept ;
+                 chco:impliesActivity chco:ThinkFrom ;
+                 chco:overlapsWith chco:PlayingSF .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness
-:Ongoingness rdf:type owl:NamedIndividual ,
-                      :PracticeConcept ;
-             :generatedBy :BecomingWith ,
-                          :RenderCapable ;
-             :hasCondition :ResponseAbility .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Ongoingness
+chco:Ongoingness rdf:type owl:NamedIndividual ,
+                          chco:PracticeConcept ;
+                 chco:generatedBy chco:BecomingWith ,
+                                  chco:RenderCapable ;
+                 chco:hasCondition chco:ResponseAbility .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF
-:PlayingSF rdf:type owl:NamedIndividual ,
-                    :ActivityConcept ;
-           :overlapsWith :Storytelling .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#PlayingSF
+chco:PlayingSF rdf:type owl:NamedIndividual ,
+                        chco:ActivityConcept ;
+               chco:overlapsWith chco:Storytelling .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness
-:Politeness rdf:type owl:NamedIndividual ,
-                     :ModeConcept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Politeness
+chco:Politeness rdf:type owl:NamedIndividual ,
+                         chco:ModeConcept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable
-:RenderCapable rdf:type owl:NamedIndividual ,
-                        :ActivityConcept ;
-               :overlapsWith :BecomingWith .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#RenderCapable
+chco:RenderCapable rdf:type owl:NamedIndividual ,
+                            chco:ActivityConcept ;
+                   chco:overlapsWith chco:BecomingWith .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility
-:ResponseAbility rdf:type owl:NamedIndividual ,
-                          :ModeConcept .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#ResponseAbility
+chco:ResponseAbility rdf:type owl:NamedIndividual ,
+                              chco:ModeConcept .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling
-:Storytelling rdf:type owl:NamedIndividual ,
-                       :ActivityConcept ;
-              :overlapsWith :PlayingSF .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Storytelling
+chco:Storytelling rdf:type owl:NamedIndividual ,
+                           chco:ActivityConcept ;
+                  chco:overlapsWith chco:PlayingSF .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom
-:ThinkFrom rdf:type owl:NamedIndividual ,
-                    :ActivityConcept ;
-           :impliedIn :Inheritance .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#ThinkFrom
+chco:ThinkFrom rdf:type owl:NamedIndividual ,
+                        chco:ActivityConcept ;
+               chco:impliedIn chco:Inheritance .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith
-:ThinkWith rdf:type owl:NamedIndividual ,
-                    :ActivityConcept ;
-           :hasCondition :Politeness ;
-           :impliedIn :GoVisit ;
-           :impliesActivity :BecomingWith ,
-                            :RenderCapable .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#ThinkWith
+chco:ThinkWith rdf:type owl:NamedIndividual ,
+                        chco:ActivityConcept ;
+               chco:hasCondition chco:Politeness ;
+               chco:impliedIn chco:GoVisit ;
+               chco:impliesActivity chco:BecomingWith ,
+                                    chco:RenderCapable .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding
-:Worlding rdf:type owl:NamedIndividual ,
-                   :PracticeConcept ;
-          :hasExample :GoVisit .
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluConcepts.ttl#Worlding
+chco:Worlding rdf:type owl:NamedIndividual ,
+                       chco:PracticeConcept ;
+              chco:hasExample chco:GoVisit .
 
 
 #################################################################
@@ -212,9 +212,9 @@ The reason for the design and creation of these two ontologies is the possibilit
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ActivityConcept
-                :ModeConcept
-                :PracticeConcept
+  owl:members ( chco:ActivityConcept
+                chco:ModeConcept
+                chco:PracticeConcept
               )
 ] .
 

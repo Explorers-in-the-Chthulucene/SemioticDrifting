@@ -1,22 +1,37 @@
-@prefix : <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#> .
+@prefix : <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix chthulu: <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#> .
-@base <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#> .
+@prefix chthulu: <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#> .
+@base <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#> .
 
-<http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#> rdf:type owl:Ontology ;
-                                                                   chthulu:creator "Giusy Grieco" ,
-                                                                                   "Maddalena Ghiotto" ;
-                                                                   rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."@en .
+<https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#> rdf:type owl:Ontology ;
+                                                                                                                    rdfs:comment "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."@en ,
+                                                                                                                                 """Chthulucene is an ontology designed to be mapped with ChthuluConcepts ontology. 
+The relation between the two ontologies functions as follows:
+in Chthulucene, every named individual retrieved in the text, belonging to the class chthulu:Concept is conceptually equal to one precise named individual in ChthuluConcepts. The two are connected by owl:sameAs property, for example:
+
+chthulu:capable_96 a chthulu:Concept ;
+                                   chthulu:conceptRole chthulu:Subject_96 ;
+                                   chthulu:isEvokedBy chthulu:Studying_96 ;
+                                    owl:sameAs chco:RenderCapable .
+
+The equality is established on the basis of a dictionary that associates every ChthuluConcepts individual to a set of lexical units manually compiled that the authors believe can be considered evocative of that specific concept. 
+the dictionary, named \"conceptsLU\" and so far only based on Chapter 7 text of Staying with the trouble, can be found here: https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/script/graph_code/chthuluGraph.py
+
+As a result of this type of mapping, while parsing the text, several individuals of class chthulu:Concept in Chthulucene, that represent the same individual in in ChthuluConcepts can be identified. 
+
+The reason for the design and creation of these two ontologies is the possibility of having two different levels of analysis of the concepts present in the text: one higher level, represented in ChthuluConcepts, where the abstract connections and relations between different concepts is modeled; one lower level, where concepts and their roles in different contexts are identified in each sentence, allowing one to understand how the concept is used and exemplified on a concrete level.""" ;
+                                                                                                                    chthulu:creator "Giusy Grieco" ,
+                                                                                                                                    "Maddalena Ghiotto" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#creator
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#creator
 chthulu:creator rdf:type owl:AnnotationProperty .
 
 
@@ -24,7 +39,7 @@ chthulu:creator rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#agentiveRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#agentiveRole
 chthulu:agentiveRole rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf chthulu:hasRole ;
                      rdfs:domain chthulu:AgentiveEntity ;
@@ -32,7 +47,7 @@ chthulu:agentiveRole rdf:type owl:ObjectProperty ;
                      rdfs:comment "Property connecting an AgentiveEntity to the Role it assumes in a Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#conceptRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#conceptRole
 chthulu:conceptRole rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf chthulu:hasRole ;
                     rdfs:domain chthulu:Concept ;
@@ -40,7 +55,7 @@ chthulu:conceptRole rdf:type owl:ObjectProperty ;
                     rdfs:comment "Property connecting a Cpncept to the Role it assumes in a Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#descriptorRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#descriptorRole
 chthulu:descriptorRole rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf chthulu:hasRole ;
                        rdfs:domain chthulu:Descriptor ;
@@ -48,7 +63,7 @@ chthulu:descriptorRole rdf:type owl:ObjectProperty ;
                        rdfs:comment "Pproperty connecting a Descriptor to the Role it assumes in a Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#evokes
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#evokes
 chthulu:evokes rdf:type owl:ObjectProperty ;
                owl:inverseOf chthulu:isEvokedBy ;
                rdfs:domain chthulu:Frame ;
@@ -56,24 +71,24 @@ chthulu:evokes rdf:type owl:ObjectProperty ;
                rdfs:comment "property connecting a Frame to the Concepts, if present, evoked in the text." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasRole
 chthulu:hasRole rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#involvesRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#involvesRole
 chthulu:involvesRole rdf:type owl:ObjectProperty ;
                      rdfs:domain chthulu:Frame ;
                      rdfs:range chthulu:Role ;
                      rdfs:comment "Property connecting a frame to its Frame Elements (hence, the sematic roles identified in a Frame)." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#isEvokedBy
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#isEvokedBy
 chthulu:isEvokedBy rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:comment "Property connecting  the Concepts, if present, evoked in the text of a certain Frame." .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#locationRole
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#locationRole
 chthulu:locationRole rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf chthulu:hasRole ;
                      rdfs:domain chthulu:Place ;
@@ -85,35 +100,35 @@ chthulu:locationRole rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasFramenetID
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasFramenetID
 chthulu:hasFramenetID rdf:type owl:DatatypeProperty ;
                       rdfs:domain chthulu:Frame ;
                       rdfs:range xsd:int ;
                       rdfs:comment "The FrameNet ID corresponding to the identified Frame" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasInstance
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasInstance
 chthulu:hasInstance rdf:type owl:DatatypeProperty ;
                     rdfs:domain chthulu:Frame ;
                     rdfs:range rdfs:Literal ;
                     rdfs:comment "The sentence where the Frame is identified as a string" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasLabel
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasLabel
 chthulu:hasLabel rdf:type owl:DatatypeProperty ;
                  rdfs:domain chthulu:Frame ;
                  rdfs:range rdfs:Literal ;
                  rdfs:comment "The name of the Frame in string" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#hasMainReference
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasMainReference
 chthulu:hasMainReference rdf:type owl:DatatypeProperty ;
                          rdfs:domain chthulu:Animated ;
                          rdfs:range rdfs:Literal ;
                          rdfs:comment "property that connects the Animated class to the main way it is reference in the text. For example chthulu:VinicianeDespret chthulu:hasMainReference \"Despret\"" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#isPOS
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#isPOS
 chthulu:isPOS rdf:type owl:DatatypeProperty ;
               rdfs:domain chthulu:Role ;
               rdfs:range xsd:string .
@@ -123,46 +138,46 @@ chthulu:isPOS rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Agent
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Agent
 chthulu:Agent rdf:type owl:Class ;
               rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#AgentiveEntity
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#AgentiveEntity
 chthulu:AgentiveEntity rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Amotz_Zahavi
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Amotz_Zahavi
 chthulu:Amotz_Zahavi rdf:type owl:Class ;
                      rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animal
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Animal
 chthulu:Animal rdf:type owl:Class ;
                rdfs:subClassOf chthulu:Animated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Animated
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Animated
 chthulu:Animated rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:AgentiveEntity .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Association
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Association
 chthulu:Association rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:Organization .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Baghdad
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Baghdad
 chthulu:Baghdad rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Beatriz_da_Costa
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Beatriz_da_Costa
 chthulu:Beatriz_da_Costa rdf:type owl:Class ;
                          rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Being_in_category
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Being_in_category
 chthulu:Being_in_category rdf:type owl:Class ;
                           rdfs:subClassOf chthulu:Frame ,
                                           [ rdf:type owl:Restriction ;
@@ -177,47 +192,47 @@ chthulu:Being_in_category rdf:type owl:Class ;
   by a Cognizer."""@en .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Berlin
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Berlin
 chthulu:Berlin rdf:type owl:Class ;
                rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Bird
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Bird
 chthulu:Bird rdf:type owl:Class ;
              rdfs:subClassOf chthulu:Animal .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Breeder
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Breeder
 chthulu:Breeder rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#California
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#California
 chthulu:California rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Camel
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Camel
 chthulu:Camel rdf:type owl:Class ;
               rdfs:subClassOf chthulu:Animal .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Category
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Category
 chthulu:Category rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Caudry
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Caudry
 chthulu:Caudry rdf:type owl:Class ;
                rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause
 chthulu:Cause rdf:type owl:Class ;
               rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cause_expansion
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause_expansion
 chthulu:Cause_expansion rdf:type owl:Class ;
                         rdfs:subClassOf chthulu:Frame ,
                                         [ rdf:type owl:Restriction ;
@@ -240,22 +255,22 @@ chthulu:Cause_expansion rdf:type owl:Class ;
   physical size."""@en .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cerisy
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cerisy
 chthulu:Cerisy rdf:type owl:Class ;
                rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Chateau
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Chateau
 chthulu:Chateau rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cognizer
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer
 chthulu:Cognizer rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Collaborative_thinking
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Collaborative_thinking
 chthulu:Collaborative_thinking rdf:type owl:Class ;
                                rdfs:subClassOf chthulu:Frame ,
                                                [ rdf:type owl:Restriction ;
@@ -274,12 +289,12 @@ chthulu:Collaborative_thinking rdf:type owl:Class ;
                                rdfs:comment "Frame where two beings in an equal position with respect to each other affects each other's reasoning and understanding of the world" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Colombophile
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Colombophile
 chthulu:Colombophile rdf:type owl:Class ;
                      rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_to_believe
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Coming_to_believe
 chthulu:Coming_to_believe rdf:type owl:Class ;
                           rdfs:subClassOf chthulu:Frame ,
                                           [ rdf:type owl:Restriction ;
@@ -299,7 +314,7 @@ chthulu:Coming_to_believe rdf:type owl:Class ;
   usually initiated by a person or piece of Evidence.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Coming_up_with
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Coming_up_with
 chthulu:Coming_up_with rdf:type owl:Class ;
                        rdfs:subClassOf chthulu:Frame ,
                                        [ rdf:type owl:Restriction ;
@@ -317,180 +332,180 @@ chthulu:Coming_up_with rdf:type owl:Class ;
   the Ideas in this frame are predominantly conceptual in nature.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Concept
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Concept
 chthulu:Concept rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Consequences
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Consequences
 chthulu:Consequences rdf:type owl:Class ;
                      rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Content
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Content
 chthulu:Content rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Cow
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cow
 chthulu:Cow rdf:type owl:Class ;
             rdfs:subClassOf chthulu:Animal .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Damascus
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Damascus
 chthulu:Damascus rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Descriptor
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Descriptor
 chthulu:Descriptor rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#EcologicalPark
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#EcologicalPark
 chthulu:EcologicalPark rdf:type owl:Class ;
                        rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Evidence
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Evidence
 chthulu:Evidence rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Experiencer
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Experiencer
 chthulu:Experiencer rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Fancier
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Fancier
 chthulu:Fancier rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Farmer
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Farmer
 chthulu:Farmer rdf:type owl:Class ;
                rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Farmland
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Farmland
 chthulu:Farmland rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Father
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Father
 chthulu:Father rdf:type owl:Class ;
                rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Frame
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Frame
 chthulu:Frame rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#France
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#France
 chthulu:France rdf:type owl:Class ;
                rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GPE
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#GPE
 chthulu:GPE rdf:type owl:Class ;
             rdfs:subClassOf chthulu:Place ;
             owl:disjointWith chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#GobiDesert
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#GobiDesert
 chthulu:GobiDesert rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Hannah_Arendt
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Hannah_Arendt
 chthulu:Hannah_Arendt rdf:type owl:Class ;
                       rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Heir
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Heir
 chthulu:Heir rdf:type owl:Class ;
              rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanComm
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#HumanComm
 chthulu:HumanComm rdf:type owl:Class ;
                   rdfs:subClassOf chthulu:Animated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#HumanProp
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#HumanProp
 chthulu:HumanProp rdf:type owl:Class ;
                   rdfs:subClassOf chthulu:Animated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Idea
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Idea
 chthulu:Idea rdf:type owl:Class ;
              rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inanimated
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Inanimated
 chthulu:Inanimated rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:AgentiveEntity .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Inquirer
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Inquirer
 chthulu:Inquirer rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Iran
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Iran
 chthulu:Iran rdf:type owl:Class ;
              rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Isabelle_Stengers
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Isabelle_Stengers
 chthulu:Isabelle_Stengers rdf:type owl:Class ;
                           rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Item
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Item
 chthulu:Item rdf:type owl:Class ;
              rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Jocelyne_Porcher
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Jocelyne_Porcher
 chthulu:Jocelyne_Porcher rdf:type owl:Class ;
                          rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LOC
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#LOC
 chthulu:LOC rdf:type owl:Class ;
             rdfs:subClassOf chthulu:Place .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#LeisurePark
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#LeisurePark
 chthulu:LeisurePark rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Location
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Location
 chthulu:Location rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Man
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Man
 chthulu:Man rdf:type owl:Class ;
             rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Manner
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner
 chthulu:Manner rdf:type owl:Class ;
                rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Market
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Market
 chthulu:Market rdf:type owl:Class ;
                rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Matali_Crasset
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Matali_Crasset
 chthulu:Matali_Crasset rdf:type owl:Class ;
                        rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Mental_stimulus_stimulus_focus
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Mental_stimulus_stimulus_focus
 chthulu:Mental_stimulus_stimulus_focus rdf:type owl:Class ;
                                        rdfs:subClassOf chthulu:Frame ,
                                                        [ rdf:type owl:Restriction ;
@@ -509,22 +524,22 @@ chthulu:Mental_stimulus_stimulus_focus rdf:type owl:Class ;
   in an Experiencer.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Miss_Manners
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Miss_Manners
 chthulu:Miss_Manners rdf:type owl:Class ;
                      rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Modality
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Modality
 chthulu:Modality rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Descriptor .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NatureReserve
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#NatureReserve
 chthulu:NatureReserve rdf:type owl:Class ;
                       rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Needing
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Needing
 chthulu:Needing rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Frame ,
                                 [ rdf:type owl:Restriction ;
@@ -547,28 +562,28 @@ chthulu:Needing rdf:type owl:Class ;
   Requirement.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#NegevDesert
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#NegevDesert
 chthulu:NegevDesert rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#New_York
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#New_York
 chthulu:New_York rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Object
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Object
 chthulu:Object rdf:type owl:Class ;
                rdfs:subClassOf chthulu:Inanimated ;
                owl:disjointWith chthulu:Technology .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Organization
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Organization
 chthulu:Organization rdf:type owl:Class ;
                      rdfs:subClassOf chthulu:Animated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#People_by_vocation
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#People_by_vocation
 chthulu:People_by_vocation rdf:type owl:Class ;
                            rdfs:subClassOf chthulu:Frame ,
                                            [ rdf:type owl:Restriction ;
@@ -583,12 +598,12 @@ chthulu:People_by_vocation rdf:type owl:Class ;
   their vocation.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perceiver_agentive
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perceiver_agentive
 chthulu:Perceiver_agentive rdf:type owl:Class ;
                            rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Perception_active
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perception_active
 chthulu:Perception_active rdf:type owl:Class ;
                           rdfs:subClassOf chthulu:Frame ,
                                           [ rdf:type owl:Restriction ;
@@ -609,85 +624,85 @@ chthulu:Perception_active rdf:type owl:Class ;
   call the perceiver role in this frame Perceiver_agentive.""" .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Persistent_characteristic
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Persistent_characteristic
 chthulu:Persistent_characteristic rdf:type owl:Class ;
                                   rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Person
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Person
 chthulu:Person rdf:type owl:Class ;
                rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Phenomenon
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Phenomenon
 chthulu:Phenomenon rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Pig
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Pig
 chthulu:Pig rdf:type owl:Class ;
             rdfs:subClassOf chthulu:Animal .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#PigeonLofts
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#PigeonLofts
 chthulu:PigeonLofts rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Place
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Place
 chthulu:Place rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Purpose
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Purpose
 chthulu:Purpose rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Quality
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Quality
 chthulu:Quality rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Descriptor .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Requirement
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Requirement
 chthulu:Requirement rdf:type owl:Class ;
                     rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Role
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Role
 chthulu:Role rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Soay_sheep
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Soay_sheep
 chthulu:Soay_sheep rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:Animal .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Son
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Son
 chthulu:Son rdf:type owl:Class ;
             rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#SouthernIsraeliDesert
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#SouthernIsraeliDesert
 chthulu:SouthernIsraeliDesert rdf:type owl:Class ;
                               rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Southern_California
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Southern_California
 chthulu:Southern_California rdf:type owl:Class ;
                             rdfs:subClassOf chthulu:GPE .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Stimulus
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Stimulus
 chthulu:Stimulus rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Student
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Student
 chthulu:Student rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Studying
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Studying
 chthulu:Studying rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Frame ,
                                  [ rdf:type owl:Restriction ;
@@ -704,57 +719,57 @@ chthulu:Studying rdf:type owl:Class ;
                                  ] .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Subject
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Subject
 chthulu:Subject rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Technology
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Technology
 chthulu:Technology rdf:type owl:Class ;
                    rdfs:subClassOf chthulu:Inanimated .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thelma_Rowell
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thelma_Rowell
 chthulu:Thelma_Rowell rdf:type owl:Class ;
                       rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Thinker
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker
 chthulu:Thinker rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:Role .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Village
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Village
 chthulu:Village rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:LOC .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vinciane_Despret
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Vinciane_Despret
 chthulu:Vinciane_Despret rdf:type owl:Class ;
                          rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Virginia_Woolf
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Virginia_Woolf
 chthulu:Virginia_Woolf rdf:type owl:Class ;
                        rdfs:subClassOf chthulu:HumanProp .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Visitor
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Visitor
 chthulu:Visitor rdf:type owl:Class ;
                 rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Vocation
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Vocation
 chthulu:Vocation rdf:type owl:Class ;
                  rdfs:subClassOf chthulu:Descriptor .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#Woman
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Woman
 chthulu:Woman rdf:type owl:Class ;
               rdfs:subClassOf chthulu:HumanComm .
 
 
-###  http://www.semanticweb.org/ghiot/ontologies/2023/5/chthulucene#World
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#World
 chthulu:World rdf:type owl:Class ;
               rdfs:subClassOf chthulu:LOC .
 
