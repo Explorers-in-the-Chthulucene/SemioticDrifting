@@ -872,9 +872,9 @@ end block quoute -->
 							In Chthulugraph the equal classes <code>Concept</code> in both ontologies and their individuals are mapped, expanding the knowledge 
 							about Concept individuals in Chthulucene by adding information about how different concepts
 							 relate and interact with each other according to ChthuluConcepts' model<br><br>
-							 <a href="ontologies/ChthuluGraph.ttl" download>>> download ChthuluGraph.ttl</a><br><br>
+							 <a href="ontologies/ChthuluGraph.ttl" download>>> 🔗 download ChthuluGraph.ttl</a><br><br>
 							<h2 style="color:orange; padding-top: 25px;">Ontology no.1 | ChthuluConcepts</h2>
-							<a href="ontologies/ChthuluConcepts.ttl" download>>> download
+							<a href="ontologies/ChthuluConcepts.ttl" download>>> 🔗 download
 								ChthuluConcepts.ttl</a><br><br>
 							<h2 class="text-muted">Extracted Concepts</h2>This Ontology is designed to represent the
 							content of the text at a theoretical level. Starting from topic modeling and our
@@ -965,7 +965,7 @@ end block quoute -->
 
 
 							<h2 style="color:orange; padding-top: 25px;">Ontology no.2 | Chthulucene</h2>
-							<a href="ontologies/Chthulucene.ttl" download> >> download Chthulucene.ttl</a><br><br>
+							<a href="ontologies/Chthulucene.ttl" download> >> 🔗 download Chthulucene.ttl</a><br><br>
 							<h2 class="text-muted">Classes</h2>Starting from Frame semantics, we aimed to be able to
 							connect our extracted Entities with their semantic roles in each sentence, in order to anna
 							layer of undertanding of entities relationships in a context, as well as understanding
@@ -1057,20 +1057,22 @@ end block quoute -->
 						</header><!-- prova qui-->
 						<div class="col-md-24" style="padding: 25px;color:grey">
 							Since the ontology as designed is meant to be populated automatically by means of text
-							parsing, we designed our own algorithm to perform such task. The python code takes in input
-							two datasets:<br>
-							📝<a href="script/graph_code/alignment.csv">alignment.csv</a>: a dataset manually written to
+							parsing, even thought for the purpose of this exam the ontologies have been manually populated, we designed our own algorithm to perform the task automatically.
+							The code needs to be improved as its result is still not accurate, but we consider this attempt to be worth sharing with the aim of providing a starting point
+							for improvement and peer collaboration.<br>
+							<img src="models/algorithm.png"/>
+							The python code takes in input two datasets:<br>
+							📝<a href="script/graph_code/alignment.csv" download>alignment.csv</a>: a dataset manually written to
 							align BookNLP output (ex. POS tagging) with our ontology Classes and indentified Frames and
-							Roles<br>
-							🏬<a href="script/BookNLP/ch_7/ch_7.tokens">BookNLP.tokens</a> file extension, to parse each
+							Roles.<br> This annotation has been done only on the first paragraph for the purpose of this exam, as a consequence, only individuals retreived in this part of the text are created.<br>
+							🏬<a href="script/BookNLP/ch_7/ch_7.tokens" download>BookNLP.tokens</a> file extension, to parse each
 							sentence and be able to reach related synctactic and morphological information.<br>
-							In addition, the two .RDF files of our ontologies, <br>
-							<a href="ontologies/ChthuluConcepts7.ttl" download>🔗ChthuluConcepts.ttl</a> and
-							<a href="ontologies/Chthulucene7.ttl" download>🔗ChthuluOnt.ttl</a>,
+							In addition, the two .RDF files of our ontologies, ChthuluConcepts and ChthuluOnt.ttl
 							obtained by exportation from Protégé, are parsed and needed triples for class hierarchies
-							and mapping are added to the main <a href="script/graph_code/cthuluGraph.ttl"
-								download>🔗ChthuluGraph</a> <br> <a href="script/graph_code/chthuluGraph.py"
-								download>⏩ChthuluGraph.py</a>
+							and mapping are added to the main <a href="ontologies/ChthuluGraph.ttl"
+								download>🔗ChthuluGraph</a> <br>
+								⏩ find here the Python code <a href="script/graph_code/chthuluGraph.py"
+								download>ChthuluGraph.py</a>
 						</div>
 					</div>
 
