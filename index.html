@@ -272,10 +272,10 @@
 											<div class="accordion mb-5" id="accordionExample">
 												<div class="accordion-item" >
 													<h2 class="accordion-header" id="headingOne">
-													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
 														Reader | Chap 7 | Chthulu Concepts <b>*in progress, try the first button*</b>
 													</h2>
-													<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+													<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
 													<div class="accordion-body">
 														<button id="btn" type="button" class="btn btn-outline-primary" style="margin-bottom: 25px;">CC | Chthulu Concepts</button>
 														<button id="btn" type="button" class="btn btn-outline-primary" style="margin-bottom: 25px;">CC | Chthulu Entities</button>
@@ -381,6 +381,7 @@ end block quoute -->
 	</header><!-- prova qui-->
 		<div class="col-md-24" style="padding: 25px; color:grey">According to the Knowledge Extraction performed on the text we designed <b>two ontologies</b> to represent different layers of abstractions. <br> They are concieved to be mapped through the owl property <b>sameAs</b> when an instance of a concept is found by parsing the text, allowing to connect semantic text-tied information at a sentence level with a more broader understanding of Haraway's theory, in a process that unfolds from the particular to the general and is able to give a comprehensive overview of how Entities, their roles and the conceptual knowledge they convey are related to each other as well as hinting at how Haraway style of writing works on a textual level. <br>
 			<h2 style="color:orange; padding-top: 25px;">Ontology no.1 | ChthuluConcepts</h2> 
+			<a href="ontologies/ChthuluConcepts.ttl" download>>> download ChthuluConcepts.ttl</a><br><br>
 			<h2 class="text-muted">Extracted Concepts</h2>This Ontology is designed to represent the content of the text at a theoretical level. Starting from topic modeling and our understanding of Staying with the trouble's Chapter 7, we created an Ontology to connect meaningful extracted Concepts between them, highlighting their interconnectedness and relations. <br>
 				<code>Becoming-with </code> <br>
 				<code>Go-visit </code> <br>
@@ -438,7 +439,8 @@ end block quoute -->
 
 
 
-			<h2 style="color:orange; padding-top: 25px;">Ontology no.2 | ChthuluGraph</h2> 
+			<h2 style="color:orange; padding-top: 25px;">Ontology no.2 | Chthulucene</h2> 
+			<a href="ontologies/Chthulucene.ttl" download> >> download Chthulucene.ttl</a><br><br>
 			<h2 class="text-muted">Classes</h2>Starting from Frame semantics, we aimed to be able to connect our extracted Entities with their semantic roles in each sentence, in order to anna layer of undertanding of entities relationships in a context, as well as understanding better what types of entities could cover which role, given that Donna Haraway especially adopts a <b>non-anthropocentric view</b> and focuses on the importance of <b>multispecies collaboration</b> as well as the centrality of <b>situating knowledge</b>, namely expliciting from what position a being produces knowledge, or in Haraway's terms "what thoughts think other thoughts". <br> To do so we identified for main classes to group different types of Frame Arguments: <br>
 				<code>AgentiveEntity </code> <br>
 				<code>Concept </code> <br>
