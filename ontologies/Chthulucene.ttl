@@ -60,7 +60,7 @@ chthulu:descriptorRole rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf chthulu:hasRole ;
                        rdfs:domain chthulu:Descriptor ;
                        rdfs:range chthulu:Role ;
-                       rdfs:comment "Pproperty connecting a Descriptor to the Role it assumes in a Frame" .
+                       rdfs:comment "Property connecting a Descriptor to the Role it assumes in a Frame" .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#evokes
@@ -100,25 +100,11 @@ chthulu:locationRole rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasFramenetID
-chthulu:hasFramenetID rdf:type owl:DatatypeProperty ;
-                      rdfs:domain chthulu:Frame ;
-                      rdfs:range xsd:int ;
-                      rdfs:comment "The FrameNet ID corresponding to the identified Frame" .
-
-
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasInstance
 chthulu:hasInstance rdf:type owl:DatatypeProperty ;
                     rdfs:domain chthulu:Frame ;
                     rdfs:range rdfs:Literal ;
                     rdfs:comment "The sentence where the Frame is identified as a string" .
-
-
-###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasLabel
-chthulu:hasLabel rdf:type owl:DatatypeProperty ;
-                 rdfs:domain chthulu:Frame ;
-                 rdfs:range rdfs:Literal ;
-                 rdfs:comment "The name of the Frame in string" .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#hasMainReference
@@ -128,19 +114,14 @@ chthulu:hasMainReference rdf:type owl:DatatypeProperty ;
                          rdfs:comment "property that connects the Animated class to the main way it is reference in the text. For example chthulu:VinicianeDespret chthulu:hasMainReference \"Despret\"" .
 
 
-###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#isPOS
-chthulu:isPOS rdf:type owl:DatatypeProperty ;
-              rdfs:domain chthulu:Role ;
-              rdfs:range xsd:string .
-
-
 #################################################################
 #    Classes
 #################################################################
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Agent
 chthulu:Agent rdf:type owl:Class ;
-              rdfs:subClassOf chthulu:Role .
+              rdfs:subClassOf chthulu:Role ;
+              rdfs:comment "In Cause_expansion, an Agent is the one who causes the change in size of the Item may be present." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#AgentiveEntity
@@ -229,7 +210,8 @@ chthulu:Caudry rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause
 chthulu:Cause rdf:type owl:Class ;
-              rdfs:subClassOf chthulu:Role .
+              rdfs:subClassOf chthulu:Role ;
+              rdfs:comment "In Cause_expansion, the Cause is a non-human entity which brings about the change in size." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause_expansion
@@ -267,7 +249,10 @@ chthulu:Chateau rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer
 chthulu:Cognizer rdf:type owl:Class ;
-                 rdfs:subClassOf chthulu:Role .
+                 rdfs:subClassOf chthulu:Role ;
+                 rdfs:comment "In Coming_to_believe, Cognizer is the person who comes to believe something." ,
+                              "In Coming_up_with, Cognizer is the person who comes up with or conceptualizes the Invention. It is normally expressed as an External Argument." ,
+                              "In Needing, the Cognizer requires or believes he/she requires the Requirement to hold so that the Dependent will occur." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Collaborative_thinking
@@ -333,17 +318,14 @@ chthulu:Coming_up_with rdf:type owl:Class ;
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Concept
-chthulu:Concept rdf:type owl:Class .
-
-
-###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Consequences
-chthulu:Consequences rdf:type owl:Class ;
-                     rdfs:subClassOf chthulu:Role .
+chthulu:Concept rdf:type owl:Class ;
+                rdfs:comment "Concept class involves all instances of the text that refer to one of the main concepts present in Chapter 7 of Staying with the trouble, such as \"Render each other capable\", or other conceptual instances (such as periods) that can be considered as a unit and cover one specific semantic role in a Frame, such as \"What must be known and built together\"." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Content
 chthulu:Content rdf:type owl:Class ;
-                rdfs:subClassOf chthulu:Role .
+                rdfs:subClassOf chthulu:Role ;
+                rdfs:comment "In Coming_to_believe, the Content is what one comes to believe, usually expressed as a finite clausal Complement or an Object NP, and may sometimes be expressed by a PP." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cow
@@ -367,12 +349,14 @@ chthulu:EcologicalPark rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Evidence
 chthulu:Evidence rdf:type owl:Class ;
-                 rdfs:subClassOf chthulu:Role .
+                 rdfs:subClassOf chthulu:Role ;
+                 rdfs:comment "In Coming_to_believe, the Evidence on which knowledge or belief is based" .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Experiencer
 chthulu:Experiencer rdf:type owl:Class ;
-                    rdfs:subClassOf chthulu:Role .
+                    rdfs:subClassOf chthulu:Role ;
+                    rdfs:comment "In Mental_stimulus_stimulus_focus, the Experiencer is the person or sentient entity that experiences or feels the emotions" .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Fancier
@@ -437,7 +421,8 @@ chthulu:HumanProp rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Idea
 chthulu:Idea rdf:type owl:Class ;
-             rdfs:subClassOf chthulu:Role .
+             rdfs:subClassOf chthulu:Role ;
+             rdfs:comment "In Coming_up_with, Idea is the intellectual creation of the Cognizer. It is normally expressed as an NP Object, but sometimes as a PP Complement." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Inanimated
@@ -462,7 +447,9 @@ chthulu:Isabelle_Stengers rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Item
 chthulu:Item rdf:type owl:Class ;
-             rdfs:subClassOf chthulu:Role .
+             rdfs:subClassOf chthulu:Role ;
+             rdfs:comment "In Being_in_Category, this is the entity which is is an instance of a particular Category. Typically, the Item is expressed as the external argument." ,
+                          "In Cause_expansion, the Item is the entity that changes size, frequently the External Argument of verbs or the NP Object if an Agent is expressed." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Jocelyne_Porcher
@@ -482,7 +469,8 @@ chthulu:LeisurePark rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Location
 chthulu:Location rdf:type owl:Class ;
-                 rdfs:subClassOf chthulu:Role .
+                 rdfs:subClassOf chthulu:Role ;
+                 rdfs:comment "In Perception_active, Location is the position of the Perceiver during the act of perception." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Man
@@ -492,7 +480,10 @@ chthulu:Man rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner
 chthulu:Manner rdf:type owl:Class ;
-               rdfs:subClassOf chthulu:Role .
+               rdfs:subClassOf chthulu:Role ;
+               rdfs:comment "In Collaborative_thinkink, a barticular method or quality or way of thinking together of the thinkers involved." ,
+                            "In Mental_stimulus_stimulus_focus, any description of the way in which the Experiencer experiences the Stimulus." ,
+                            "In Studying, The manner of studying that the Student has." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Market
@@ -548,10 +539,6 @@ chthulu:Needing rdf:type owl:Class ;
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty chthulu:involvesRole ;
-                                  owl:someValuesFrom chthulu:Consequences
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty chthulu:involvesRole ;
                                   owl:someValuesFrom chthulu:Requirement
                                 ] ;
                 rdfs:comment """Frame where a speaker believes that some state of affairs or entity (the      
@@ -600,7 +587,8 @@ chthulu:People_by_vocation rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perceiver_agentive
 chthulu:Perceiver_agentive rdf:type owl:Class ;
-                           rdfs:subClassOf chthulu:Role .
+                           rdfs:subClassOf chthulu:Role ;
+                           rdfs:comment "In Perception_active, the Perceiver_agentive performs some action in order to have a perceptual experience." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perception_active
@@ -626,17 +614,20 @@ chthulu:Perception_active rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Persistent_characteristic
 chthulu:Persistent_characteristic rdf:type owl:Class ;
-                                  rdfs:subClassOf chthulu:Role .
+                                  rdfs:subClassOf chthulu:Role ;
+                                  rdfs:comment "In People_by_vocation, the Persistent_characteristic is a physiological characteristic or personality trait or title of the Person which is concieved of as persisting over time." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Person
 chthulu:Person rdf:type owl:Class ;
-               rdfs:subClassOf chthulu:Role .
+               rdfs:subClassOf chthulu:Role ;
+               rdfs:comment "In People_by_vocation, the Person is the human being." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Phenomenon
 chthulu:Phenomenon rdf:type owl:Class ;
-                   rdfs:subClassOf chthulu:Role .
+                   rdfs:subClassOf chthulu:Role ;
+                   rdfs:comment "In Perception_active, Phenomenon indicates the entity or phenomenon to which the Perceiver_agentive directs his or her attention in order to have a perceptual experience." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Pig
@@ -655,7 +646,8 @@ chthulu:Place rdf:type owl:Class .
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Purpose
 chthulu:Purpose rdf:type owl:Class ;
-                rdfs:subClassOf chthulu:Role .
+                rdfs:subClassOf chthulu:Role ;
+                rdfs:comment "In Cause_expansion, the Purpose for which the Agent causes the expansion of the Item" .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Quality
@@ -665,7 +657,8 @@ chthulu:Quality rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Requirement
 chthulu:Requirement rdf:type owl:Class ;
-                    rdfs:subClassOf chthulu:Role .
+                    rdfs:subClassOf chthulu:Role ;
+                    rdfs:comment "In Needing frame, the entity or state-of-affairs that must be present or obtain in order for the Dependent to obtain." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Role
@@ -694,12 +687,14 @@ chthulu:Southern_California rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Stimulus
 chthulu:Stimulus rdf:type owl:Class ;
-                 rdfs:subClassOf chthulu:Role .
+                 rdfs:subClassOf chthulu:Role ;
+                 rdfs:comment "In Mental_stimulus_stimulus_focus, the Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Student
 chthulu:Student rdf:type owl:Class ;
-                rdfs:subClassOf chthulu:Role .
+                rdfs:subClassOf chthulu:Role ;
+                rdfs:comment "In Studying, Student is one who receives instruction from a Teacher or Institution." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Studying
@@ -716,12 +711,14 @@ chthulu:Studying rdf:type owl:Class ;
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty chthulu:involvesRole ;
                                    owl:someValuesFrom chthulu:Subject
-                                 ] .
+                                 ] ;
+                 rdfs:comment "A Student applys themselves for the purposes of education within a Subject. They may receive instruction from a particular Teacher at the Institution." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Subject
 chthulu:Subject rdf:type owl:Class ;
-                rdfs:subClassOf chthulu:Role .
+                rdfs:subClassOf chthulu:Role ;
+                rdfs:comment "In Studying, the area of knowledge or skill which is taught to a Student." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Technology
@@ -736,7 +733,8 @@ chthulu:Thelma_Rowell rdf:type owl:Class ;
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker
 chthulu:Thinker rdf:type owl:Class ;
-                rdfs:subClassOf chthulu:Role .
+                rdfs:subClassOf chthulu:Role ;
+                rdfs:comment "In Collaborative_thinking, this is one of the entity involved in the thinking, human or non human." .
 
 
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Village
@@ -772,6 +770,489 @@ chthulu:Woman rdf:type owl:Class ;
 ###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#World
 chthulu:World rdf:type owl:Class ;
               rdfs:subClassOf chthulu:LOC .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Agent_1
+chthulu:Agent_1 rdf:type owl:NamedIndividual ,
+                         chthulu:Agent .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Being_in_category_1
+chthulu:Being_in_category_1 rdf:type owl:NamedIndividual ,
+                                     chthulu:Being_in_category ;
+                            chthulu:involvesRole chthulu:Category_1 ,
+                                                 chthulu:Item_1 ;
+                            chthulu:hasInstance "That is her worlding practice." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Beings
+chthulu:Beings rdf:type owl:NamedIndividual ,
+                        chthulu:Animated ;
+               chthulu:agentiveRole chthulu:Thinker_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Blackbird
+chthulu:Blackbird rdf:type owl:NamedIndividual ,
+                           chthulu:Bird ;
+                  chthulu:agentiveRole chthulu:Evidence_1 ,
+                                       chthulu:Phenomenon_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Category_1
+chthulu:Category_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Category .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause_1
+chthulu:Cause_1 rdf:type owl:NamedIndividual ,
+                         chthulu:Cause .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cause_expansion_1
+chthulu:Cause_expansion_1 rdf:type owl:NamedIndividual ,
+                                   chthulu:Cause_expansion ;
+                          chthulu:involvesRole chthulu:Agent_1 ,
+                                               chthulu:Cause_1 ,
+                                               chthulu:Item_2 ,
+                                               chthulu:Purpose_1 ;
+                          chthulu:hasInstance "Her kind of thinking enlarges, even invents, the competencies of all the players, including herself, such that the domain of ways of being and knowing dilates, expands, adds both ontological and epistemological possibilities, proposes and enacts what was not there before." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer_1
+chthulu:Cognizer_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Cognizer ;
+                   chthulu:conceptRole chthulu:Content_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer_2
+chthulu:Cognizer_2 rdf:type owl:NamedIndividual ,
+                            chthulu:Cognizer .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer_3
+chthulu:Cognizer_3 rdf:type owl:NamedIndividual ,
+                            chthulu:Cognizer .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Cognizer_4
+chthulu:Cognizer_4 rdf:type owl:NamedIndividual ,
+                            chthulu:Cognizer .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Collaborative_thinking_1
+chthulu:Collaborative_thinking_1 rdf:type owl:NamedIndividual ,
+                                          chthulu:Collaborative_thinking ;
+                                 chthulu:involvesRole chthulu:Thinker_1 ,
+                                                      chthulu:Thinker_2 ;
+                                 chthulu:hasInstance "Vinciane Despret thinks-with other beings, human and not." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Collaborative_thinking_2
+chthulu:Collaborative_thinking_2 rdf:type owl:NamedIndividual ,
+                                          chthulu:Collaborative_thinking ;
+                                 chthulu:involvesRole chthulu:Manner_1 ,
+                                                      chthulu:Manner_2 ,
+                                                      chthulu:Manner_3 ,
+                                                      chthulu:Thinker_3 ,
+                                                      chthulu:Thinker_4 ;
+                                 chthulu:hasInstance "She thinks in attunement with those she thinks with—recursively, inventively, relentlessly—with joy and verve." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Coming_to_believe_1
+chthulu:Coming_to_believe_1 rdf:type owl:NamedIndividual ,
+                                     chthulu:Coming_to_believe ;
+                            chthulu:involvesRole chthulu:Cognizer_1 ,
+                                                 chthulu:Content_1 ,
+                                                 chthulu:Evidence_1 ;
+                            chthulu:hasInstance """Despret listened to a singing blackbird one morning—a living blackbird outside 
+her particular window—and that way learned what importance sounds like.""" .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Coming_up_with_1
+chthulu:Coming_up_with_1 rdf:type owl:NamedIndividual ,
+                                  chthulu:Coming_up_with ;
+                         chthulu:involvesRole chthulu:Cognizer_2 ,
+                                              chthulu:Idea_1 ;
+                         chthulu:hasInstance "Her kind of thinking enlarges, even invents, the competencies of all the players, including herself, such that the domain of ways of being and knowing dilates, expands, adds both ontological and epistemological possibilities, proposes and enacts what was not there before." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Coming_up_with_2
+chthulu:Coming_up_with_2 rdf:type owl:NamedIndividual ,
+                                  chthulu:Coming_up_with ;
+                         chthulu:involvesRole chthulu:Cognizer_3 ,
+                                              chthulu:Idea_2 ;
+                         chthulu:hasInstance "She studies how beings render each other capable in actual encounters, and she theorizes—makes cogently available—that kind of theory and method." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Competencies
+chthulu:Competencies rdf:type owl:NamedIndividual ,
+                              chthulu:Concept ;
+                     chthulu:conceptRole chthulu:Item_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Content_1
+chthulu:Content_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Content .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Despret
+chthulu:Despret rdf:type owl:NamedIndividual ,
+                         chthulu:Vinciane_Despret ;
+                chthulu:agentiveRole chthulu:Cognizer_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Despret_1
+chthulu:Despret_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Vinciane_Despret ;
+                  chthulu:agentiveRole chthulu:Experiencer_1 ,
+                                       chthulu:Perceiver_agentive_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Discovering
+chthulu:Discovering rdf:type owl:NamedIndividual ,
+                             chthulu:Modality ;
+                    chthulu:descriptorRole chthulu:Manner_5 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Encounters
+chthulu:Encounters rdf:type owl:NamedIndividual ,
+                            chthulu:LOC ;
+                   chthulu:locationRole chthulu:Manner_6 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Evidence_1
+chthulu:Evidence_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Evidence .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Experiencer_1
+chthulu:Experiencer_1 rdf:type owl:NamedIndividual ,
+                               chthulu:Experiencer .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Her
+chthulu:Her rdf:type owl:NamedIndividual ,
+                     chthulu:Vinciane_Despret ;
+            chthulu:agentiveRole chthulu:Agent_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Idea_1
+chthulu:Idea_1 rdf:type owl:NamedIndividual ,
+                        chthulu:Idea .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Idea_2
+chthulu:Idea_2 rdf:type owl:NamedIndividual ,
+                        chthulu:Idea .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Inventively
+chthulu:Inventively rdf:type owl:NamedIndividual ,
+                             chthulu:Modality ;
+                    chthulu:descriptorRole chthulu:Manner_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Item_1
+chthulu:Item_1 rdf:type owl:NamedIndividual ,
+                        chthulu:Item .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Item_2
+chthulu:Item_2 rdf:type owl:NamedIndividual ,
+                        chthulu:Item .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Location_of_protagonist_1
+chthulu:Location_of_protagonist_1 rdf:type owl:NamedIndividual ,
+                                           chthulu:Location .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_1
+chthulu:Manner_1 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_2
+chthulu:Manner_2 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_3
+chthulu:Manner_3 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_4
+chthulu:Manner_4 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_5
+chthulu:Manner_5 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Manner_6
+chthulu:Manner_6 rdf:type owl:NamedIndividual ,
+                          chthulu:Manner .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Mental_stimulus_stimulus_focus_1
+chthulu:Mental_stimulus_stimulus_focus_1 rdf:type owl:NamedIndividual ,
+                                                  chthulu:Mental_stimulus_stimulus_focus ;
+                                         chthulu:involvesRole chthulu:Experiencer_1 ,
+                                                              chthulu:Manner_4 ,
+                                                              chthulu:Manner_5 ,
+                                                              chthulu:Stimulus_1 ;
+                                         chthulu:hasInstance "Despret is not interested in thinking by discovering the stupidities of others, or by reducing the field of attention to prove a point." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Needing_1
+chthulu:Needing_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Needing ;
+                  chthulu:involvesRole chthulu:Cognizer_4 ,
+                                       chthulu:Requirement_1 ;
+                  chthulu:hasInstance "She is a philosopher and a scientist who is allergic to denunciation and hungry for discovery, needy for what must be known and built together, with and for earthly beings, living, dead, and yet to come." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#People_by_vocation_1
+chthulu:People_by_vocation_1 rdf:type owl:NamedIndividual ,
+                                      chthulu:People_by_vocation ;
+                             chthulu:involvesRole chthulu:Persistent_characteristic_1 ,
+                                                  chthulu:Persistent_characteristic_2 ,
+                                                  chthulu:Person_1 ;
+                             chthulu:hasInstance "She is a philosopher and a scientist who is allergic to denunciation and hungry for discovery, needy for what must be known and built together, with and for earthly beings, living, dead, and yet to come." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perceiver_agentive_1
+chthulu:Perceiver_agentive_1 rdf:type owl:NamedIndividual ,
+                                      chthulu:Perceiver_agentive .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Perception_active_1
+chthulu:Perception_active_1 rdf:type owl:NamedIndividual ,
+                                     chthulu:Perception_active ;
+                            chthulu:involvesRole chthulu:Location_of_protagonist_1 ,
+                                                 chthulu:Perceiver_agentive_1 ,
+                                                 chthulu:Phenomenon_1 ;
+                            chthulu:hasInstance """Despret listened to a singing blackbird one morning—a living blackbird outside 
+her particular window—and that way learned what importance sounds like.""" .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Persistent_characteristic_1
+chthulu:Persistent_characteristic_1 rdf:type owl:NamedIndividual ,
+                                             chthulu:Persistent_characteristic .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Persistent_characteristic_2
+chthulu:Persistent_characteristic_2 rdf:type owl:NamedIndividual ,
+                                             chthulu:Persistent_characteristic .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Person_1
+chthulu:Person_1 rdf:type owl:NamedIndividual ,
+                          chthulu:Person .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Phenomenon_1
+chthulu:Phenomenon_1 rdf:type owl:NamedIndividual ,
+                              chthulu:Phenomenon .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Philosopher
+chthulu:Philosopher rdf:type owl:NamedIndividual ,
+                             chthulu:Vocation ;
+                    chthulu:descriptorRole chthulu:Persistent_characteristic_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Purpose_1
+chthulu:Purpose_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Purpose .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Recursively
+chthulu:Recursively rdf:type owl:NamedIndividual ,
+                             chthulu:Modality ;
+                    chthulu:descriptorRole chthulu:Manner_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Reducing
+chthulu:Reducing rdf:type owl:NamedIndividual ,
+                          chthulu:Modality ;
+                 chthulu:descriptorRole chthulu:Manner_4 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Relentlessly
+chthulu:Relentlessly rdf:type owl:NamedIndividual ,
+                              chthulu:Modality ;
+                     chthulu:descriptorRole chthulu:Manner_3 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Render_each_other_capable
+chthulu:Render_each_other_capable rdf:type owl:NamedIndividual ,
+                                           chthulu:Concept ;
+                                  chthulu:conceptRole chthulu:Subject_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Requirement_1
+chthulu:Requirement_1 rdf:type owl:NamedIndividual ,
+                               chthulu:Requirement .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Scientist
+chthulu:Scientist rdf:type owl:NamedIndividual ,
+                           chthulu:Vocation ;
+                  chthulu:descriptorRole chthulu:Persistent_characteristic_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#She
+chthulu:She rdf:type owl:NamedIndividual ,
+                     chthulu:Vinciane_Despret ;
+            chthulu:agentiveRole chthulu:Thinker_3 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#She_1
+chthulu:She_1 rdf:type owl:NamedIndividual ,
+                       chthulu:Vinciane_Despret ;
+              chthulu:agentiveRole chthulu:Cognizer_3 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#She_2
+chthulu:She_2 rdf:type owl:NamedIndividual ,
+                       chthulu:Vinciane_Despret ;
+              chthulu:agentiveRole chthulu:Person_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#She_3
+chthulu:She_3 rdf:type owl:NamedIndividual ,
+                       chthulu:Vinciane_Despret ;
+              chthulu:agentiveRole chthulu:Student_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Stimulus_1
+chthulu:Stimulus_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Stimulus .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Student_1
+chthulu:Student_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Student .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Studying_1
+chthulu:Studying_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Studying ;
+                   chthulu:involvesRole chthulu:Manner_6 ,
+                                        chthulu:Student_1 ,
+                                        chthulu:Subject_1 ;
+                   chthulu:hasInstance "She studies how beings render each other capable in actual encounters, and she theorizes—makes cogently available—that kind of theory and method." .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Subject_1
+chthulu:Subject_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Subject .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#That
+chthulu:That rdf:type owl:NamedIndividual ,
+                      chthulu:Concept ;
+             chthulu:conceptRole chthulu:Item_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#The_domain_of_ways_of_being_and_knowing_dilates
+chthulu:The_domain_of_ways_of_being_and_knowing_dilates rdf:type owl:NamedIndividual ,
+                                                                 chthulu:Concept ;
+                                                        chthulu:conceptRole chthulu:Purpose_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Theory_and_method
+chthulu:Theory_and_method rdf:type owl:NamedIndividual ,
+                                   chthulu:Concept ;
+                          chthulu:conceptRole chthulu:Idea_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker_1
+chthulu:Thinker_1 rdf:type owl:NamedIndividual ,
+                           chthulu:Thinker .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker_2
+chthulu:Thinker_2 rdf:type owl:NamedIndividual ,
+                           chthulu:Thinker .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker_3
+chthulu:Thinker_3 rdf:type owl:NamedIndividual ,
+                           chthulu:Thinker .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinker_4
+chthulu:Thinker_4 rdf:type owl:NamedIndividual ,
+                           chthulu:Thinker .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinking
+chthulu:Thinking rdf:type owl:NamedIndividual ,
+                          chthulu:Concept ;
+                 chthulu:conceptRole chthulu:Cause_1 ,
+                                     chthulu:Cognizer_2 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Thinking_1
+chthulu:Thinking_1 rdf:type owl:NamedIndividual ,
+                            chthulu:Concept ;
+                   chthulu:conceptRole chthulu:Stimulus_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Those
+chthulu:Those rdf:type owl:NamedIndividual ,
+                       chthulu:Animated ;
+              chthulu:agentiveRole chthulu:Thinker_4 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Viniciane_Despret
+chthulu:Viniciane_Despret rdf:type owl:NamedIndividual ,
+                                   chthulu:Vinciane_Despret ;
+                          chthulu:agentiveRole chthulu:Thinker_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#What_importance_sounds_like
+chthulu:What_importance_sounds_like rdf:type owl:NamedIndividual ,
+                                             chthulu:Concept .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#What_must_be_known_and_built_together
+chthulu:What_must_be_known_and_built_together rdf:type owl:NamedIndividual ,
+                                                       chthulu:Concept ;
+                                              chthulu:conceptRole chthulu:Requirement_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#What_was_not_there_before
+chthulu:What_was_not_there_before rdf:type owl:NamedIndividual ,
+                                           chthulu:Concept ;
+                                  chthulu:conceptRole chthulu:Idea_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Who
+chthulu:Who rdf:type owl:NamedIndividual ,
+                     chthulu:Vinciane_Despret ;
+            chthulu:agentiveRole chthulu:Cognizer_4 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Window
+chthulu:Window rdf:type owl:NamedIndividual ,
+                        chthulu:LOC ;
+               chthulu:locationRole chthulu:Location_of_protagonist_1 .
+
+
+###  https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/Chthulucene.ttl#Worlding
+chthulu:Worlding rdf:type owl:NamedIndividual ,
+                          chthulu:Concept ;
+                 chthulu:conceptRole chthulu:Category_1 .
 
 
 #################################################################
