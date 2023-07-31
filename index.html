@@ -743,7 +743,7 @@ end block quoute -->
 						<header class="text-center my-5">
 							<a id="theprocess" href="SVG\kgEvaluation.svg"
 								title="Knowledge Extraction with semi-automated techniques"
-								class="image-link float-end"><img src="SVG\kgEvaluation.svg"></a>
+								class="image-link float-end"><img src="SVG\kgEvaluation.svg" width="50%"></a>
 							<h2 style="color:orange;">Knowledge Extraction</h2>
 						</header><!-- prova qui-->
 						<div class="col-md-24" style="padding: 25px;color:grey">
@@ -853,7 +853,7 @@ end block quoute -->
 					<div class="card" style="margin-top: 40px;">
 						<header class="text-center my-5">
 							<a href="SVG\merge.svg" title="Ontology Design" class="image-link float-end"><img
-									src="SVG\merge.svg"></a>
+									src="SVG\merge.svg" width="50%"></a>
 							<h2 style="color:orange;">Ontology Design</h2>
 						</header>
 						
@@ -1038,9 +1038,7 @@ end block quoute -->
 								<li>Independently from the frame, what roles do all of the #ActivityConcept concepts
 									have?</li>
 							</ol>
-							<a
-								href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/chthulu_cq.ipynb">🔗Go
-								to the SPARQL Queries</a> <br>
+							<br>
 							<a
 								href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/chthulu_cq.ipynb">📓Go
 								to Documentation Notebook</a>
@@ -1052,10 +1050,12 @@ end block quoute -->
 					<div class="card" style="margin-top: 40px;">
 						<header class="text-center my-5">
 							<a href="SVG\ontologyDesign.svg" title="Knowledge Graph & Evaluation"
-								class="image-link float-end"><img src="SVG\ontologyDesign.svg"></a>
+								class="image-link float-end"><img src="SVG\ontologyDesign.svg" width="50%"></a>
 							<h2 style="color:orange;">Knowledge Graph & Evaluation</h2>
 						</header><!-- prova qui-->
+						
 						<div class="col-md-24" style="padding: 25px;color:grey">
+							<h3>Knowledge Graph</h3>
 							Since the ontology as designed is meant to be populated automatically by means of text
 							parsing, even thought for the purpose of this exam the ontologies have been manually populated, we designed our own algorithm to perform the task automatically.
 							The code needs to be improved as its result is still not accurate, but we consider this attempt to be worth sharing with the aim of providing a starting point
@@ -1074,6 +1074,27 @@ end block quoute -->
 								⏩ find here the Python code <a href="script/graph_code/chthuluGraph.py"
 								download>ChthuluGraph.py</a>
 						</div>
+						
+						<div class="col-md-24" style="padding: 25px;color:grey">
+							<h3>Evaluation</h3>
+							The ontology has been evaluated formally by means of SPARQL queries on the basis of aforementioned Competency questions.<br>
+							<a href="script/chthulu_cq.ipynb" download>🔗Download the SPARQL Queries Jupyter Notebook</a><br><br>
+
+							<h3>Critique and further enhancements</h3>
+							With the present work we have faced to the problem of modeling different instances of the same entity in a way that could
+							allow us to retrieve their semantic role and their co occurrence at a sentence level in a long text. 
+							The solution we came up with, even though accounting in a complete way for the identification of roles and types of entity, as well as 
+							defining meaningful relationships between semantic roles in frames and their conceptual meaning in Haraway's world, could definetely be improved.<br>
+							The main flaw of our model is its redundancy, since, instead of having a single individual that participates in different situations (is found in multiple sentences across the text), 
+							we created a Class for every entity and as many individuals of that class as encountered in the text (ex. "she", "who", "Desprets" are all different individuals of the class Viniciane_Despret).
+							This solution, beside its extensive and redundant nature, could also be criticized logically, in so far as, only one individual "Viniciane Despret" exists and it that same individual that manifests itself in
+							multiple occasions throughout the text.<br>
+							As further enhancement, we propose to take inspiration from <a href="https://www.researchgate.net/publication/225119791_Understanding_the_Semantic_Web_through_Descriptions_and_Situations">Situation ontology design pattern</a> to rework
+							on ChthuluGraph and improve the ontology.
+
+						
+						</div>
+
 					</div>
 
 				</div>
