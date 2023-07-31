@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix chthulugraph: <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluGraph.ttl#> .
-@base <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluGraph.ttl> .
+@base <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluGraph.ttl#> .
 
 <https://raw.githubusercontent.com/Explorers-in-the-Chthulucene/SemioticDrifting/main/ontologies/ChthuluGraph.ttl> rdf:type owl:Ontology ;
                                                                                                                     <http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts> "Giusy Grieco" ,
